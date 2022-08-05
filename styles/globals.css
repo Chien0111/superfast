@@ -1,29 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* html,
-body {
-    padding: 0;
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 16px 0;
+    list-style-type: none;
+}
+.slick-active .dot {
+    background-color: white;
+}
+.slick-active .dot2 {
+    background-color: #2691ff;
+}
+.slick-list {
+    /* padding-left: 0px !important; */
+    width: 100% !important;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.bottom .slick-track {
+    display: flex !important;
+    align-items: flex-end !important;
+}
+.center .slick-track {
+    display: flex !important;
+    align-items: center !important;
+}
+.top .slick-track {
+    display: flex !important;
+    align-items: flex-start !important;
 }
 
-* {
-    box-sizing: border-box;
+.align-left .slick-list > div {
+    margin-left: 0 !important ;
 }
-
-@media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
-    }
-    body {
-        color: white;
-        background: black;
-    }
-} */
+.align-right .slick-list > div {
+    margin-right: 0 !important ;
+}
+.first-back-btn {
+    display: flex !important;
+    align-items: center !important;
+    background: linear-gradient(180deg, #daf2fe00 0%, #daf2fe 77.95%);
+}

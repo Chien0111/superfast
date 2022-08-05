@@ -11,7 +11,7 @@ import Introduce from "../../element/home/Introduce";
 import OurStaff from "../../element/home/OurStaff";
 import Slider from "../../element/home/Slider";
 
-const HomeTeplate = () => {
+const HomeTemplate = () => {
     return (
         <div>
             <Slider />
@@ -29,4 +29,4 @@ const HomeTeplate = () => {
     );
 };
 
-export default HomeTeplate;
+export default HomeTemplate;

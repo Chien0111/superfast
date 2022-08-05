@@ -1,10 +1,10 @@
 import BaseLayout from "../layout/base";
-import HomeTeplate from "../Template/Home";
+import HomeTemplate from "../Template/Home";
 
 const Home = () => {
     return (
         <div>
-            <HomeTeplate />
+            <HomeTemplate />
         </div>
     );
 };
