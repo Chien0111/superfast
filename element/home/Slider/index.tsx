@@ -1,23 +1,54 @@
+import { Image } from "@mantine/core";
 import React from "react";
 import SliderComp from "../../../components/Slider";
 const cardList = [
     {
-        content: <p className="w-full bg-red-500">ahahhahaha</p>,
+        content: (
+            <div className="w-full flex justify-between">
+                <div>hahahahahaha</div>
+                <Image src="/images/home_1.png" width="80%" height="100%" />
+            </div>
+        ),
     },
     {
-        content: <p className="w-full bg-red-500">ahahhahaha</p>,
+        content: (
+            <div className="w-full flex justify-between">
+                <div>hahahahahaha</div>
+                <Image src="/images/home_1.png" width="80%" height="100%" />
+            </div>
+        ),
     },
     {
-        content: <p className="w-full bg-red-500">ahahhahaha</p>,
+        content: (
+            <div className="w-full flex justify-between">
+                <div>hahahahahaha</div>
+                <Image src="/images/home_1.png" width="80%" height="100%" />
+            </div>
+        ),
     },
     {
-        content: <p className="w-full bg-red-500">ahahhahaha</p>,
+        content: (
+            <div className="w-full flex justify-between">
+                <div>hahahahahaha</div>
+                <Image src="/images/home_1.png" width="80%" height="100%" />
+            </div>
+        ),
     },
     {
-        content: <p className="w-full bg-red-500">ahahhahaha</p>,
+        content: (
+            <div className="w-full flex justify-between">
+                <div>hahahahahaha</div>
+                <Image src="/images/home_1.png" width="80%" height="100%" />
+            </div>
+        ),
     },
     {
-        content: <p className="w-full bg-red-500">ahahhahaha</p>,
+        content: (
+            <div className="w-full flex justify-between">
+                <div>hahahahahaha</div>
+                <Image src="/images/home_1.png" width="80%" height="100%" />
+            </div>
+        ),
     },
 ];
 const Slider = () => {
@@ -52,7 +83,7 @@ const Slider = () => {
         styleDot: "",
     };
     return (
-        <div className="w-full mx-auto">
+        <div className="w-full h-screen">
             <SliderComp
                 settings={{
                     slidesToShow: 1,
@@ -64,6 +95,7 @@ const Slider = () => {
                 showDots={settingSlidePC.showDots}
                 content={cardList}
                 styleDot=""
+                className="w-full h-full"
             />
         </div>
     );
