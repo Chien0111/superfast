@@ -18,7 +18,7 @@ const SliderComp = (props: SliderProps) => {
         width = "w-full",
         positionItems = "bottom",
     } = props;
-    const styleDots = `dot h-4 w-4 border-2 border-ct-neutral-01 rounded-full -mt-8 ${styleDot}`;
+    const styleDots = `dot2 h-4 w-4 border-2 border-ct-neutral-01 rounded-full mt-4 ${styleDot}`;
     const settingsInit = {
         speed: 500,
         autoplay: true,

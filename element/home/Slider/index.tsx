@@ -1,51 +1,57 @@
 import { Image } from "@mantine/core";
-import React from "react";
+import { ArrowRight } from "iconsax-react";
 import SliderComp from "../../../components/Slider";
 const cardList = [
     {
         content: (
-            <div className="w-full flex justify-between">
-                <div>hahahahahaha</div>
+            <div className="w-full flex items-center justify-between">
+                <div className="ml-12">
+                    <p className="text-[40px]">Do something right herre</p>
+                    <button className="px-10 py-4 mt-8 rounded-md bg-ct-secondary-01 text-2xl text-ct-neutral-01">
+                        <span>Find out now</span>{" "}
+                        <ArrowRight
+                            className="inline ml-4"
+                            color="currentColor"
+                            size="24"
+                        />
+                    </button>
+                </div>
                 <Image src="/images/home_1.png" width="80%" height="100%" />
             </div>
         ),
     },
     {
         content: (
-            <div className="w-full flex justify-between">
-                <div>hahahahahaha</div>
+            <div className="w-full flex items-center justify-between">
+                <div className="ml-12">
+                    <p className="text-[40px]">Do something right herre</p>
+                    <button className="px-10 py-4 mt-8 rounded-md bg-ct-secondary-01 text-2xl text-ct-neutral-01">
+                        <span>Find out now</span>{" "}
+                        <ArrowRight
+                            className="inline ml-4"
+                            color="currentColor"
+                            size="24"
+                        />
+                    </button>
+                </div>
                 <Image src="/images/home_1.png" width="80%" height="100%" />
             </div>
         ),
     },
     {
         content: (
-            <div className="w-full flex justify-between">
-                <div>hahahahahaha</div>
-                <Image src="/images/home_1.png" width="80%" height="100%" />
-            </div>
-        ),
-    },
-    {
-        content: (
-            <div className="w-full flex justify-between">
-                <div>hahahahahaha</div>
-                <Image src="/images/home_1.png" width="80%" height="100%" />
-            </div>
-        ),
-    },
-    {
-        content: (
-            <div className="w-full flex justify-between">
-                <div>hahahahahaha</div>
-                <Image src="/images/home_1.png" width="80%" height="100%" />
-            </div>
-        ),
-    },
-    {
-        content: (
-            <div className="w-full flex justify-between">
-                <div>hahahahahaha</div>
+            <div className="w-full flex items-center justify-between">
+                <div className="ml-12">
+                    <p className="text-[40px]">Do something right herre</p>
+                    <button className="px-10 py-4 mt-8 rounded-md bg-ct-secondary-01 text-2xl text-ct-neutral-01">
+                        <span>Find out now</span>{" "}
+                        <ArrowRight
+                            className="inline ml-4"
+                            color="currentColor"
+                            size="24"
+                        />
+                    </button>
+                </div>
                 <Image src="/images/home_1.png" width="80%" height="100%" />
             </div>
         ),

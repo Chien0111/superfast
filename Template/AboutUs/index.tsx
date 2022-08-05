@@ -1,4 +1,3 @@
-import React from "react";
 import Subscribe from "../../components/Subscribe";
 import GetInTouch from "../../element/aboutUs/GetInTouch";
 

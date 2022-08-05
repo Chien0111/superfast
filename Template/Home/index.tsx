@@ -1,4 +1,3 @@
-import React from "react";
 import Subscribe from "../../components/Subscribe";
 import Blog from "../../element/home/Blog";
 import CoreValue from "../../element/home/CoreValue";

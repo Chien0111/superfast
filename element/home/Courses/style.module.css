@@ -1,0 +1,9 @@
+.dad:hover .childBottom {
+    bottom: 0;
+}
+.dad:hover .childPrice {
+    filter: hue-rotate(45deg);
+}
+.dad:hover .childImg {
+    transform: scale(107%);
+}
