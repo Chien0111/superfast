@@ -5,6 +5,7 @@ import style from "./style.module.css";
 const Courses = () => {
   const data = [
     {
+      img: "/images/Banner 11.jpg",
       title: "Beginners",
       des: `Từ vựng: Hình thành và phát triển vốn từ vựng về nhiều chủ đề gần gũi 
       Cấu trúc: Bước đầu phản xả hỏi đáp thông qua các cấu trúc câu đơn giản
@@ -16,6 +17,7 @@ const Courses = () => {
       cap: "--",
     },
     {
+      img: "/images/Banner 12.jpg",
       title: "Starters",
       des: `Từ vựng: Nghe hiểu và ghi nhớ từ vựng thuộc các chủ đề gần gũi
       Cấu trúc: Sử dụng ngữ pháp cơ bản để nói câu ngắng
@@ -27,6 +29,7 @@ const Courses = () => {
       cap: "--",
     },
     {
+      img: "/images/Banner 10.jpg",
       title: "Movers",
       des: `Từ vựng: Quen thuộc từ vựng trình độ A1+, bám sát yêu cầu Cambridge 
       Cấu trúc: Nắm chắc ngữ pháp trình độ A1+, bám sát yêu cầu Cambridge
@@ -38,6 +41,7 @@ const Courses = () => {
       cap: "--",
     },
     {
+      img: "/images/Banner 7.jpg",
       title: "Flyers",
       des: `Từ vựng: Nắm chắc từ vựng trình độ A2+, bám sát yêu cầu Cambridge 
       Cấu trúc: Quen thuộc ngữ pháp trình độ A2+, bám sát yêu cầu Cambridge
@@ -112,7 +116,7 @@ const CourseItem = ({ data }: any) => {
     >
       <Image
         className={`rounded-md overflow-hidden transition-all duration-700 ease-in-out ${style.childImg}`}
-        src="/images/curriculum-02.jpg"
+        src={data.img || "/images/curriculum-02.jpg"}
         width="100%"
         height="auto"
         alt="img"

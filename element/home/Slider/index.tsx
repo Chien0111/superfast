@@ -33,7 +33,7 @@ const cardList = [
             Mô hình học 1-1
           </p>
           <p className="text-left font-bold text-[50px] mb-4 text-ct-neutral-01">
-            Tạo không gian gắn kết, tập trung hoàn toàn với giáo viên.
+            Tạo không gian gắn kết, tập trung hoàn toàn với giáo viên
           </p>
           <button className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01">
             <span>Đăng ký ngay</span>{" "}
@@ -57,7 +57,7 @@ const cardList = [
           </p>
           <p className="text-left font-bold text-[50px] mb-4 text-ct-neutral-01">
             Giúp luyện phát âm như người bản xứ và nâng cao năng lực phản xạ
-            ngôn ngữ.
+            ngôn ngữ
           </p>
           <button className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01">
             <span>Đăng ký ngay</span>{" "}
@@ -81,7 +81,7 @@ const cardList = [
           </p>
           <p className="text-left font-bold text-[50px] mb-4 text-ct-neutral-01">
             Chương trình giảng dạy bám sát đề thi YLE, đáp ứng 100% kiến thức
-            tiêu chuẩn.
+            tiêu chuẩn
           </p>
           <button className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01">
             <span>Đăng ký ngay</span>{" "}
@@ -160,7 +160,7 @@ const Slider = () => {
             slidesToShow: 1,
             slidesToScroll: 1,
             swipeToSlide: true,
-            infinite: false,
+            infinite: true,
           }}
           showArrow={settingSlidePC.showArrow}
           showDots={settingSlidePC.showDots}
