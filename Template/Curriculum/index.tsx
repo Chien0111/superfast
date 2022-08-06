@@ -1,6 +1,7 @@
 import Subscribe from "../../components/Subscribe";
 import { ArrowRight2, ArrowCircleRight2} from "iconsax-react";
 import { Image } from "@mantine/core";
+import Sitecontent from "../../element/curriculum/sitecontent";
 
 const CurriculumTemplate = () => {
     return (
@@ -9,104 +10,7 @@ const CurriculumTemplate = () => {
                 <h1 className="font-bold text-6xl">Curriculum</h1>
                 <p className="flex items-center justify-center m-4"><span>Home</span> <span><ArrowRight2 size="14"/></span> <span>Curriculum</span></p>
             </div>
-            <div className="p-10 my-10">
-                <div className="flex">
-                <div className="w-1/2 flex items-center">
-                <div className="relative">
-                        <Image
-                        classNames={{image:' p-2 hover:opacity-70'}} 
-                        radius={500}
-                        className={`rounded-md `}
-                        src="/images/facilities-11.jpg"
-                        width="300px"
-                        height="auto"
-                        alt="img"
-                        />
-                        <div className="absolute top-0 right-0 w-14 h-14  rounded-full bg-ct-secondary-02 text-center flex items-center text-ct-white">
-                            <div className="w-full text-xs p-2">
-                                <h5>1.8-3</h5> 
-                                <span>YEARS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-2xl font-medium">Playgroup</h3>
-                        <p>By creating a safe, consistent and welcoming environment</p>
-                    </div>
-                </div>
-                <div className="w-1/2 flex items-center">
-                    <div className="relative">
-                        <Image
-                        classNames={{image:' p-2 hover:opacity-70'}} 
-                        radius={500}
-                        className={`rounded-md `}
-                        src="/images/facilities-11.jpg"
-                        width="300px"
-                        height="auto"
-                        alt="img"
-                        />
-                        <div className="absolute top-0 right-0 w-14 h-14  rounded-full bg-ct-secondary-02 text-center flex items-center text-ct-white">
-                            <div className="w-full text-xs p-2">
-                                <h5>1.8-3</h5> 
-                                <span>YEARS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-2xl font-medium">Playgroup</h3>
-                        <p>By creating a safe, consistent and welcoming environment</p>
-                    </div>
-                </div>
-                </div>
-                <div className="flex mt-10">
-                <div className="w-1/2 flex items-center">
-                <div className="relative">
-                        <Image
-                        classNames={{image:' p-2 hover:opacity-70'}} 
-                        radius={500}
-                        className={`rounded-md `}
-                        src="/images/facilities-11.jpg"
-                        width="300px"
-                        height="auto"
-                        alt="img"
-                        />
-                        <div className="absolute top-0 right-0 w-14 h-14  rounded-full bg-ct-secondary-02 text-center flex items-center text-ct-white">
-                            <div className="w-full text-xs p-2">
-                                <h5>1.8-3</h5> 
-                                <span>YEARS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-2xl font-medium">Playgroup</h3>
-                        <p>By creating a safe, consistent and welcoming environment</p>
-                    </div>
-                </div>
-                <div className="w-1/2 flex items-center">
-                    <div className="relative">
-                        <Image
-                        classNames={{image:' p-2 hover:opacity-70'}} 
-                        radius={500}
-                        className={`rounded-md `}
-                        src="/images/facilities-11.jpg"
-                        width="300px"
-                        height="auto"
-                        alt="img"
-                        />
-                        <div className="absolute top-0 right-0 w-14 h-14  rounded-full bg-ct-secondary-02 text-center flex items-center text-ct-white">
-                            <div className="w-full text-xs p-2">
-                                <h5>1.8-3</h5> 
-                                <span>YEARS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-2xl font-medium">Playgroup</h3>
-                        <p>By creating a safe, consistent and welcoming environment</p>
-                    </div>
-                </div>
-                </div>
-            </div>
+            <Sitecontent/>
             <div className="w-full ">
                 <div className="w-full relativer">
                     <div className="absolute text-center w-full z-0">

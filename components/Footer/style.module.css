@@ -1,9 +1,6 @@
 .image{
     margin-right:10px;
 }
-.information{
-    margin: 5px 0;
-}
 .information:hover{
     color: #FFB800;
 }
