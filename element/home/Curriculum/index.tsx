@@ -47,7 +47,7 @@ const CurriculumItem = () => {
       </div>
       <div className="text-center">
         <p className="font-bold mt-4">Playgroup</p>
-        <p className=" font-thin my-4">
+        <p className=" font-normal my-4">
           By creating a safe, consistent and welcoming environment
         </p>
         <div className="mx-auto flex items-center justify-center w-10 h-10 rounded-full text-ct-primary-01 bg-ct-neutral-01 hover:bg-ct-primary-01 hover:text-ct-neutral-01">

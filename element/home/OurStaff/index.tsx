@@ -46,7 +46,7 @@ const Teacher = ({ data }: any) => {
         src={data.img || "/images/teacher-01.jpg"}
       />
       <p className="mt-6 my-2 font-bold text-center">{data.name}</p>
-      <p className="text-[14px] font-thin text-center">{data.des}</p>
+      <p className="text-[14px] font-normal text-center">{data.des}</p>
     </div>
   );
 };

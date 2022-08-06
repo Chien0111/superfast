@@ -89,17 +89,19 @@ const Courses = () => {
           Khóa học đăng ký nhiều nhất
         </h2>
       </div>
-      <SliderComp
-        settings={settingSlidePC.setting}
-        showArrow={settingSlidePC.showArrow}
-        showDots={settingSlidePC.showDots}
-        content={data.map((item, index) => {
-          return {
-            content: <CourseItem data={item} />,
-          };
-        })}
-        styleDot=""
-      />
+      <div className="w-full max-w-[1200px] mx-auto">
+        <SliderComp
+          settings={settingSlidePC.setting}
+          showArrow={settingSlidePC.showArrow}
+          showDots={settingSlidePC.showDots}
+          content={data.map((item, index) => {
+            return {
+              content: <CourseItem data={item} />,
+            };
+          })}
+          styleDot=""
+        />
+      </div>
     </div>
   );
 };
@@ -120,7 +122,7 @@ const CourseItem = ({ data }: any) => {
       >
         <div className="p-5 pt-3 pb-4 relative">
           <p className="text-[24px] font-bold">{data.title}</p>
-          <p className="font-light py-3 pb-4 border-b">{data.des}</p>
+          <p className="font-normal py-3 pb-4 border-b">{data.des}</p>
           <div
             className={`transition-all w-14 h-14 flex items-center justify-center rounded-full bg-ct-secondary-02 text-ct-neutral-01 absolute right-4 -top-8 ${style.childPrice}`}
           >

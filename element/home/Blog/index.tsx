@@ -32,7 +32,7 @@ const BlogItem = () => {
       >
         <p className="bg-ct-secondary-02 rounded-lg p-1 px-3 w-fit">Blog</p>
         <p className="text-2xl my-4">Lorem ipsum dolor sit amet, consect</p>
-        <p className="text-sm font-thin">12 tháng 6, 2022 • ADMIN</p>
+        <p className="text-sm font-normal">12 tháng 6, 2022 • ADMIN</p>
       </div>
     </div>
   );

@@ -59,10 +59,10 @@ const Item = (props: any) => {
       <div
         className={`transition-all duration-500 w-20 h-20 flex items-center justify-center rounded-2xl bg-ct-secondary-02 overflow-hidden ${style.childNumber}`}
       >
-        <p className="text-ct-secondary-01 text-[40px]">0{index+1}</p>
+        <p className="text-ct-secondary-01 text-[40px]">0{index + 1}</p>
       </div>
       <p className="font-bold my-4">{data.title}</p>
-      <p className="font-thin">{data.des}</p>
+      <p className="font-normal">{data.des}</p>
     </div>
   );
 };

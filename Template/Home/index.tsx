@@ -11,21 +11,21 @@ import OurStaff from "../../element/home/OurStaff";
 import Slider from "../../element/home/Slider";
 
 const HomeTemplate = () => {
-    return (
-        <div>
-            <Slider />
-            <Introduce />
-            <Courses />
-            <CoreValue />
-            <OurStaff />
-            <Feedback />
-            <Curriculum />
-            <Galery />
-            <Coundown />
-            <Blog />
-            <Subscribe />
-        </div>
-    );
+  return (
+    <div>
+      <Slider />
+      <Introduce />
+      <Courses />
+      <CoreValue />
+      <OurStaff />
+      <Feedback />
+      <Curriculum />
+      <Galery />
+      <Coundown />
+      <Blog />
+      <Subscribe />
+    </div>
+  );
 };
 
 export default HomeTemplate;

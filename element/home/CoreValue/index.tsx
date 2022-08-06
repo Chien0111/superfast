@@ -37,7 +37,7 @@ const Item = () => {
         <p className="font-bold mb-4">
           Lorem ipsum dolor sit amet consectetur.
         </p>
-        <p className="font-thin">
+        <p className="font-normal">
           Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
           consectetur.
         </p>

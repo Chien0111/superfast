@@ -4,13 +4,13 @@ import SliderComp from "../../../components/Slider";
 const cardList = [
   {
     content: (
-      <div className="w-full flex items-center justify-between px-10">
+      <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
         <div className="ml-12 max-w-[700px]">
           <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
             Công nghệ H5P
           </p>
           <p className="text-left font-bold text-[50px] mb-4 text-ct-primary-01">
-            Mang tính tương tác cao, <br /> khơi gợi hứng thú học tập
+            Mang tính tương tác cao, khơi gợi hứng thú học tập
           </p>
           <button className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01">
             <span>Đăng ký ngay</span>{" "}
@@ -21,13 +21,13 @@ const cardList = [
             />
           </button>
         </div>
-        <Image src="/images/home_1.png" width="80%" height="100%" />
+        <Image src="/images/banner1.png" width="100%" height="100%" />
       </div>
     ),
   },
   {
     content: (
-      <div className="w-full flex items-center justify-between px-10">
+      <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
         <div className="ml-12 max-w-[700px]">
           <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
             Mô hình học 1-1
@@ -44,13 +44,13 @@ const cardList = [
             />
           </button>
         </div>
-        <Image src="/images/home_1.png" width="80%" height="100%" />
+        <Image src="/images/banner2.png" width="100%" height="100%" />
       </div>
     ),
   },
   {
     content: (
-      <div className="w-full flex items-center justify-between px-10">
+      <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
         <div className="ml-12 max-w-[700px]">
           <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
             Talk to me ứng dụng AI
@@ -68,13 +68,13 @@ const cardList = [
             />
           </button>
         </div>
-        <Image src="/images/home_1.png" width="80%" height="100%" />
+        <Image src="/images/banner3.png" width="100%" height="100%" />
       </div>
     ),
   },
   {
     content: (
-      <div className="w-full flex items-center justify-between px-10">
+      <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
         <div className="ml-12 max-w-[700px]">
           <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
             Định hướng thi chứng chỉ YLE của Cambridge
@@ -92,7 +92,7 @@ const cardList = [
             />
           </button>
         </div>
-        <Image src="/images/home_1.png" width="80%" height="100%" />
+        <Image src="/images/banner4.png" width="100%" height="100%" />
       </div>
     ),
   },
@@ -129,20 +129,22 @@ const Slider = () => {
     styleDot: "",
   };
   return (
-    <div className="w-full h-screen">
-      <SliderComp
-        settings={{
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          swipeToSlide: true,
-          infinite: false,
-        }}
-        showArrow={settingSlidePC.showArrow}
-        showDots={settingSlidePC.showDots}
-        content={cardList}
-        styleDot=""
-        className="w-full h-full"
-      />
+    <div className="relative">
+      <div className="w-full h-screen">
+        <SliderComp
+          settings={{
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            infinite: false,
+          }}
+          showArrow={settingSlidePC.showArrow}
+          showDots={settingSlidePC.showDots}
+          content={cardList}
+          styleDot=""
+          className="w-full h-full"
+        />
+      </div>
     </div>
   );
 };
