@@ -1,0 +1,3 @@
+.dad:hover .child {
+  transform: scale(110%);
+}

@@ -1,5 +1,4 @@
 import SliderComp from "../../../components/Slider";
-import { Image } from "@mantine/core";
 
 const Feedback = () => {
   const settingSlidePC = {
@@ -13,20 +12,30 @@ const Feedback = () => {
     styleDot: "",
   };
   return (
-    <div className="bg-[#faf4ea] py-10 bg-[url(/images/feedback_bg.png)] bg-no-repeat bg-center">
-      <SliderComp
-        settings={settingSlidePC.setting}
-        showArrow={settingSlidePC.showArrow}
-        showDots={settingSlidePC.showDots}
-        content={[
-          { content: <FeedbackItem /> },
-          { content: <FeedbackItem /> },
-          { content: <FeedbackItem /> },
-          { content: <FeedbackItem /> },
-          { content: <FeedbackItem /> },
-        ]}
-        styleDot=""
-      />
+    <div>
+      <div className="w-fit mx-auto mt-10">
+        <p className="text-center font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
+          Meet our staffs
+        </p>
+        <h2 className="text-center font-bold text-[40px] mb-4 text-ct-primary-01">
+          Excellent teacher
+        </h2>
+      </div>
+      <div className="pb-10 bg-[url(/images/feedback_bg.png)] bg-no-repeat bg-center">
+        <SliderComp
+          settings={settingSlidePC.setting}
+          showArrow={settingSlidePC.showArrow}
+          showDots={settingSlidePC.showDots}
+          content={[
+            { content: <FeedbackItem /> },
+            { content: <FeedbackItem /> },
+            { content: <FeedbackItem /> },
+            { content: <FeedbackItem /> },
+            { content: <FeedbackItem /> },
+          ]}
+          styleDot=""
+        />
+      </div>
     </div>
   );
 };

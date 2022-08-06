@@ -3,10 +3,20 @@ import style from "./style.module.css";
 
 const Blog = () => {
   return (
-    <div className="flex flex-wrap max-w-[1200px] mx-auto">
-      <BlogItem />
-      <BlogItem />
-      <BlogItem />
+    <div className="max-w-[1200px] mx-auto">
+      <div className="w-fit mx-auto">
+        <p className="text-center font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
+          From our blog
+        </p>
+        <h2 className="text-center font-bold text-[40px] mb-4 text-ct-primary-01">
+          Recent post
+        </h2>
+      </div>
+      <div className="flex flex-wrap">
+        <BlogItem />
+        <BlogItem />
+        <BlogItem />
+      </div>
     </div>
   );
 };

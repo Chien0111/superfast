@@ -2,11 +2,21 @@ import { Image } from "@mantine/core";
 
 const OurStaff = () => {
   return (
-    <div className="flex flex-wrap max-w-[1200px] mx-auto">
-      <Teacher />
-      <Teacher />
-      <Teacher />
-      <Teacher />
+    <div className=" max-w-[1200px] mx-auto">
+      <div className="w-fit mx-auto">
+          <p className="text-center font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
+          Meet our staffs
+          </p>
+          <h2 className="text-center font-bold text-[40px] mb-4 text-ct-primary-01">
+          Excellent teacher
+          </h2>
+        </div>
+      <div className="flex flex-wrap">
+        <Teacher />
+        <Teacher />
+        <Teacher />
+        <Teacher />
+      </div>
     </div>
   );
 };

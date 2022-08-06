@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       colors: {
         'ct-primary': {
-          '01': '#2691FF',
+          '01': '#23215b',
           '02': '#3599D9',
           '03': '#0474BC',
           '05': 'rgb(30 64 175)',
