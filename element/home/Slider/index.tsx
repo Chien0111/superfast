@@ -9,7 +9,7 @@ const cardList = [
           <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
             Công nghệ H5P
           </p>
-          <p className="text-left font-bold text-[50px] mb-4 text-ct-primary-01">
+          <p className="text-left font-bold text-[50px] mb-4 text-ct-neutral-01">
             Mang tính tương tác cao, khơi gợi hứng thú học tập
           </p>
           <button className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01">
@@ -32,7 +32,7 @@ const cardList = [
           <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
             Mô hình học 1-1
           </p>
-          <p className="text-left font-bold text-[50px] mb-4 text-ct-primary-01">
+          <p className="text-left font-bold text-[50px] mb-4 text-ct-neutral-01">
             Tạo không gian gắn kết, tập trung hoàn toàn với giáo viên.
           </p>
           <button className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01">
@@ -55,7 +55,7 @@ const cardList = [
           <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
             Talk to me ứng dụng AI
           </p>
-          <p className="text-left font-bold text-[50px] mb-4 text-ct-primary-01">
+          <p className="text-left font-bold text-[50px] mb-4 text-ct-neutral-01">
             Giúp luyện phát âm như người bản xứ và nâng cao năng lực phản xạ
             ngôn ngữ.
           </p>
@@ -79,7 +79,7 @@ const cardList = [
           <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
             Định hướng thi chứng chỉ YLE của Cambridge
           </p>
-          <p className="text-left font-bold text-[50px] mb-4 text-ct-primary-01">
+          <p className="text-left font-bold text-[50px] mb-4 text-ct-neutral-01">
             Chương trình giảng dạy bám sát đề thi YLE, đáp ứng 100% kiến thức
             tiêu chuẩn.
           </p>
@@ -130,7 +130,31 @@ const Slider = () => {
   };
   return (
     <div className="relative">
-      <div className="w-full h-screen">
+      <svg
+        className="editorial"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z"
+          />
+        </defs>
+        <g className="parallax">
+          <use xlinkHref="#gentle-wave" x="50" y="0" fill="#605ea6" />
+          <use xlinkHref="#gentle-wave" x="50" y="3" fill="#2e2c74" />
+          <use xlinkHref="#gentle-wave" x="50" y="6" fill="#23215b" />
+        </g>
+      </svg>
+      <div className="w-full h-fit bg-[#23215b]">
         <SliderComp
           settings={{
             slidesToShow: 1,
@@ -142,7 +166,6 @@ const Slider = () => {
           showDots={settingSlidePC.showDots}
           content={cardList}
           styleDot=""
-          className="w-full h-full"
         />
       </div>
     </div>
