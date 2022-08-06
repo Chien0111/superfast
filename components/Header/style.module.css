@@ -1,0 +1,42 @@
+.nav>ul>li{
+    display: inline-block;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown:hover{
+    color: #FFB800;
+}
+.dropdown:hover > .dropdownnav,.dropdownnav{
+    display: block;
+}
+.dropdownnav{
+    z-index: 0;
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    background: #fffcf6;
+    border-radius: 20px;
+}
+.dropdownnav:hover{
+    display: block;
+}
+.dropdownnav li:hover{
+    color: blue;
+} 
+.dropdownnav li a{
+    display: flex;
+    align-items: center;
+}
+.dropdownnav li a:hover> .icon{
+    display: block;
+} 
+.dropdownnav li a:hover> .dropdownnav{
+    display: block;
+}
+.dropdownnav li{
+    margin: 20px;
+}
