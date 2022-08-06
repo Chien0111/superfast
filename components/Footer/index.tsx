@@ -3,7 +3,7 @@ import style from "./style.module.css";
 
 const Footer = () => {
     return <div>
-                <div className="lg:flex px-10 pt-20 pb-5">
+                <div className="lg:flex px-5 pt-20 pb-5 max-w-[1200px] m-auto">
                     <div className="md:flex">
                         <div className="md:w-1/2 p-5">
                             <p className="font-medium">

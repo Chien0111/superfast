@@ -1,8 +1,31 @@
 import { Input,Image, Button } from "@mantine/core";
 
 const GetinTouch = () => {
+    const data = [
+        {
+            img: '/images/Banner 11.jpg',
+            name: 'Chien',
+            work: 'Senior Marketing Manager',
+            phone: '+ 844 123 456 78 90',
+            email: 'contact@example.com'
+        },
+        {
+            img: '/images/Banner 11.jpg',
+            name: 'Hung',
+            work: 'Senior Marketing Manager',
+            phone: '+ 844 123 456 78 90',
+            email: 'contact@example.com'
+        },
+        {
+            img: '/images/Banner 11.jpg',
+            name: 'Hưng',
+            work: 'Senior Marketing Manager',
+            phone: '+ 844 123 456 78 90',
+            email: 'contact@example.com'
+        },
+    ]
     return(
-        <div className="lg:flex">
+        <div className="lg:flex max-w-[1200px] m-auto">
             <div className="lg:w-3/5 p-10">
             <div>
                 <p className=" font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
@@ -58,15 +81,17 @@ const GetinTouch = () => {
             </div>
             </div>
             <div className="lg:w-2/5 mt-20">
-                <Contact/>
-                <Contact/>
-                <Contact/>
+                {data.map((item: any) => {
+                    console.log(item);
+                    
+                    return <Contact data={item}/>
+                })}
             </div>
         </div>
     );
 };
 
-const Contact = () => {
+const Contact = ({data}: any) => {
     return(
         <div className="px-10">
         <div className="flex items-center p-2">
@@ -75,21 +100,19 @@ const Contact = () => {
                 image:`w-full hover:opacity-70`,
                 imageWrapper: 'w-full'}} 
             radius={999}
-            className={` `}
-            src="/images/about-01.jpg"
+            src={data.img}
             width='100px'
             height='100px'
             alt="img"
             />
             <div className="mx-5">
             <h2 className="font-bold text-[20px] mb-4 text-ct-primary-01">
-            John Doe
+            {data.name}
             </h2>
-            <span>Senior Marketing Manager</span> <br />
-            <span>Phone: + 844 123 444 77 88</span> <br />
-            <span>Email: contact@example.com</span> <br />
+            <span>{data.work}</span> <br />
+            <span>Phone: {data.phone}</span> <br />
+            <span>Email: {data.email}</span> <br />
             </div>
-            
         </div>
         </div>
     )
