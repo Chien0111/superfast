@@ -1,5 +1,9 @@
 .dad:hover .childNumber {
-  border: 2px dashed rgb(255 107 0);
+  border: 2px dashed;
   background: transparent;
   border-radius: 200px;
+  border-color: inherit;
+}
+.dad:hover .childtext {
+  color: #ffb800;
 }

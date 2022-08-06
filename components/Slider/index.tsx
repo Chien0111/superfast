@@ -76,7 +76,7 @@ const SampleNextArrow = (props: arrowProps) => {
       className="flex absolute right-4 bg-ct-neutral-01 h-min rounded-full -ml-10 z-50 justify-center items-center"
       onClick={onClick}
     >
-      <RightArrow className="p-2 bg-ct-neutral-01 text-ct-neutral-03 rounded-full shadow-02" />
+      <RightArrow className="p-2 bg-ct-neutral-01 hover:bg-ct-secondary-02 hover:text-ct-neutral-01 text-ct-neutral-03 rounded-full shadow-02" />
     </span>
   );
 };
@@ -88,7 +88,7 @@ const SamplePrevArrow = (props: arrowProps) => {
       className="flex absolute left-4 h-min rounded-full -mr-10 z-50 justify-center items-center"
       onClick={onClick}
     >
-      <LeftArrow className="p-2 bg-ct-neutral-01 text-ct-neutral-03 rounded-full shadow-02" />
+      <LeftArrow className="p-2 bg-ct-neutral-01 hover:bg-ct-secondary-02 hover:text-ct-neutral-01 text-ct-neutral-03 rounded-full shadow-02" />
     </span>
   );
 };
