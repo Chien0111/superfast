@@ -12,8 +12,8 @@ const Feedback = () => {
     styleDot: "",
   };
   return (
-    <div>
-      <div className="w-fit mx-auto mt-10">
+    <div className=" my-20">
+      <div className="w-fit mx-auto">
         <p className="text-center font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
           Meet our staffs
         </p>

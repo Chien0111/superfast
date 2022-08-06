@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 const Curriculum = () => {
   return (
-    <div className="bg-[#faf4ea] w-full py-10">
+    <div className="bg-[#faf4ea] w-full py-20">
       <div className="max-w-[1200px] mx-auto">
         <div className="w-fit mx-auto">
           <p className="text-center font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">

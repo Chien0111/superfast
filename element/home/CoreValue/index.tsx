@@ -2,7 +2,7 @@ import style from "./style.module.css";
 
 const CoreValue = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between mx-auto max-w-[1200px] my-10">
+    <div className="flex flex-col md:flex-row justify-between mx-auto max-w-[1200px] my-32">
       {" "}
       <div>
         <p className="font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
