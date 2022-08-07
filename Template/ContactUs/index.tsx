@@ -19,7 +19,9 @@ const Contact = () => {
                 <h1 className="font-bold text-6xl">Contact</h1>
                 <p className="flex items-center justify-center m-4"><span>Home</span> <span><ArrowRight2 size="14"/></span> <span>Contact</span></p>
             </div>
+            <div className="max-w-[1200px] m-auto px-10">
             <Map/>
+            </div>
             <Office/>
             <GetinTouch/>
         </div>
