@@ -28,55 +28,59 @@ const GetinTouch = () => {
         <div className="lg:flex max-w-[1200px] m-auto">
             <div className="lg:w-3/5 p-10">
             <div>
-                <p className=" font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
-                Get In Touch
-                </p>
-                <h2 className="font-bold text-[40px] mb-4 text-ct-primary-01">
-                We love to hear from you
+                <h2 className="w-full font-bold text-[15px] mb-4 text-ct-primary-01">
+                Vui lòng nhập chính xác các thông tin dưới đây để thuận tiện cho SPEAKWEll liên hệ lại với bạn, toàn bộ thông tin của bạn sẽ được bảo mật
                 </h2>
             </div>
             <div className="text-center lg:text-start">
                 <div className="flex">
                     <div className="w-1/2 mr-5">
-                        <Input.Wrapper  label="Your Name" required>
+                        <Input.Wrapper  label="Họ tên của phụ huynh" required>
                             <Input classNames={{
                                 input: 'p-8 '
-                            }} placeholder="Your Name" />
+                            }} placeholder="Họ tên của phụ huynh" />
                         </Input.Wrapper>
                     </div>
                     <div className="w-1/2 mr-5">
-                        <Input.Wrapper  label="Your Email" required>
+                        <Input.Wrapper  label="Số điện thoại" required>
                             <Input classNames={{
                                 input: 'p-8 '
-                            }} placeholder="Your Email" />
+                            }} placeholder="Số điện thoại" />
                         </Input.Wrapper>
                     </div>
                 </div>
                 <div className="flex">
                     <div className="w-1/2 mr-5">
-                        <Input.Wrapper  label="Your Phone" required>
+                        <Input.Wrapper  label="Email" required>
                             <Input classNames={{
                                 input: 'p-8 '
-                            }} placeholder="Your Phone" />
+                            }} placeholder="Email của bạn" />
                         </Input.Wrapper>
                     </div>
                     <div className="w-1/2 mr-5">
-                        <Input.Wrapper  label="Subject" required>
+                        <Input.Wrapper  label="Họ tên học viên" required>
                             <Input classNames={{
                                 input: 'p-8 '
-                            }} placeholder="Subject" />
+                            }} placeholder="Họ tên học viên" />
                         </Input.Wrapper>
                     </div>
                 </div>
+                <div className=" mr-5">
+                        <Input.Wrapper  label="Năm sinh học viên" required>
+                            <Input classNames={{
+                                input: 'p-8 '
+                            }} placeholder="Năm sinh học viên" />
+                        </Input.Wrapper>
+                    </div>
                 <div>
-                    <Input.Wrapper className="mr-5"  label="Your Message" required>
+                    <Input.Wrapper className="mr-5"  label="Lời nhắn của Speak Well" required>
                         <Input classNames={{
                                 input: 'p-8 '
-                            }} placeholder="Your Message" />
+                            }} placeholder="Lời nhắn của Speak Well" />
                     </Input.Wrapper>
                 </div >
                     <Button className="bg-ct-primary-01 text-white mt-5">
-                        Submit
+                        Đăng ký ngay
                     </Button>
             </div>
             </div>

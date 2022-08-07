@@ -2,8 +2,8 @@ import { Input } from "@mantine/core";
 import { ArrowCircleRight2} from "iconsax-react";
 
 const Subscribe = () => {
-    return <div className="w-full h-auto bg-ct-solid-red-01 p-10">
-        <div className="lg:flex flex-wrap text-center items-center justify-between">
+    return <div className="w-full h-auto bg-ct-solid-red-01 p-10 ">
+        <div className="lg:flex flex-wrap text-center items-center justify-between max-w-[1200px] m-auto">
             <div className="lg:w-1/3 w-full'"><h1 className="text-ct-white font-bold text-4xl">Sign up for newsletter</h1></div>
             <div className="lg:w-2/3 w-full">
                 <div className="flex p-6 w-full"> 
