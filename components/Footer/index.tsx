@@ -3,9 +3,9 @@ import style from "./style.module.css";
 
 const Footer = () => {
     return <div>
-                <div className="lg:flex px-5 pt-20 pb-5 max-w-[1200px] m-auto">
+                <div className="lg:flex px-5 pt-20 pb-5 max-w-[1200px] m-auto border-b-2">
                     <div className="md:flex">
-                        <div className="md:w-1/2 p-5">
+                        <div className="md:w-1/2 p-5 lg:border-r-2 md:border-r-2">
                             <p className="font-medium">
                                 <span className="font-bold">Do you have questions and want to contact us?</span> <br />
                                 <span className="text-ct-secondary-02">Call or visit us.</span>
@@ -13,7 +13,7 @@ const Footer = () => {
                             <p className="text-ct-solid-red-01 text-2xl font-bold py-3 w-full">+99999999999</p>
                             <p className="text-ct-neutral-04 font-extralight ">56 Glassford Street Glasgow G1 1UL, New York, USA</p>
                         </div>
-                        <div className={`md:w-1/2 p-5 ${style.information}`}>
+                        <div className={`md:w-1/2 lg:border-r-2  p-5 ${style.information}`}>
                             <p className="font-bold">
                                 Information
                             </p>
@@ -26,8 +26,8 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:flex">
-                        <div className="md:w-1/2 p-5">
+                    <div className="md:flex md:mt-5">
+                        <div className="md:w-1/2 p-5 lg:border-r-2 md:border-r-2">
                             <p className="font-bold">
                                 Media Gallery
                             </p>
@@ -114,7 +114,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="md:w-1/2 p-5">
+                        <div className="md:w-1/2 p-5 ">
                             <div className="flex">
                                 <a href="">
                                     <Image
@@ -162,6 +162,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                <div className="max-w-[1200px] m-auto"></div>
                  <Image
                 classNames={{image:'z-20'}} 
                 className={` `}
