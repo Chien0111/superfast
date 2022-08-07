@@ -1,4 +1,7 @@
-import { Input,Image, Button } from "@mantine/core";
+import { Input,Image, Button, TextInput ,NumberInput,Textarea} from "@mantine/core";
+import { useForm, yupResolver } from "@mantine/form";
+import { showNotification } from "@mantine/notifications";
+import * as Yup from "yup";
 
 const GetinTouch = () => {
     const data = [
@@ -24,6 +27,48 @@ const GetinTouch = () => {
             email: 'contact@example.com'
         },
     ]
+    const phoneRegExp = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
+  const schema = Yup.object().shape({
+    name: Yup.string()
+      .required("Vui lòng nhập tên phụ huynh")
+      .min(2, "Vui lòng nhập đầy đủ phụ huynh")
+      .trim(),
+    phone: Yup.string()
+      .matches(phoneRegExp, "Vui lòng nhập số điện thoại đúng quy định")
+      .required("Vui lòng nhập số điện thoại"),
+  });
+  const form = useForm({
+    initialValues: {
+      name: "",
+      phone: "",
+      studentName: "",
+      birth: "",
+      email: "",
+      note: "",
+    },
+    validate: yupResolver(schema),
+  });
+  const handleUploadData = (value: any) => {
+    fetch("https://api-contact.hocmaidev.tk/api/contact", {
+      method: "POST",
+      body: JSON.stringify({ ...value }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        showNotification({
+          title: "Thành công",
+          message: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất!",
+          color: "teal",
+        });
+      })
+      .catch((err) => {
+        showNotification({
+          title: "Thất bại",
+          message: "Đã xảy ra lỗi, Vui lỏng thử lại sau!",
+          color: "red",
+        });
+      });
+  };
     return(
         <div className="lg:flex max-w-[1200px] m-auto">
             <div className="lg:w-3/5 p-10">
@@ -33,55 +78,55 @@ const GetinTouch = () => {
                 </h2>
             </div>
             <div className="text-center lg:text-start">
-                <div className="flex">
-                    <div className="w-1/2 mr-5">
-                        <Input.Wrapper  label="Họ tên của phụ huynh" required>
-                            <Input classNames={{
-                                input: 'p-8 '
-                            }} placeholder="Họ tên của phụ huynh" />
-                        </Input.Wrapper>
-                    </div>
-                    <div className="w-1/2 mr-5">
-                        <Input.Wrapper  label="Số điện thoại" required>
-                            <Input classNames={{
-                                input: 'p-8 '
-                            }} placeholder="Số điện thoại" />
-                        </Input.Wrapper>
-                    </div>
-                </div>
-                <div className="flex">
-                    <div className="w-1/2 mr-5">
-                        <Input.Wrapper  label="Email" required>
-                            <Input classNames={{
-                                input: 'p-8 '
-                            }} placeholder="Email của bạn" />
-                        </Input.Wrapper>
-                    </div>
-                    <div className="w-1/2 mr-5">
-                        <Input.Wrapper  label="Họ tên học viên" required>
-                            <Input classNames={{
-                                input: 'p-8 '
-                            }} placeholder="Họ tên học viên" />
-                        </Input.Wrapper>
-                    </div>
-                </div>
-                <div className=" mr-5">
-                        <Input.Wrapper  label="Năm sinh học viên" required>
-                            <Input classNames={{
-                                input: 'p-8 '
-                            }} placeholder="Năm sinh học viên" />
-                        </Input.Wrapper>
-                    </div>
-                <div>
-                    <Input.Wrapper className="mr-5"  label="Lời nhắn của Speak Well" required>
-                        <Input classNames={{
-                                input: 'p-8 '
-                            }} placeholder="Lời nhắn của Speak Well" />
-                    </Input.Wrapper>
-                </div >
-                    <Button className="bg-ct-primary-01 text-white mt-5">
-                        Đăng ký ngay
-                    </Button>
+            <form onSubmit={form.onSubmit((value) => handleUploadData(value))}>
+               <div className="flex">
+          <TextInput
+            {...form.getInputProps("name")}
+            className="grow mr-4 "
+            label="Họ và tên phụ huynh"
+            placeholder="Họ và tên phụ huynh"
+          />
+          <TextInput
+            {...form.getInputProps("phone")}
+            className="grow"
+            label="Số điện thoại"
+            placeholder="Số điện thoại"
+          />
+        </div>
+        <div className="flex my-2">
+          <TextInput
+            {...form.getInputProps("studentName")}
+            className="grow mr-4"
+            label="Họ và tên học viên"
+            placeholder="Họ và tên học viên"
+          />
+          <NumberInput
+            {...form.getInputProps("birth")}
+            className="grow"
+            defaultValue={2016}
+            label="Năm sinh học viên"
+            placeholder="Năm sinh học viên"
+          />
+        </div>
+        <TextInput
+          {...form.getInputProps("email")}
+          label="Email"
+          type="email"
+          placeholder="Email"
+        />
+        <Textarea
+          {...form.getInputProps("note")}
+          className="my-2"
+          placeholder="Lời nhắn cho SpeakWell"
+          label="Lời nhắn cho SpeakWell"
+        />
+        <button
+          type="submit"
+          className="capitalize px-8 py-4 mt-2 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01"
+        >
+          <span>Đăng ký ngay</span>{" "}
+        </button>
+      </form>
             </div>
             </div>
             <div className="lg:w-2/5 mt-20">

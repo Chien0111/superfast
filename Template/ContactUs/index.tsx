@@ -25,7 +25,7 @@ const Contact = () => {
           <span>Contact</span>
         </p>
       </div>
-      <div className="max-w-[1200px] m-auto px-10">
+      <div className="max-w-[1200px] m-auto mb-6">
         <Mapcontact />
       </div>
       <Office />
