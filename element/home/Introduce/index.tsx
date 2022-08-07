@@ -33,15 +33,16 @@ const Introduce = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row justify-between mx-auto max-w-[1200px] my-20">
+    <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-[1200px] my-20">
       {" "}
-      <Image
-        className="w-full"
-        src="/images/intro-banner.png"
-        width={512}
-        height={447}
-        alt="banner"
-      />
+      <div className="w-fit mr-10">
+        <Image
+          src="/images/intro-banner.png"
+          width={512}
+          height={447}
+          alt="banner"
+        />
+      </div>
       <div className="w-fit">
         <div>
           <p className="font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">

@@ -22,10 +22,11 @@ const OurStaff = () => {
     <div className=" max-w-[1200px] mx-auto">
       <div className="w-fit mx-auto">
         <p className="text-center font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
-          ĐỘI NGŨ GIÁO VIÊN NƯỚC NGOÀI
+          Đội ngũ giáo viên nước ngoài
         </p>
         <h2 className="text-center font-bold text-[40px] mb-4 text-ct-primary-01">
-          Đội ngũ giảng viên giàu kinh nghiệm được rất nhiều học viên yêu quý.
+          Đội ngũ giảng viên giàu kinh nghiệm <br /> được rất nhiều học viên yêu
+          quý
         </h2>
       </div>
       <div className="flex flex-wrap">
