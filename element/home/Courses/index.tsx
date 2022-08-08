@@ -7,10 +7,7 @@ const Courses = () => {
     {
       img: "/images/Banner 11.jpg",
       title: "Beginners",
-      des: `Từ vựng: Hình thành và phát triển vốn từ vựng về nhiều chủ đề gần gũi 
-      Cấu trúc: Bước đầu phản xả hỏi đáp thông qua các cấu trúc câu đơn giản
-      Kỹ năng: Tạo nền tảng phát âm chuẩn với hệ thống bảng chữ cái tiếng Anh
-      Chất lượng: Mang đến tình yêu với môn tiếng Anh ngay từ khi còn nhỏ`,
+      des: `Khoá học khơi gợi hứng thú học tập và khám phá ngôn ngữ của học sinh ở trình độ tiền căn bản, giúp trẻ được tiếp thu Tiếng Anh một cách tự nhiên`,
       price: "--",
       age: "4-6",
       time: "--",
@@ -19,10 +16,7 @@ const Courses = () => {
     {
       img: "/images/Banner 12.jpg",
       title: "Starters",
-      des: `Từ vựng: Nghe hiểu và ghi nhớ từ vựng thuộc các chủ đề gần gũi
-      Cấu trúc: Sử dụng ngữ pháp cơ bản để nói câu ngắng
-      Kỹ năng: Đọc hiểu sách truyện tiếng Anh cho thiếu nhi và viết câu đơn giản
-      Chất lượng: Đạt chuẩn đầu ra bài thi Starters theo Cambridge`,
+      des: `Khóa học giúp cho học sinh có thể nâng cao trình độ tiếng Anh thông qua việc trải nghiệm hình thức học năng động, sáng tạo, tương tác 2 chiều với giáo viên để đạt trình độ Starters`,
       price: "--",
       age: "6-8",
       time: "--",
@@ -31,10 +25,7 @@ const Courses = () => {
     {
       img: "/images/Banner 10.jpg",
       title: "Movers",
-      des: `Từ vựng: Quen thuộc từ vựng trình độ A1+, bám sát yêu cầu Cambridge 
-      Cấu trúc: Nắm chắc ngữ pháp trình độ A1+, bám sát yêu cầu Cambridge
-      Kỹ năng: Hiểu và vận dụng trong hội thoại và đoạn văn tiếng Anh bậc A1+
-      Chất lượng: Chinh phục bài thi Movers theo chuẩn đầu ra Cambridge`,
+      des: ` Khóa học Movers giúp học sinh có thể sử dụng 4 kỹ năng với những chủ đề quen thuộc trong cuộc sống hàng ngày và định hướng thi được chứng chỉ Movers theo chuẩn Cambridge`,
       price: "--",
       age: "8-10",
       time: "--",
@@ -43,10 +34,7 @@ const Courses = () => {
     {
       img: "/images/Banner 7.jpg",
       title: "Flyers",
-      des: `Từ vựng: Nắm chắc từ vựng trình độ A2+, bám sát yêu cầu Cambridge 
-      Cấu trúc: Quen thuộc ngữ pháp trình độ A2+, bám sát yêu cầu Cambridge
-      Kỹ năng: Giao tiếp trong các tình huống hằng ngày và viết đoạn văn ngắn
-      Chất lượng: Phát triển đầy đủ kỹ năng để vượt qua bài thi Cambridge Flyers`,
+      des: `Khóa học Flyers phù hợp với học sinh muốn nâng cao trình độ tiếng Anh đồng đều 4 kỹ năng Nghe - Nói - Đọc - Viết, tự tin giao tiếp, phát triển đầy đủ kiến thức và kỹ năng để chinh phục bài thi Flyers theo chuẩn Cambridge`,
       price: "--",
       age: "8-10",
       time: "--",
