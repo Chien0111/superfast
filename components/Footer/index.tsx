@@ -71,15 +71,15 @@ const Footer = () => {
               </p>
               <div className=" flex items-center">
                 <Link href="https://www.facebook.com/speakwell.icanconnect.vn">
-                  <a className="cursor-pointer text-xl mr-3" target="_blank">
+                  <a className="cursor-pointer text-xl mr-3 hover:opacity-70" target="_blank">
                     {" "}
-                    <Facebook size="42" className="text-ct-primary-03" />
+                    <Facebook size="42" className='text-ct-primary-03 w-full ' variant="Bold"/>
                   </a>
                 </Link>
                 <Link href="https://www.youtube.com/c/SpeakWellTi%E1%BA%BFnganhchu%E1%BA%A9nCambridgechotr%E1%BA%BB">
-                  <a className="cursor-pointer text-xl" target="_blank">
+                  <a className="cursor-pointer text-xl hover:opacity-70" target="_blank">
                     {" "}
-                    <Youtube size="49" className="text-ct-solid-red-01" />
+                    <Youtube size="49" className="text-ct-solid-red-01" variant="Bold"/>
                   </a>
                 </Link>
               </div>

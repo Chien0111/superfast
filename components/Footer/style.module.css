@@ -4,3 +4,7 @@
 .information:hover{
     color: #FFB800;
 }
+.hovericon:hover + .icon{
+    color: red;
+    padding: 15px;
+}
