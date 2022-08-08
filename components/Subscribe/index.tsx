@@ -3,19 +3,19 @@ import { ArrowCircleRight2 } from "iconsax-react";
 
 const Subscribe = () => {
   return (
-    <div className="w-full h-auto bg-ct-solid-red-01 sm:block hidden">
-      <div className="flex relative flex-wrap text-center items-center justify-between m-auto">
-        <h1 className="text-ct-white font-bold text-4xl lg:ml-20 w-1/3 ">
-          Sign up for newsletter
-        </h1>
+    <div className="w-full h-auto bg-ct-solid-red-01 ">
+      <div className="md:flex relative flex-wrap text-center items-center justify-between m-auto p-10 md:p-0">
+        <div className="text-ct-white font-bold text-4xl lg:ml-20 md:w-1/3 flex justify-center">
+          <h1>Sign up for newsletter</h1>
+        </div>
         <Image
-        className=""
+        className="hidden md:block"
           src="images/footer-bg2.png"
           width={300}
           height="auto"
           alt="img"
         />
-        <div className="flex absolute right-0 p-6 w-3/5">
+        <div className="flex md:absolute md:right-0 p-6 md:w-3/5 w-full">
           <Input
             classNames={{
               input:
