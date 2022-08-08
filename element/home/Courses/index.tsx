@@ -1,4 +1,6 @@
 import { Image } from "@mantine/core";
+import { useState } from "react";
+import ModalRegister from "../../../components/ModalRegister";
 import SliderComp from "../../../components/Slider";
 import style from "./style.module.css";
 
@@ -98,6 +100,8 @@ const Courses = () => {
   );
 };
 const CourseItem = ({ data }: any) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div
       className={`mx-auto bg-ct-neutral-01 max-w-[360px] h-[450px] rounded-md overflow-hidden relative transition-all ${style.dad}`}
@@ -135,10 +139,19 @@ const CourseItem = ({ data }: any) => {
             <p>{data.cap} em</p>
           </div>
         </div>
-        <div className="w-full p-3 text-center bg-ct-secondary-02 text-ct-neutral-01">
+        <div
+          onClick={() => setIsOpen(true)}
+          className="w-full p-3 text-center bg-ct-secondary-02 text-ct-neutral-01"
+        >
           Tham gia lớp học{" "}
         </div>
       </div>
+      <ModalRegister
+        isOpen={isOpen}
+        onClose={() => {
+          setIsOpen(false);
+        }}
+      />
     </div>
   );
 };
