@@ -18,8 +18,8 @@ export const dataIntro = [
     </defs>
     </svg>
     `,
-    colorMain: "text-ct-primary-03 border-[#fab31c]",
-    colorSecond: "bg-[#feefcf]",
+    colorMain: "text-ct-primary-03 border-ct-primary-03",
+    colorSecond: "bg-[#B8E7FF]",
     title: "Nâng cao Phản Xạ Nghe - Nói",
     des: "Với hình thức học trực tuyến 1 kèm 1, giáo viên luôn hỗ trợ giúp bám sát lộ trình kết hợp cùng công cụ Talk to me ứng dụng công nghệ trí tuệ nhân tạo (AI) giúp trẻ luyện phát âm chuẩn quốc tế, đồng thời nâng cao năng lực phản xạ ngôn ngữ.",
   },
