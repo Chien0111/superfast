@@ -2,11 +2,17 @@ import { MantineProvider } from "@mantine/core";
 import { NotificationsProvider } from "@mantine/notifications";
 import { useDebouncedValue, useWindowScroll } from "@mantine/hooks";
 import { ArrowUp2 } from "iconsax-react";
+import dayjs from 'dayjs';
+import 'dayjs/locale/vi';
+
 import DefaultLayout from "../layout/default";
 import "../styles/globals.css";
 
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+
+dayjs.locale("vi"); // use locale globally
+dayjs().locale("vi").format();
 
 const MyApp = ({ Component, pageProps }: any) => {
   const Layout = Component.Layout || DefaultLayout;

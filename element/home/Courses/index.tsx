@@ -1,6 +1,6 @@
 import { Image } from "@mantine/core";
 import { useState } from "react";
-import ModalRegister from "../../../components/ModalRegister";
+import ModalRegisterTime from "../../../components/ModalRegisterTime";
 import SliderComp from "../../../components/Slider";
 import style from "./style.module.css";
 
@@ -146,7 +146,7 @@ const CourseItem = ({ data }: any) => {
           Tham gia lớp học{" "}
         </div>
       </div>
-      <ModalRegister
+      <ModalRegisterTime
         isOpen={isOpen}
         onClose={() => {
           setIsOpen(false);

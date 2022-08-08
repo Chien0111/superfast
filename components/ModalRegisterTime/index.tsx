@@ -1,11 +1,13 @@
 import { Modal, NumberInput, Textarea, TextInput } from "@mantine/core";
-import React from "react";
+import { DatePicker, TimeInput } from "@mantine/dates";
 import { useForm, yupResolver } from "@mantine/form";
 import { showNotification } from "@mantine/notifications";
+import { useState } from "react";
 
 import * as Yup from "yup";
+import { combineDateTime } from "../../utils";
 
-const ModalRegister = ({ isOpen = false, onClose }: any) => {
+const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
   const phoneRegExp = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
   const schema = Yup.object().shape({
     name: Yup.string()
@@ -27,10 +29,19 @@ const ModalRegister = ({ isOpen = false, onClose }: any) => {
     },
     validate: yupResolver(schema),
   });
+  const [date, setValue] = useState<any>();
+  const [time, setTime] = useState<any>();
+
   const handleUploadData = (value: any) => {
     fetch("https://api-contact.hocmaidev.tk/api/contact", {
       method: "POST",
-      body: JSON.stringify({ ...value }),
+      body: JSON.stringify({
+        ...value,
+        learn_time_register: combineDateTime(
+          date.toISOString(),
+          time.toISOString()
+        ),
+      }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -87,12 +98,24 @@ const ModalRegister = ({ isOpen = false, onClose }: any) => {
             placeholder="Năm sinh học viên"
           />
         </div>
-        <TextInput
-          {...form.getInputProps("email")}
-          label="Email"
-          type="email"
-          placeholder="Email"
-        />
+        <div className="flex">
+          <TextInput
+            {...form.getInputProps("email")}
+            label="Email"
+            type="email"
+            placeholder="Email"
+          />
+          <DatePicker
+            locale="vi"
+            className="ml-4 grow"
+            placeholder="Ngày đăng ký"
+            label="Ngày đăng ký"
+            inputFormat="MM/DD/YYYY"
+            labelFormat="MM/YYYY"
+            onChange={setValue}
+          />
+          <TimeInput className="ml-4" label="Giờ đăng ký" onChange={setTime} />
+        </div>
         <Textarea
           {...form.getInputProps("note")}
           className="my-2"
@@ -110,4 +133,4 @@ const ModalRegister = ({ isOpen = false, onClose }: any) => {
   );
 };
 
-export default ModalRegister;
+export default ModalRegisterTime;
