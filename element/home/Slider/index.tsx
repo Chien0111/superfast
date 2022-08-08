@@ -49,7 +49,7 @@ const Slider = () => {
             </p>
             <button
               onClick={() => setIsOpen(true)}
-              className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01"
+              className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
             >
               <span>Đăng ký ngay</span>{" "}
               <ArrowRight
@@ -75,7 +75,7 @@ const Slider = () => {
             </p>
             <button
               onClick={() => setIsOpen(true)}
-              className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01"
+              className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
             >
               <span>Đăng ký ngay</span>{" "}
               <ArrowRight
@@ -102,7 +102,7 @@ const Slider = () => {
             </p>
             <button
               onClick={() => setIsOpen(true)}
-              className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01"
+              className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
             >
               <span>Đăng ký ngay</span>{" "}
               <ArrowRight
@@ -129,7 +129,7 @@ const Slider = () => {
             </p>
             <button
               onClick={() => setIsOpen(true)}
-              className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01"
+              className="capitalize px-8 py-4 mt-8 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
             >
               <span>Đăng ký ngay</span>{" "}
               <ArrowRight
@@ -165,12 +165,12 @@ const Slider = () => {
           />
         </defs>
         <g className="parallax">
-          <use xlinkHref="#gentle-wave" x="50" y="0" fill="#605ea6" />
-          <use xlinkHref="#gentle-wave" x="50" y="3" fill="#2e2c74" />
-          <use xlinkHref="#gentle-wave" x="50" y="6" fill="#23215b" />
+          <use xlinkHref="#gentle-wave" x="50" y="0" fill="#ED2490" />
+          <use xlinkHref="#gentle-wave" x="50" y="3" fill="#8CC63F" />
+          <use xlinkHref="#gentle-wave" x="50" y="6" fill="#0057A5" />
         </g>
       </svg>
-      <div className="w-full h-fit bg-[#23215b]">
+      <div className="w-full h-fit bg-[#0057A5]">
         <SliderComp
           settings={{
             slidesToShow: 1,

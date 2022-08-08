@@ -13,7 +13,7 @@ module.exports = {
         'ct-primary': {
           '01': '#23215b',
           '02': '#3599D9',
-          '03': '#0474BC',
+          '03': '#0057A5',
           '05': 'rgb(30 64 175)',
         },
         'ct-secondary': {
@@ -35,6 +35,7 @@ module.exports = {
         'ct-solid-red': {
           '01': '#FF4545',
           '02': '#D10000',
+          '03': '#ED2490',
         },
         'ct-solid-yellow': {
           '01': '#FFE177',

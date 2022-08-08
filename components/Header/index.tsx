@@ -8,19 +8,18 @@ const Header = () => {
   return (
     <div>
       <div className={`w-full flex justify-between items-center p-7 `}>
-        <div className="">
+        <div className="flex items-center">
           <Image src="/logo.jpg" alt="Random unsplash image" width={200} />
-        </div>
-        <div className="mx-26 md:block hidden">
-          <nav className={`${style.nav}`}>
-            <ul className="list-none">
-              <li className={`${style.dropdown} `}>
-                <Link href="/">
-                  <a className="flex items-center mr-4 px-4 font-bold cursor-pointer">
-                    Home
-                  </a>
-                </Link>
-                {/* <ul className={`${style.dropdownnav}`}>
+          <div className="mx-26 md:block hidden">
+            <nav className={`${style.nav}`}>
+              <ul className="list-none">
+                <li className={`${style.dropdown} `}>
+                  <Link href="/">
+                    <a className="flex items-center mr-4 px-4 font-bold cursor-pointer">
+                      Trang chủ
+                    </a>
+                  </Link>
+                  {/* <ul className={`${style.dropdownnav}`}>
                   <li>
                     <ArrowCircleDown
                       size="12"
@@ -43,23 +42,24 @@ const Header = () => {
                     Home3
                   </li>
                 </ul> */}
-              </li>
-              <li className={`${style.dropdown} `}>
-                <Link href="/curriculum">
-                  <a className="flex items-center mr-4 px-4 font-bold cursor-pointer">
-                    Curriculum
-                  </a>
-                </Link>
-              </li>
-              <li className={`${style.dropdown} `}>
-                <Link href="/contact-us">
-                  <a className="flex items-center mr-4 px-4 font-bold cursor-pointer">
-                    Contact Us
-                  </a>
-                </Link>
-              </li>
-            </ul>
-          </nav>
+                </li>
+                <li className={`${style.dropdown} `}>
+                  <Link href="/curriculum">
+                    <a className="flex items-center mr-4 px-4 font-bold cursor-pointer">
+                      Chương trình
+                    </a>
+                  </Link>
+                </li>
+                <li className={`${style.dropdown} `}>
+                  <Link href="/contact-us">
+                    <a className="flex items-center mr-4 px-4 font-bold cursor-pointer">
+                      Liên hệ
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
         <div>
           <div>

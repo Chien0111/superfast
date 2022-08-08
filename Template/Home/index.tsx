@@ -21,10 +21,10 @@ const HomeTemplate = () => {
       <CoreValue />
       <OurStaff />
       <Feedback />
-      <Curriculum />
+      {/* <Curriculum /> */}
       <Galery />
       <Coundown />
-      <Blog />
+      {/* <Blog /> */}
       <Subscribe />
     </div>
   );
