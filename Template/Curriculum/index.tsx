@@ -8,8 +8,8 @@ const CurriculumTemplate = () => {
     return (
         <div>
             <div className="text-center text-ct-white bg-indigo-900 py-16">
-                <h1 className="font-bold text-6xl">Curriculum</h1>
-                <p className="flex items-center justify-center m-4"><span>Home</span> <span><ArrowRight2 size="14"/></span> <span>Curriculum</span></p>
+                <h1 className="font-bold text-6xl">Chương trình</h1>
+                <p className="flex items-center justify-center m-4"><span>Trang chủ</span> <span className="mx-2"><ArrowRight2 size="14"/></span> <span>Chương trình</span></p>
             </div>
             <Sitecontent/>
             <RegissTranTion/>

@@ -6,33 +6,36 @@ import style from "./style.module.css";
 const Footer = () => {
   return (
     <div>
-      <div className="lg:flex  px-5 pt-20 pb-5 border-b-2 max-w-[1200px] m-auto">
-        <div className="md:flex lg:w-1/2">
-          <div className=" md:w-1/2  p-5 lg:border-r-2 md:border-r-2 ">
+      <div className="lg:flex  px-5 lg:pt-20 pt-10 pb-5 border-b lg:max-w-[1000px] max-w-[1200px] m-auto">
+        <div className="lg:flex lg:w-full">
+          <div className=" lg:w-2/3 w-full lg:border-r border-b lg:border-b-0 pb-4">
             <div className="w-full">
-              <div className="w-1/3 md:w-full">
+              <div className=" lg:w-full flex items-center justify-start ml-[-20px] mb-6">
                 <Image
-                  classNames={{
-                    image: `${style.image} w-full `,
-                    imageWrapper: "w-full",
-                  }}
-                  className={` mb-2`}
-                  src="photo_2022.jpg"
-                  width="100%"
-                  height="auto"
-                  alt="img"
+                  src="/logo.jpg"
+                  alt="Random unsplash image"
+                  width="200px"
+                  radius={20}
+                />
+                <span className="font-medium text-ct-primary-05 mr-2">
+                  được phát triển độc quyền bởi
+                </span>
+                <Image
+                  src="/photo_2022.jpg"
+                  alt="Random unsplash image"
+                  width="200px"
                 />
               </div>
               <div>
                 <p className="font-medium">
-                  <span className="font-bold">
+                  <span className="font-bold lg:text-xl ">
                     CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ DỊCH VỤ GIÁO DỤC
                   </span>{" "}
                   <br />
                 </p>
-                <p className="text-ct-solid-red-01 text-2xl font-bold py-3 w-full flex break-words">
+                <p className="text-ct-solid-red-01 lg:text-2xl font-bold py-3 w-full flex break-words items-center">
                   <CallCalling
-                    size="32"
+                    size="26"
                     className="text-ct-solid-green-01 mr-2"
                   />{" "}
                   <span className="text-ct-solid-red-01">
@@ -46,28 +49,44 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className=" md:w-1/2  p-5 lg:border-r-2 md:mt-4">
+          <div className=" lg:w-1/3 mt-2 lg:px-5">
             <div className="w-full mt-2">
-              <h1 className="text-4xl font-normail">Information</h1>
-              <p className="my-3">
+              <h1 className="text-3xl font-normail text-ct-primary-01 mb-6">
+                THÔNG TIN
+              </h1>
+              <p className="my-2">
                 <Link href="/">
-                  <a className="text-xl cursor-pointer  ">Home</a>
+                  <a className="text-xl cursor-pointer  ">Trang chủ</a>
                 </Link>
               </p>
               <p className="my-2">
                 <Link href="/curriculum">
-                  <a className="cursor-pointer text-xl">Curriculum</a>
+                  <a className="cursor-pointer text-xl">Chương trình</a>
                 </Link>
               </p>
-              <p className="my-2">
+              <p className="my-2 mb-4">
                 <Link href="/contact-us">
-                  <a className="cursor-pointer text-xl">Contact Us</a>
+                  <a className="cursor-pointer text-xl">Liên hệ</a>
                 </Link>
               </p>
+              <div className=" flex items-center">
+                <Link href="https://www.facebook.com/speakwell.icanconnect.vn">
+                  <a className="cursor-pointer text-xl mr-3" target="_blank">
+                    {" "}
+                    <Facebook size="42" className="text-ct-primary-03" />
+                  </a>
+                </Link>
+                <Link href="https://www.youtube.com/c/SpeakWellTi%E1%BA%BFnganhchu%E1%BA%A9nCambridgechotr%E1%BA%BB">
+                  <a className="cursor-pointer text-xl" target="_blank">
+                    {" "}
+                    <Youtube size="49" className="text-ct-solid-red-01" />
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <div className="md:flex md:mt-3 lg:w-1/2">
+        {/* <div className="md:flex md:mt-3 lg:w-1/2">
           <div className="  md:w-1/2 md:border-r-2 p-5 lg:border-r-2 ">
             <div className="w-full mt-2">
               <h1 className="text-4xl font-normail">Media Gallery</h1>
@@ -177,7 +196,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Image
         classNames={{ image: "z-20" }}
