@@ -35,8 +35,8 @@ const CoreValue = () => {
     <div className="flex flex-col md:flex-row justify-between mx-auto max-w-[1200px] my-32">
       {" "}
       <div className="max-w-[500px] mr-10">
-        <p className="font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
-          Our core value
+        <p className="font-['Dancing_Script'] text-ct-solid-red-03 text-[30px]">
+          Giá trị cốt lõi
         </p>
         <h2 className="font-bold text-[40px] mb-4 text-ct-primary-01">
           Giải pháp học tập trực tuyến với tính tương tác cao nhất
@@ -57,7 +57,7 @@ const Item = (props: any) => {
   return (
     <div className={`max-w-[300px] p-2 ${data.colorMain} ${style.dad}`}>
       <div
-        className={`transition-all duration-500 w-20 h-20 flex items-center justify-center rounded-2xl ${data.colorSecond} overflow-hidden ${data.color} ${style.childNumber}`}
+        className={`transition-all duration-700 border-[2px] border-dashed border-transparent w-20 h-20 flex items-center justify-center rounded-2xl ${data.colorSecond} overflow-hidden ${data.color} ${style.childNumber}`}
       >
         <p className={`${data.colorMain} text-[40px]`}>0{index + 1}</p>
       </div>

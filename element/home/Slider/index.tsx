@@ -39,8 +39,8 @@ const Slider = () => {
   const cardList = [
     {
       content: (
-        <div className="w-full h-[500px] max-w-[1200px] mx-auto flex items-start justify-between">
-          <div className="ml-12 max-w-[700px]">
+        <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
+          <div className="ml-12 max-w-[500px]">
             <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
               Công nghệ H5P
             </p>
@@ -59,14 +59,14 @@ const Slider = () => {
               />
             </button>
           </div>
-          <Image src="/images/banner1.png" width="476px" height="100%" />
+          <Image src="/images/banner1.png" width="660px" height="100%" />
         </div>
       ),
     },
     {
       content: (
-        <div className="w-full max-w-[1200px] mx-auto flex items-start justify-between">
-          <div className="ml-12 max-w-[700px]">
+        <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
+          <div className="ml-12  max-w-[500px]">
             <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
               Mô hình học 1-1
             </p>
@@ -85,14 +85,14 @@ const Slider = () => {
               />
             </button>
           </div>
-          <Image src="/images/banner2.png" width="476px" height="100%" />
+          <Image src="/images/banner2.png" width="660px" height="100%" />
         </div>
       ),
     },
     {
       content: (
-        <div className="w-full max-w-[1200px] mx-auto flex items-start justify-between">
-          <div className="ml-12 max-w-[700px]">
+        <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
+          <div className="ml-12  max-w-[500px]">
             <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
               Talk to me ứng dụng AI
             </p>
@@ -112,14 +112,14 @@ const Slider = () => {
               />
             </button>
           </div>
-          <Image src="/images/banner3.png" width="476px" height="100%" />
+          <Image src="/images/banner3.png" width="660px" height="100%" />
         </div>
       ),
     },
     {
       content: (
-        <div className="w-full max-w-[1200px] mx-auto flex items-start justify-between">
-          <div className="ml-12 max-w-[700px]">
+        <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
+          <div className="ml-12  max-w-[500px]">
             <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
               Định hướng thi chứng chỉ YLE của Cambridge
             </p>
@@ -139,15 +139,15 @@ const Slider = () => {
               />
             </button>
           </div>
-          <Image src="/images/banner4.png" width="476px" height="100%" />
+          <Image src="/images/banner4.png" width="660px" height="100%" />
         </div>
       ),
     },
   ];
   return (
-    <div className="relative">
+    <div className="">
       <svg
-        className="editorial"
+        className="editorial translate-y-[40px]"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
@@ -156,12 +156,12 @@ const Slider = () => {
         <defs>
           <path
             id="gentle-wave"
-            d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z"
+            d="M-160 44c30 0
+                58-12 88-12s
+                58 12 88 12 
+                58-12 88-12 
+                58 12 88 12
+                v44h-352z"
           />
         </defs>
         <g className="parallax">
@@ -170,7 +170,8 @@ const Slider = () => {
           <use xlinkHref="#gentle-wave" x="50" y="6" fill="#0057A5" />
         </g>
       </svg>
-      <div className="w-full h-fit bg-[#0057A5]">
+
+      <div className="w-full bg-[#0057A5]">
         <SliderComp
           settings={{
             slidesToShow: 1,
@@ -182,6 +183,7 @@ const Slider = () => {
           showDots={settingSlidePC.showDots}
           content={cardList}
           styleDot=""
+          className=""
         />
       </div>
       <ModalRegister

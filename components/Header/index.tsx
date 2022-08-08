@@ -65,7 +65,12 @@ const Header = () => {
           <div>
             <div className="lg:block hidden">
               <p> HỖ TRỢ KHÁCH HÀNG </p>
-              <p className="font-semibold text-ct-secondary-02"> 1900 9399 </p>
+              <a
+                href="tel:19009399"
+                className="font-semibold text-ct-solid-red-03"
+              >
+                1900 9399
+              </a>
             </div>
             <div className="md:hidden block">
               <HambergerMenu size="32" />

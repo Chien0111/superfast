@@ -14,7 +14,7 @@ const Feedback = () => {
   return (
     <div className=" my-20">
       <div className="w-fit mx-auto">
-        <p className="text-center font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
+        <p className="text-center font-['Dancing_Script'] text-ct-solid-red-03 text-[30px]">
           Meet our staffs
         </p>
         <h2 className="text-center font-bold text-[40px] mb-4 text-ct-primary-01">

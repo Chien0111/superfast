@@ -86,7 +86,7 @@ const Courses = () => {
   return (
     <div className="bg-[#faf4ea] py-20 pt-16">
       <div className="w-fit mx-auto text-center my-8 ">
-        <p className="font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
+        <p className="font-['Dancing_Script'] text-ct-solid-red-03 text-[30px]">
           Khóa học
         </p>
         <h2 className="font-bold text-[40px] mb-4 text-ct-primary-01">
