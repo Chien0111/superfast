@@ -14,8 +14,8 @@ const Introduce = () => {
           alt="banner"
         />
       </div>
-      <div className="w-fit">
-        <div>
+      <div className="w-fit mx-auto">
+        <div className="w-fit text-center lg:text-left">
           <p className="font-['Dancing_Script'] text-ct-solid-red-03 text-[30px]">
             Ưu điểm khoá học
           </p>
@@ -23,7 +23,7 @@ const Introduce = () => {
             Kiến thức tốt nhất
           </h2>
         </div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap items-center">
           {dataIntro.map((item, index) => {
             return <Item key={index} data={item} />;
           })}

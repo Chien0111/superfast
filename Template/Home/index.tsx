@@ -20,9 +20,9 @@ const HomeTemplate = () => {
       <Courses />
       <CoreValue />
       <OurStaff />
-      <Feedback />
+      {/* <Feedback /> */}
       {/* <Curriculum /> */}
-      <Galery />
+      {/* <Galery /> */}
       <Coundown />
       {/* <Blog /> */}
       <Subscribe />

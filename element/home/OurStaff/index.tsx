@@ -19,7 +19,7 @@ const OurStaff = () => {
     },
   ];
   return (
-    <div className=" max-w-[1200px] mx-auto">
+    <div className=" max-w-[1200px] mx-auto mb-10">
       <div className="w-fit mx-auto">
         <p className="text-center font-['Dancing_Script'] text-ct-solid-red-03 text-[30px]">
           Đội ngũ giáo viên nước ngoài
