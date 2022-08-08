@@ -43,8 +43,10 @@ const Footer = () => {
                   </span>
                 </p>
                 <p className="text-ms">
-                  Địa chỉ: Số 40, phố Nguyên Hồng, Phường Láng Hạ, Quận Đống Đa,
-                  Thành phố Hà Nội, Việt Nam{" "}
+                Văn phòng Hà Nội: Tầng 4, tòa nhà 25T2, Nguyễn Thị Thập, Trung Hòa, Cầu Giấy, Hà Nội
+                </p>
+                <p className="text-ms">
+                Văn phòng Hồ Chí Minh: 59 Xa lộ Hà Nội, thành phố Thủ Đức, thành phố Hồ Chí Minh
                 </p>
               </div>
             </div>
