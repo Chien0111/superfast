@@ -42,11 +42,18 @@ const Footer = () => {
                     Hotline: 1900 9399
                   </span>
                 </p>
-                <p className="text-ms">
-                Văn phòng Hà Nội: Tầng 4, tòa nhà 25T2, Nguyễn Thị Thập, Trung Hòa, Cầu Giấy, Hà Nội
+                <p className="text-ms mb-2">
+                  <span className="font-medium text-lg ">
+                    Văn phòng Hà Nội:
+                  </span>{" "}
+                  Tầng 4, tòa nhà 25T2, Nguyễn Thị Thập, Trung Hòa, Cầu Giấy, Hà
+                  Nội
                 </p>
                 <p className="text-ms">
-                Văn phòng Hồ Chí Minh: 59 Xa lộ Hà Nội, thành phố Thủ Đức, thành phố Hồ Chí Minh
+                <span className="font-medium text-lg ">
+                    Văn phòng Hồ Chí Minh:
+                  </span>{" "} 59 Xa lộ Hà Nội, thành phố Thủ Đức,
+                  thành phố Hồ Chí Minh
                 </p>
               </div>
             </div>
@@ -73,15 +80,29 @@ const Footer = () => {
               </p>
               <div className=" flex items-center">
                 <Link href="https://www.facebook.com/speakwell.icanconnect.vn">
-                  <a className="cursor-pointer text-xl mr-3 hover:opacity-70" target="_blank">
+                  <a
+                    className="cursor-pointer text-xl mr-3 hover:opacity-70"
+                    target="_blank"
+                  >
                     {" "}
-                    <Facebook size="42" className='text-ct-primary-03 w-full ' variant="Bold"/>
+                    <Facebook
+                      size="42"
+                      className="text-ct-primary-03 w-full "
+                      variant="Bold"
+                    />
                   </a>
                 </Link>
                 <Link href="https://www.youtube.com/c/SpeakWellTi%E1%BA%BFnganhchu%E1%BA%A9nCambridgechotr%E1%BA%BB">
-                  <a className="cursor-pointer text-xl hover:opacity-70" target="_blank">
+                  <a
+                    className="cursor-pointer text-xl hover:opacity-70"
+                    target="_blank"
+                  >
                     {" "}
-                    <Youtube size="49" className="text-ct-solid-red-01" variant="Bold"/>
+                    <Youtube
+                      size="49"
+                      className="text-ct-solid-red-01"
+                      variant="Bold"
+                    />
                   </a>
                 </Link>
               </div>
