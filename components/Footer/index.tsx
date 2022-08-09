@@ -1,7 +1,6 @@
 import { Image } from "@mantine/core";
 import { CallCalling, Facebook, Youtube } from "iconsax-react";
 import Link from "next/link";
-import style from "./style.module.css";
 
 const Footer = () => {
   return (
@@ -14,13 +13,13 @@ const Footer = () => {
                 <Image
                   src="speak well.png"
                   alt="Random unsplash image"
-                  width={400}
+                  width={320}
                 />
               </div>
               <div className="">
                 <p className="font-medium">
                   <span className="font-bold lg:text-xl ">
-                    CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ DỊCH VỤ GIÁO DỤC
+                    CÔNG TY CỔ PHẦN GALAXY EDUCATION
                   </span>{" "}
                   <br />
                 </p>
@@ -44,7 +43,8 @@ const Footer = () => {
                   <span className="font-medium text-lg ">
                     Văn phòng Hồ Chí Minh:
                   </span>{" "}
-                  59 Xa lộ Hà Nội, thành phố Thủ Đức, thành phố Hồ Chí Minh
+                  59 Xa lộ Hà Nội, phường Thảo Điền, thành phố Thủ Đức, thành
+                  phố Hồ Chí Minh
                 </p>
               </div>
             </div>

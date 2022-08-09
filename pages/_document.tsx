@@ -10,7 +10,12 @@ export default class _Document extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="/logo.jpg" />
+          <link rel="shortcut icon" href="/logo_square.png" />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+          <title>Giải pháp Tiếng Anh trực tuyến hàng đầu Việt Nam</title>
         </Head>
         <body>
           <Main />

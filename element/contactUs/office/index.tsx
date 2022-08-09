@@ -1,31 +1,32 @@
 import { Image } from "@mantine/core";
 import style from "./style.module.css";
 import { CallCalling, Location, MessageNotif } from "iconsax-react";
+import Link from "next/link";
 
 const Office = () => {
   const data = [
     {
       img: "/images/Banner 11.jpg",
-      title: "Head office",
+      title: "Trụ sở chính",
       location:
-        "Box 565, Pinneys Beach, Charlestown, Nevis, West Indies, Carib",
-      phone: "+ 844 123 456 78 90",
+        "59 Xa lộ Hà Nội, phường Thảo Điền, thành phố Thủ Đức, thành phố Hồ Chí Minh",
+      phone: "1900 9399",
       email: "contact@example.com",
     },
     {
       img: "/images/Banner 11.jpg",
-      title: "Brand office",
+      title: "Văn phòng Hà Nội",
       location:
-        "Box 565, Pinneys Beach, Charlestown, Nevis, West Indies, Carib",
-      phone: "+ 844 123 456 78 90",
+        "Tòa nhà 25T2 Nguyễn Thị Thập, phường Trung Hòa, quận Cầu Giấy, thành phố Hà Nội",
+      phone: "1900 9399",
       email: "contact@example.com",
     },
     {
       img: "/images/Banner 11.jpg",
-      title: "Brand office",
+      title: "Văn phòng Hồ Chí Minh",
       location:
-        "Box 565, Pinneys Beach, Charlestown, Nevis, West Indies, Carib",
-      phone: "+ 844 123 456 78 90",
+        "B002 - B0003, 62 Hoàng Thế Thiện, Khu đô thị Sala, thành phố Thủ Đức, thành phố Hồ Chí Minh",
+      phone: "1900 9399",
       email: "contact@example.com",
     },
   ];
@@ -43,7 +44,7 @@ const Office = () => {
 const ContentOffice = ({ data }: any) => {
   return (
     <div className={`lg:w-1/3 m-10`}>
-      <Image
+      {/* <Image
         classNames={{ image: `${style.image} w-full`, imageWrapper: "w-full" }}
         radius={15}
         className={`rounded-md `}
@@ -51,7 +52,7 @@ const ContentOffice = ({ data }: any) => {
         width="full"
         height="auto"
         alt="img"
-      />
+      /> */}
       <div>
         <div className="">
           <p className=" border-ct-neutral-03 border-b-2 border-dashed font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
@@ -64,14 +65,16 @@ const ContentOffice = ({ data }: any) => {
             <Location size="30" className="mr-2" />
             {data.location}
           </p>
-          <p className="flex mt-2">
-            <CallCalling size="20" className="mr-2" />
-            {data.phone}
-          </p>
-          <p className="flex mt-2">
+          <Link href={`tel:${data.phone}`}>
+            <a className="flex mt-2">
+              <CallCalling size="20" className="mr-2" />
+              {data.phone}
+            </a>
+          </Link>
+          {/* <p className="flex mt-2">
             <MessageNotif className="mr-2" />
             {data.email}
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

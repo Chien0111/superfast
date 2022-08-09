@@ -15,12 +15,12 @@ const Header = () => {
       name: "Trang chủ",
       href: "/",
     },
+    // {
+    //   name: "Chương trình học",
+    //   href: "/curriculum",
+    // },
     {
-      name: "Chương trình học",
-      href: "/curriculum",
-    },
-    {
-      name: "Liện hệ",
+      name: "Liên hệ",
       href: "/contact-us",
     },
   ];
@@ -40,7 +40,7 @@ const Header = () => {
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center w-full">
               <div className="flex items-center w-full my-4">
-                <div className="w-[250px] lg:min-w-[400px]">
+                <div className="w-[250px] lg:min-w-[320px]">
                   <Image
                     className="mr-8"
                     src="/speak well.png"

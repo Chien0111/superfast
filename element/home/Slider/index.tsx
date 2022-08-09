@@ -39,7 +39,7 @@ const Slider = () => {
   const cardList = [
     {
       content: (
-        <div className="w-full max-w-[1200px] mx-auto flex items-center justify-center lg:justify-between">
+        <div className="w-full max-w-[1200px] mx-auto flex items-start justify-center lg:justify-between">
           <div className="ml-0 lg:ml-12 max-w-[500px] flex flex-col items-center">
             {/* <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
               Công nghệ H5P
@@ -52,7 +52,7 @@ const Slider = () => {
             </div>
             <button
               onClick={() => setIsOpen(true)}
-              className="capitalize w-fit px-8 py-4 my-8 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
+              className="capitalize w-fit px-8 py-4 my-8 lg:mt-2 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
             >
               <span>Đăng ký ngay</span>{" "}
               <ArrowRight
@@ -73,8 +73,8 @@ const Slider = () => {
     },
     {
       content: (
-        <div className="w-full max-w-[1200px] mx-auto flex items-center justify-center lg:justify-between">
-          <div className="ml-12  max-w-[500px]">
+        <div className="w-full max-w-[1200px] mx-auto flex items-start justify-center lg:justify-between">
+          <div className="ml-0 lg:ml-12 max-w-[500px] flex flex-col items-center">
             {/* <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
               Mô hình học 1-1
             </p>
@@ -87,7 +87,7 @@ const Slider = () => {
 
             <button
               onClick={() => setIsOpen(true)}
-              className="capitalize w-fit px-8 py-4 my-8 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
+              className="capitalize w-fit px-8 py-4 my-8 lg:mt-2 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
             >
               <span>Đăng ký ngay</span>{" "}
               <ArrowRight
@@ -108,7 +108,7 @@ const Slider = () => {
     },
     {
       content: (
-        <div className="w-full max-w-[1200px] mx-auto flex items-center justify-center lg:justify-between">
+        <div className="w-full max-w-[1200px] mx-auto flex items-start justify-center lg:justify-between">
           <div className="ml-0 lg:ml-12 max-w-[500px] flex flex-col items-center">
             {/* <p className="text-left font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
               Talk to me ứng dụng AI
@@ -123,7 +123,7 @@ const Slider = () => {
 
             <button
               onClick={() => setIsOpen(true)}
-              className="capitalize w-fit px-8 py-4 my-8 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
+              className="capitalize w-fit px-8 py-4 my-8 lg:mt-2 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
             >
               <span>Đăng ký ngay</span>{" "}
               <ArrowRight

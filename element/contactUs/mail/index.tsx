@@ -132,9 +132,9 @@ const GetinTouch = () => {
         </div>
       </div>
       <div className="lg:w-2/5 mt-20">
-        {data.map((item: any, index: number) => {
+        {/* {data.map((item: any, index: number) => {
           return <Contact key={index} data={item} />;
-        })}
+        })} */}
       </div>
     </div>
   );
