@@ -6,7 +6,7 @@ const Introduce = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-[1200px] my-20">
       {" "}
-      <div className="w-fit mr-10 min-w-[300px] lg:min-w-[512px] lg:min-h-[447px] ">
+      <div className="w-fit lg:mr-10 min-w-[300px] lg:min-w-[512px] lg:min-h-[447px] ">
         <Image
           src="/images/intro-banner.png"
           width="100%"
