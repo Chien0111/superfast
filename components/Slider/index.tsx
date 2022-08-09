@@ -22,7 +22,7 @@ const SliderComp = (props: SliderProps) => {
   const settingsInit = {
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     infinite: false,
     dots: showDots,
     arrows: showArrow,
