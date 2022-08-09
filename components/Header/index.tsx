@@ -13,13 +13,15 @@ const Header = () => {
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex w-full items-center justify-between h-16">
             <div className="flex items-center w-full">
-              <div className="flex items-center w-full">
-                <Image
-                  className="mr-8"
-                  src="/speak well.png"
-                  alt="Speak well"
-                  width={180}
-                />
+              <div className="flex items-center w-full mt-8">
+                <div className="w-[250px] lg:min-w-[400px]">
+                  <Image
+                    className="mr-8"
+                    src="/speak well.png"
+                    alt="Speak well"
+                    width="100%"
+                  />
+                </div>
                 <div className="hidden md:block w-full">
                   <div className="pl-10 flex w-full justify-between items-center space-x-4">
                     <ul className="list-none">

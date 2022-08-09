@@ -40,8 +40,8 @@ const Subscribe = () => {
   };
   return (
     <div className="w-full h-[240px] bg-ct-solid-red-01 relative">
-      <div className="max-w-[1200px] mx-auto w-full h-full flex items-center relative z-10">
-        <div className="text-ct-white font-bold text-4xl lg:ml-20 md:w-1/3 flex justify-center">
+      <div className="max-w-[1200px] mx-auto w-full h-full flex flex-col lg:flex-row items-center relative z-10">
+        <div className="text-ct-white text-center lg:text-left font-bold text-4xl pt-2 lg:pt-0 lg:ml-20 md:w-1/3 flex justify-center">
           <h1>Nhận thông tin mới nhất</h1>
         </div>
         <div className="flex p-6 md:w-3/5 w-full">

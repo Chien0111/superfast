@@ -29,8 +29,8 @@ const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
     },
     validate: yupResolver(schema),
   });
-  const [date, setValue] = useState<any>();
-  const [time, setTime] = useState<any>();
+  const [date, setValue] = useState<any>(new Date());
+  const [time, setTime] = useState<any>(new Date());
 
   const handleUploadData = (value: any) => {
     fetch("https://api-contact.hocmaidev.tk/api/contact", {
@@ -86,13 +86,13 @@ const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
         <div className="flex my-2">
           <TextInput
             {...form.getInputProps("studentName")}
-            className="grow mr-4"
+            className="grow mr-4 w-1/2"
             label="Họ và tên học viên"
             placeholder="Họ và tên học viên"
           />
           <NumberInput
             {...form.getInputProps("birth")}
-            className="grow"
+            className="grow w-1/2"
             defaultValue={2016}
             label="Năm sinh học viên"
             placeholder="Năm sinh học viên"
@@ -104,17 +104,24 @@ const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
             label="Email"
             type="email"
             placeholder="Email"
+            className="w-1/2"
           />
           <DatePicker
             locale="vi"
             className="ml-4 grow"
-            placeholder="Ngày đăng ký"
-            label="Ngày đăng ký"
+            placeholder="Ngày giờ đăng ký"
+            label="Ngày giờ đăng ký"
             inputFormat="MM/DD/YYYY"
             labelFormat="MM/YYYY"
+            value={date}
             onChange={setValue}
           />
-          <TimeInput className="ml-4" label="Giờ đăng ký" onChange={setTime} />
+          <TimeInput
+            className="ml-4"
+            label=" "
+            value={time}
+            onChange={setTime}
+          />
         </div>
         <Textarea
           {...form.getInputProps("note")}

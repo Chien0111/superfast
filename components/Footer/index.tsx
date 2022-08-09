@@ -12,10 +12,9 @@ const Footer = () => {
             <div className="w-full">
               <div className=" lg:w-full flex items-center justify-start  mb-6">
                 <Image
-                  src="/speak well.png"
+                  src="speak well.png"
                   alt="Random unsplash image"
-                  width="320px"
-                  radius={20}
+                  width={400}
                 />
               </div>
               <div className="">
@@ -42,10 +41,10 @@ const Footer = () => {
                   Nội
                 </p>
                 <p className="text-ms">
-                <span className="font-medium text-lg ">
+                  <span className="font-medium text-lg ">
                     Văn phòng Hồ Chí Minh:
-                  </span>{" "} 59 Xa lộ Hà Nội, thành phố Thủ Đức,
-                  thành phố Hồ Chí Minh
+                  </span>{" "}
+                  59 Xa lộ Hà Nội, thành phố Thủ Đức, thành phố Hồ Chí Minh
                 </p>
               </div>
             </div>
