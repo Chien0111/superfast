@@ -21,7 +21,7 @@ const Subscribe = () => {
             message: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất!",
             color: "teal",
           });
-          setEmail("")
+          setEmail("");
         })
         .catch((err) => {
           showNotification({

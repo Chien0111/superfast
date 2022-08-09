@@ -10,23 +10,15 @@ const Footer = () => {
         <div className="lg:flex lg:w-full">
           <div className=" lg:w-2/3 w-full lg:border-r border-b lg:border-b-0 pb-4">
             <div className="w-full">
-              <div className=" lg:w-full flex items-center justify-start ml-[-20px] mb-6">
+              <div className=" lg:w-full flex items-center justify-start  mb-6">
                 <Image
-                  src="/logo.jpg"
+                  src="/speak well.png"
                   alt="Random unsplash image"
-                  width="200px"
+                  width="320px"
                   radius={20}
                 />
-                <span className="font-medium text-ct-primary-05 mr-2">
-                  được phát triển độc quyền bởi
-                </span>
-                <Image
-                  src="/photo_2022.jpg"
-                  alt="Random unsplash image"
-                  width="200px"
-                />
               </div>
-              <div>
+              <div className="">
                 <p className="font-medium">
                   <span className="font-bold lg:text-xl ">
                     CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ DỊCH VỤ GIÁO DỤC
