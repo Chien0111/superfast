@@ -56,6 +56,7 @@ const Subscribe = () => {
             }}
             placeholder="Enter your e-mail ..."
             size="xl"
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <button
