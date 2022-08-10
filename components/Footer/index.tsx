@@ -59,20 +59,20 @@ const Footer = () => {
                   <a className="text-xl cursor-pointer  ">Trang chủ</a>
                 </Link>
               </p>
-              <p className="my-2">
+              {/* <p className="my-2">
                 <Link href="/curriculum">
                   <a className="cursor-pointer text-xl">Chương trình</a>
                 </Link>
-              </p>
+              </p> */}
               <p className="my-2 mb-4">
                 <Link href="/contact-us">
                   <a className="cursor-pointer text-xl">Liên hệ</a>
                 </Link>
               </p>
-              <div className=" flex items-center">
+              <div className="flex items-center justify-start">
                 <Link href="https://www.facebook.com/speakwell.icanconnect.vn">
                   <a
-                    className="cursor-pointer text-xl mr-3 hover:opacity-70"
+                    className="w-fit cursor-pointer text-xl mr-3 hover:opacity-70"
                     target="_blank"
                   >
                     {" "}
@@ -85,7 +85,7 @@ const Footer = () => {
                 </Link>
                 <Link href="https://www.youtube.com/c/SpeakWellTi%E1%BA%BFnganhchu%E1%BA%A9nCambridgechotr%E1%BA%BB">
                   <a
-                    className="cursor-pointer text-xl hover:opacity-70"
+                    className="w-fit cursor-pointer text-xl hover:opacity-70"
                     target="_blank"
                   >
                     {" "}

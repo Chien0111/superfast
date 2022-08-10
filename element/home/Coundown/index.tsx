@@ -50,7 +50,7 @@ const Coundown = () => {
           </div>
           <div
             onClick={() => setIsOpen(true)}
-            className="rounded-md p-2 px-4 mt-4 mx-auto w-fit bg-ct-secondary-02 text-ct-neutral-01"
+            className="rounded-md p-2 px-4 mt-4 mx-auto w-fit bg-ct-secondary-02 text-ct-neutral-01 cursor-pointer"
           >
             <p className="inline mr-4"> Đăng ký ngay</p>
             <ArrowCircleRight2

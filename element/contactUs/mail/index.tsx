@@ -79,17 +79,19 @@ const GetinTouch = () => {
             mật
           </h2>
         </div>
-        <div className="text-center lg:text-start">
+        <div className="">
           <form onSubmit={form.onSubmit((value) => handleUploadData(value))}>
             <div className="flex">
               <TextInput
                 {...form.getInputProps("name")}
+                required
                 className="grow mr-4 "
                 label="Họ và tên phụ huynh"
                 placeholder="Họ và tên phụ huynh"
               />
               <TextInput
                 {...form.getInputProps("phone")}
+                required
                 className="grow"
                 label="Số điện thoại"
                 placeholder="Số điện thoại"
@@ -124,7 +126,7 @@ const GetinTouch = () => {
             />
             <button
               type="submit"
-              className="capitalize px-8 py-4 mt-2 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01"
+              className="capitalize px-8 py-4 mt-2 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
             >
               <span>Đăng ký ngay</span>{" "}
             </button>

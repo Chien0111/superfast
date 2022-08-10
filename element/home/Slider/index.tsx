@@ -172,32 +172,33 @@ const Slider = () => {
   ];
   return (
     <div className="">
-      <svg
-        className="editorial translate-y-[40px] opacity-0 lg:opacity-100"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-      >
-        <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0
+      <div className="opacity-0 lg:opacity-100 hidden lg:block">
+        <svg
+          className="editorial translate-y-[40px]"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0
                 58-12 88-12s
                 58 12 88 12 
                 58-12 88-12 
                 58 12 88 12
                 v44h-352z"
-          />
-        </defs>
-        <g className="parallax">
-          <use xlinkHref="#gentle-wave" x="50" y="0" fill="#ED2490" />
-          <use xlinkHref="#gentle-wave" x="50" y="3" fill="#8CC63F" />
-          <use xlinkHref="#gentle-wave" x="50" y="6" fill="#0057A5" />
-        </g>
-      </svg>
-
-      <div className="w-full bg-[#0057A5]">
+            />
+          </defs>
+          <g className="parallax">
+            <use xlinkHref="#gentle-wave" x="50" y="0" fill="#ED2490" />
+            <use xlinkHref="#gentle-wave" x="50" y="3" fill="#8CC63F" />
+            <use xlinkHref="#gentle-wave" x="50" y="6" fill="#0057A5" />
+          </g>
+        </svg>
+      </div>
+      <div className="w-full mt-2 bg-[#0057A5]">
         <SliderComp
           settings={{
             slidesToShow: 1,

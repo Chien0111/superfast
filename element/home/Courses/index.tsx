@@ -141,7 +141,7 @@ const CourseItem = ({ data }: any) => {
         </div>
         <div
           onClick={() => setIsOpen(true)}
-          className="w-full p-3 text-center bg-ct-secondary-02 text-ct-neutral-01"
+          className="w-full p-3 text-center bg-ct-secondary-02 text-ct-neutral-01 cursor-pointer"
         >
           Tham gia lớp học{" "}
         </div>
