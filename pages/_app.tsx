@@ -42,7 +42,7 @@ const MyApp = ({ Component, pageProps }: any) => {
                   "Giải pháp học Tiếng Anh trực tuyến hàng đầu Việt Nam",
                 images: [
                   {
-                    url: "/logo_square.png",
+                    url: "https://res.cloudinary.com/nmhung/image/upload/v1660121311/logo_square_tqhoao.png",
                     width: 800,
                     height: 600,
                     alt: "Logo SpeakWell Alt",
