@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <div className="lg:flex  px-5 lg:pt-20 pt-10 pb-5 border-b lg:max-w-[1000px] max-w-[1200px] m-auto">
         <div className="lg:flex lg:w-full">
-          <div className=" lg:w-2/3 w-full lg:border-r border-b lg:border-b-0 pb-4">
+          <div className="lg:w-2/3 w-full lg:border-r border-b lg:border-b-0 pb-4">
             <div className="w-full">
               <div className=" lg:w-full flex items-center justify-start  mb-6">
                 <Image
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className=" lg:w-1/3 mt-2 lg:px-5">
+          <div className="lg:w-1/3 mt-2 lg:px-5">
             <div className="w-full mt-2">
               <h1 className="text-3xl font-normail text-ct-primary-01 mb-6">
                 THÔNG TIN
@@ -78,7 +78,7 @@ const Footer = () => {
                     {" "}
                     <Facebook
                       size="42"
-                      className="text-ct-primary-03 w-full "
+                      className="text-ct-primary-03"
                       variant="Bold"
                     />
                   </a>
