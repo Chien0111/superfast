@@ -39,27 +39,45 @@ const GetinTouch = () => {
   });
   const form = useForm({
     initialValues: {
-      name: "",
       phone: "",
+      name: "",
       studentName: "",
-      birth: "",
       email: "",
+      address: "",
       note: "",
+      link: "http://conkhonlon.com",
+      productCode: "",
+      count: 1,
+      fromSystem: "KIDS.ICANCONNECT.VN",
+      nam_sinh: "",
+      truong_hoc: "",
     },
     validate: yupResolver(schema),
   });
   const handleUploadData = (value: any) => {
-    fetch("https://api-contact.hocmaidev.tk/api/contact", {
+    fetch("https://api-contact.hocmaidev.tk/api/hocmai/LandingPage/PostData", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "api-key": "hocmai@2021",
+      },
       body: JSON.stringify({ ...value }),
     })
       .then((response) => response.json())
       .then((data) => {
-        showNotification({
-          title: "Thành công",
-          message: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất!",
-          color: "teal",
-        });
+        if (data.success) {
+          showNotification({
+            title: "Thành công",
+            message: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất!",
+            color: "teal",
+          });
+        } else {
+          showNotification({
+            title: "Thất bại",
+            message: data.message,
+            color: "red",
+          });
+        }
       })
       .catch((err) => {
         showNotification({
@@ -105,7 +123,7 @@ const GetinTouch = () => {
                 placeholder="Họ và tên học viên"
               />
               <NumberInput
-                {...form.getInputProps("birth")}
+                {...form.getInputProps("nam_sinh")}
                 className="grow"
                 defaultValue={2016}
                 label="Năm sinh học viên"

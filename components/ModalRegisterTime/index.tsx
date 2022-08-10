@@ -39,7 +39,7 @@ const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
   const [time, setTime] = useState<any>(new Date());
 
   const handleUploadData = (value: any) => {
-    fetch("http://crm-api.hocmai.com/api/hocmai/LandingPage/PostData", {
+    fetch("https://api-contact.hocmaidev.tk/api/hocmai/LandingPage/PostData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

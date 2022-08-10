@@ -34,7 +34,7 @@ const ModalRegister = ({ isOpen = false, onClose }: any) => {
     validate: yupResolver(schema),
   });
   const handleUploadData = (value: any) => {
-    fetch("http://crm-api.hocmai.com/api/hocmai/LandingPage/PostData", {
+    fetch("https://api-contact.hocmaidev.tk/api/hocmai/LandingPage/PostData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
