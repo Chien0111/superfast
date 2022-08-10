@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import TrackerProvider, { TrackerContext } from "../Context/trackerContext";
 import { useContext, useEffect } from "react";
+import { NextSeo } from "next-seo";
 
 dayjs.locale("vi"); // use locale globally
 dayjs().locale("vi").format();
@@ -33,6 +34,22 @@ const MyApp = ({ Component, pageProps }: any) => {
       <TrackerProvider>
         <NotificationsProvider position="top-right" zIndex={2077}>
           <Layout>
+            <NextSeo
+              openGraph={{
+                type: "website",
+                title: "Giải pháp học Tiếng Anh trực tuyến hàng đầu Việt Nam",
+                description:
+                  "Giải pháp học Tiếng Anh trực tuyến hàng đầu Việt Nam",
+                images: [
+                  {
+                    url: "/logo_square.png",
+                    width: 800,
+                    height: 600,
+                    alt: "Logo SpeakWell Alt",
+                  },
+                ],
+              }}
+            />
             <Component {...pageProps} />
             <div
               onClick={() => scrollTo({ y: 0 })}
