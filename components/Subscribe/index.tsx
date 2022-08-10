@@ -12,16 +12,27 @@ const Subscribe = () => {
     if (result != null) {
       fetch("https://api-contact.hocmaidev.tk/api/contact", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({ email: email }),
       })
         .then((response) => response.json())
         .then((data) => {
-          showNotification({
-            title: "Thành công",
-            message: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất!",
-            color: "teal",
-          });
-          setEmail("");
+          if (data.status) {
+            showNotification({
+              title: "Thành công",
+              message: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất!",
+              color: "teal",
+            });
+            setEmail("");
+          } else {
+            showNotification({
+              title: "Thất bại",
+              message: data.message,
+              color: "red",
+            });
+          }
         })
         .catch((err) => {
           showNotification({

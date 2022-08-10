@@ -20,12 +20,18 @@ const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
   });
   const form = useForm({
     initialValues: {
-      name: "",
       phone: "",
+      name: "",
       studentName: "",
-      birth: "",
       email: "",
+      address: "",
       note: "",
+      link: "http://conkhonlon.com",
+      productCode: "",
+      count: 1,
+      fromSystem: "KIDS.ICANCONNECT.VN",
+      nam_sinh: "",
+      truong_hoc: "",
     },
     validate: yupResolver(schema),
   });
@@ -33,8 +39,12 @@ const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
   const [time, setTime] = useState<any>(new Date());
 
   const handleUploadData = (value: any) => {
-    fetch("https://api-contact.hocmaidev.tk/api/contact", {
+    fetch("http://crm-api.hocmai.com/api/hocmai/LandingPage/PostData", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "api-key": "hocmai@2021",
+      },
       body: JSON.stringify({
         ...value,
         learn_time_register: combineDateTime(
@@ -45,12 +55,20 @@ const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        showNotification({
-          title: "Thành công",
-          message: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất!",
-          color: "teal",
-        });
-        onClose();
+        if (data.success) {
+          showNotification({
+            title: "Thành công",
+            message: "Chúng tôi sẽ phản hồi trong thời gian sớm nhất!",
+            color: "teal",
+          });
+          onClose();
+        } else {
+          showNotification({
+            title: "Thất bại",
+            message: data.message,
+            color: "red",
+          });
+        }
       })
       .catch((err) => {
         showNotification({
