@@ -35,6 +35,8 @@ const MyApp = ({ Component, pageProps }: any) => {
         <NotificationsProvider position="top-right" zIndex={2077}>
           <Layout>
             <NextSeo
+              title="Giải pháp học Tiếng Anh trực tuyến hàng đầu Việt Nam"
+              description="Giải pháp học Tiếng Anh trực tuyến hàng đầu Việt Nam"
               openGraph={{
                 type: "website",
                 title: "Giải pháp học Tiếng Anh trực tuyến hàng đầu Việt Nam",
