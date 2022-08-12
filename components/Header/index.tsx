@@ -2,7 +2,7 @@ import { Transition } from "@headlessui/react";
 import { Image } from "@mantine/core";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const navigate = useRouter();

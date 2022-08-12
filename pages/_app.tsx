@@ -1,18 +1,18 @@
 import { MantineProvider } from "@mantine/core";
-import { NotificationsProvider } from "@mantine/notifications";
 import { useDebouncedValue, useWindowScroll } from "@mantine/hooks";
-import { ArrowUp2 } from "iconsax-react";
+import { NotificationsProvider } from "@mantine/notifications";
 import dayjs from "dayjs";
 import "dayjs/locale/vi";
+import { ArrowUp2 } from "iconsax-react";
 
 import DefaultLayout from "../layout/default";
 import "../styles/globals.css";
 
+import { NextSeo } from "next-seo";
+import { useContext, useEffect } from "react";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import TrackerProvider, { TrackerContext } from "../Context/trackerContext";
-import { useContext, useEffect } from "react";
-import { NextSeo } from "next-seo";
 
 dayjs.locale("vi"); // use locale globally
 dayjs().locale("vi").format();

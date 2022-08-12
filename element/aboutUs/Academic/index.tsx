@@ -1,6 +1,6 @@
 import { Image } from "@mantine/core";
+import { ArrowCircleRight2 } from "iconsax-react";
 import style from "./style.module.css";
-import { ArrowRight2, ArrowCircleRight2 } from "iconsax-react";
 
 const Academic = () => {
   return (

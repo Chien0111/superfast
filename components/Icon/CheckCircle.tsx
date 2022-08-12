@@ -1,25 +1,26 @@
-import { IconProps } from './index.type';
+import { IconProps } from "./index.type";
 
 const CheckCircle = ({ className, size = 24, stroke = 2 }: IconProps) => {
   return (
     <div className={`${className}`}>
       <svg
-        xmlns='http://www.w3.org/2000/svg'
+        xmlns="http://www.w3.org/2000/svg"
         width={size}
         height={size}
-        viewBox='0 0 24 24'
-        fill='none'
-        stroke='currentColor'
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
         strokeWidth={stroke}
-        strokeLinecap='round'
-        strokeLinejoin='round'
-        className='feather feather-check-circle'
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="feather feather-check-circle"
       >
-        <path d='M22 11.08V12a10 10 0 1 1-5.93-9.14'></path>
-        <polyline points='22 4 12 14.01 9 11.01'></polyline>
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
       </svg>
     </div>
   );
 };
 
 export default CheckCircle;
+

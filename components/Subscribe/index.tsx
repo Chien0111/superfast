@@ -1,4 +1,4 @@
-import { TextInput, Image } from "@mantine/core";
+import { Image, TextInput } from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
 import { ArrowCircleRight2 } from "iconsax-react";
 import { useState } from "react";

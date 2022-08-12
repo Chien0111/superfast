@@ -1,5 +1,4 @@
 import { Modal, NumberInput, Textarea, TextInput } from "@mantine/core";
-import React from "react";
 import { useForm, yupResolver } from "@mantine/form";
 import { showNotification } from "@mantine/notifications";
 

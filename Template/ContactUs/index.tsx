@@ -1,6 +1,4 @@
-import axios from "axios";
 import { ArrowRight2 } from "iconsax-react";
-import { useEffect } from "react";
 import GetinTouch from "../../element/contactUs/mail";
 import Mapcontact from "../../element/contactUs/map";
 import Office from "../../element/contactUs/office";

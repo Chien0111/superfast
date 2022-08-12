@@ -1,4 +1,3 @@
-import { ArrowRight2, ArrowCircleRight2 } from "iconsax-react";
 import { Image } from "@mantine/core";
 
 const Sitecontent = () => {

@@ -1,6 +1,4 @@
-import { Image } from "@mantine/core";
-import style from "./style.module.css";
-import { CallCalling, Location, MessageNotif } from "iconsax-react";
+import { CallCalling, Location } from "iconsax-react";
 import Link from "next/link";
 
 const Office = () => {
