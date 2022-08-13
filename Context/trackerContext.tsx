@@ -3,7 +3,10 @@ import Tracker from "@openreplay/tracker";
 import { v4 as uuidV4 } from "uuid";
 import { useReducer } from "react";
 
-export const TrackerContext = createContext<any>({
+export const TrackerContext = createContext<{
+  startTracking: () => void;
+  initTracker: () => void;
+}>({
   startTracking: () => {},
   initTracker: () => {},
 });

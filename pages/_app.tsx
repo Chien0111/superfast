@@ -9,10 +9,10 @@ import DefaultLayout from "../layout/default";
 import "../styles/globals.css";
 
 import { NextSeo } from "next-seo";
-import { useContext, useEffect } from "react";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import TrackerProvider, { TrackerContext } from "../Context/trackerContext";
+import TrackerProvider from "../Context/trackerContext";
+import TrackerLayer from "../layout/Tracker";
 
 dayjs.locale("vi"); // use locale globally
 dayjs().locale("vi").format();
@@ -21,13 +21,6 @@ const MyApp = ({ Component, pageProps }: any) => {
   const Layout = Component.Layout || DefaultLayout;
   const [scroll, scrollTo] = useWindowScroll();
   const [debounced] = useDebouncedValue(scroll, 50);
-
-  const { initTracker, startTracking } = useContext(TrackerContext);
-
-  useEffect(() => {
-    initTracker();
-    startTracking();
-  }, []);
 
   return (
     <MantineProvider>
@@ -52,7 +45,9 @@ const MyApp = ({ Component, pageProps }: any) => {
                 ],
               }}
             />
-            <Component {...pageProps} />
+            <TrackerLayer>
+              <Component {...pageProps} />
+            </TrackerLayer>
             <div
               onClick={() => scrollTo({ y: 0 })}
               className={`transition-all z-50 ${

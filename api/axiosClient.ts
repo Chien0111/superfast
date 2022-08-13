@@ -10,6 +10,7 @@ const axiosClient = axios.create({
   baseURL: API_CLIENT_URL,
   headers: {
     Accept: "application/json, text/*, */*",
+    "Content-Type": "application/x-www-form-urlencoded",
   },
   // timeout: 5000,
 });

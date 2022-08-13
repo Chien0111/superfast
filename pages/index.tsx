@@ -11,4 +11,3 @@ const Home = () => {
 Home.Layout = BaseLayout;
 
 export default Home;
-
