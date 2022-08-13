@@ -15,7 +15,6 @@ export default class _Document extends Document {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
-          <title>Giải pháp học Tiếng Anh trực tuyến hàng đầu Việt Nam</title>
         </Head>
         <body>
           <Main />

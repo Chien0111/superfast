@@ -5,6 +5,7 @@ import { useForm, yupResolver } from "@mantine/form";
 import { Eye, EyeSlash } from "iconsax-react";
 import Link from "next/link";
 import * as Yup from "yup";
+import { signInRequest } from "../../api/auth";
 
 const SignIn = () => {
   const mailRegExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -25,9 +26,11 @@ const SignIn = () => {
   const handleSubmit = (value: any) => {
     console.log(value);
     // signInForm.setFieldError("email", "Invalid email");
+    const payload = {};
+    signInRequest(payload);
   };
   return (
-    <div className="w-[480px] mx-auto self-start shadow-01 rounded-[30px] px-8 py-12 bg-ct2-neutral-01 font-nunito">
+    <div className="w-full md:w-[480px] mx-auto self-start lg:shadow-01 rounded-[30px] px-8 py-12 bg-ct2-neutral-01 font-nunito">
       <Image
         src="/AuthModules/ICANlogo.png"
         alt=""
