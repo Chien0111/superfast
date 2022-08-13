@@ -2,10 +2,6 @@ import axios, { AxiosResponse } from "axios";
 import qs from "qs";
 
 const API_CLIENT_URL = process.env.API_CLIENT_URL;
-console.log(
-  "🚀 ~ file: axiosClient.ts ~ line 5 ~ API_CLIENT_URL",
-  API_CLIENT_URL
-);
 const axiosClient = axios.create({
   baseURL: API_CLIENT_URL,
   headers: {
@@ -53,9 +49,11 @@ const errorHandler = (error: any) => {
   //     window.location.href = '/';
   //   }
   // });
-  return Promise.reject(error.data);
+  return Promise.reject(error.response.data);
 };
-
+axiosClient.defaults.paramsSerializer = (params) => {
+  return qs.stringify(params);
+};
 axiosClient.interceptors.request.use(
   (request) => requestHandler(request),
   (error) => errorHandler(error)
@@ -65,10 +63,6 @@ axiosClient.interceptors.response.use(
   (response) => responseHandler(response),
   (error) => errorHandler(error)
 );
-
-axiosClient.defaults.paramsSerializer = (params) => {
-  return qs.stringify(params, { arrayFormat: "indices", encode: false });
-};
 
 // export const paramsSerializer = (params) => {
 //   return qs.stringify(params, { arrayFormat: 'repeat', encode: false });

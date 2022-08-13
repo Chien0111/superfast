@@ -2,32 +2,46 @@ import AuthLayout from "../../layout/auth";
 
 import { Divider, Image, PasswordInput, TextInput } from "@mantine/core";
 import { useForm, yupResolver } from "@mantine/form";
+import { showNotification } from "@mantine/notifications";
 import { Eye, EyeSlash } from "iconsax-react";
 import Link from "next/link";
+import { useState } from "react";
 import * as Yup from "yup";
 import { signInRequest } from "../../api/auth";
+import Modal from "../../components/Modal";
 
 const SignIn = () => {
-  const mailRegExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const [openedForgotPass, setOpenedForgotPass] = useState(false);
   const schema = Yup.object().shape({
-    email: Yup.string()
+    username: Yup.string()
       .trim()
-      .matches(mailRegExp, "Vui lòng nhập email chính xác")
       .required("Username / Email không được để trống"),
     password: Yup.string().required("Mật khẩu không được để trống").trim(),
   });
   const signInForm = useForm({
     initialValues: {
-      email: "",
+      username: "",
       password: "",
     },
     validate: yupResolver(schema),
   });
-  const handleSubmit = (value: any) => {
-    console.log(value);
-    // signInForm.setFieldError("email", "Invalid email");
-    const payload = {};
-    signInRequest(payload);
+  const handleSubmit = async (value: any) => {
+    const payload = {
+      ...value,
+      grant_type: "password",
+      client_id: "stg.sso.icanconnect.vn",
+    };
+    signInRequest(payload)
+      .then((res) => {
+        if (res.error) {
+          showNotification({
+            title: "Đã có lỗi xảy ra!",
+            message: res.error_description,
+            color: "red",
+          });
+        }
+      })
+      .catch((err) => {});
   };
   return (
     <div className="w-full md:w-[480px] mx-auto self-start lg:shadow-01 rounded-[30px] px-8 py-12 bg-ct2-neutral-01 font-nunito">
@@ -42,14 +56,14 @@ const SignIn = () => {
       </p>
       <form onSubmit={signInForm.onSubmit((value) => handleSubmit(value))}>
         <TextInput
-          {...signInForm.getInputProps("email")}
+          {...signInForm.getInputProps("username")}
           classNames={{
             input: "rounded-[10px] font-nunito",
             label: "bodytext-14px-regular text-ct2-neutral-04 mb-2 font-nunito",
           }}
           size="md"
           label="Username / Email đăng nhập"
-          type="email"
+          type="text"
         />
         <PasswordInput
           {...signInForm.getInputProps("password")}
@@ -78,7 +92,10 @@ const SignIn = () => {
             );
           }}
         />
-        <p className="w-fit cursor-pointer ml-auto text-right text-ct2-primary-01 bodytext-button mt-2">
+        <p
+          onClick={() => setOpenedForgotPass(true)}
+          className="w-fit cursor-pointer ml-auto text-right text-ct2-primary-01 bodytext-button mt-2"
+        >
           Quên mật khẩu
         </p>
         <button
@@ -109,6 +126,27 @@ const SignIn = () => {
           <a className="text-ct2-primary-01">Đăng ký ngay</a>
         </Link>
       </div>
+      <Modal
+        opened={openedForgotPass}
+        handleClose={() => setOpenedForgotPass(false)}
+      >
+        <p className="font-bold text-[24px] text-center mb-10">
+          Vui lòng liên hệ CSKH
+        </p>
+        <p className="text-center">
+          Để lấy lại mật khẩu vui lòng liên hệ bộ phận CSKH của ICAN CONNECT
+          theo hotline:{" "}
+          <Link href="tel:09123456789">
+            <a className="text-ct2-primary-01">09123456789</a>
+          </Link>
+        </p>
+        <button
+          onClick={() => setOpenedForgotPass(false)}
+          className="cursor-pointer bodytext-button bg-ct2-primary-01 rounded-lg py-[13px] w-full mt-10 text-center text-ct2-neutral-01"
+        >
+          Xác nhận
+        </button>
+      </Modal>
     </div>
   );
 };
