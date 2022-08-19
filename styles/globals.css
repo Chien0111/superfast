@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    font-family: "Quicksand", "Dancing Script", "Nunito", sans-serif;
+    font-family: "Nunito", "Quicksand", "Dancing Script", sans-serif;
   }
 }
 .slick-dots {
@@ -17,10 +17,10 @@
   list-style-type: none;
 }
 .slick-active .dot {
-  background-color: white;
+  background-color: #ffffff;
 }
 .slick-active .dot2 {
-  background-color: #ff6b00;
+  background-color: #acf85f;
 }
 .slick-list {
   /* padding-left: 0px !important; */

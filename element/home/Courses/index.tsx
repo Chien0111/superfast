@@ -69,7 +69,7 @@ const Courses = () => {
         },
       ],
     },
-    showArrow: false,
+    showArrow: true,
     showDots: true,
     styleDot: "",
   };

@@ -1,3 +1,4 @@
+import { Image } from "@mantine/core";
 import { twMerge } from "tailwind-merge";
 import LeftArrow from "../Icon/LeftArrow";
 import RightArrow from "../Icon/RightArrow";
@@ -18,7 +19,7 @@ const SliderComp = (props: SliderProps) => {
     width = "w-full",
     positionItems = "bottom",
   } = props;
-  const styleDots = `dot2 h-4 w-4 border-2 border-ct-secondary-02 rounded-full mt-4 ${styleDot}`;
+  const styleDots = `dot2 h-5 w-5 border-[3px] border-ct-primary-400 rounded-full mt-4 ${styleDot}`;
   const settingsInit = {
     speed: 500,
     autoplay: true,
@@ -76,7 +77,12 @@ const SampleNextArrow = (props: arrowProps) => {
       className="flex absolute right-4 bg-ct-neutral-01 h-min rounded-full -ml-10 z-50 justify-center items-center"
       onClick={onClick}
     >
-      <RightArrow className="p-2 bg-ct-neutral-01 hover:bg-ct-secondary-02 hover:text-ct-neutral-01 text-ct-neutral-03 rounded-full shadow-02" />
+      <Image
+        src="/images/rightArr.png"
+        width="26px"
+        height="38px"
+        alt="right"
+      />
     </span>
   );
 };
@@ -88,7 +94,7 @@ const SamplePrevArrow = (props: arrowProps) => {
       className="flex absolute left-4 h-min rounded-full -mr-10 z-50 justify-center items-center"
       onClick={onClick}
     >
-      <LeftArrow className="p-2 bg-ct-neutral-01 hover:bg-ct-secondary-02 hover:text-ct-neutral-01 text-ct-neutral-03 rounded-full shadow-02" />
+      <Image src="/images/leftArr.png" width="26px" height="38px" alt="right" />{" "}
     </span>
   );
 };

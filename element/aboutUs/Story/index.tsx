@@ -1,6 +1,6 @@
 import { Image } from "@mantine/core";
 
-const Stoty = () => {
+const Story = () => {
   return (
     <div>
       <div className="p-10">
@@ -59,4 +59,4 @@ const Stoty = () => {
   );
 };
 
-export default Stoty;
+export default Story;
