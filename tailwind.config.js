@@ -25,6 +25,7 @@ module.exports = {
           '700': '#002C58',
           '800': '#002347',
           '900': '#001C38',
+          '1000': '#0056B8',
         },
         'ct-secondary': {
           '100': '#FF7ECB',
@@ -47,6 +48,7 @@ module.exports = {
           '700': '#649037',
           '800': '#50732C',
           '900': '#405C23',
+          '1000': '#6CBD19',
         },
         'ct-neutral': {
           '100': '#FAFCFE',
@@ -157,6 +159,18 @@ module.exports = {
           fontSize: "20px",
           lineHeight: "27px",
         },
+        '.Heading-Mobile-Heading5': {
+          fontStyle: "normal",
+          fontWeight: "800",
+          fontSize: "12px",
+          lineHeight: "20px",
+        },
+        '.Heading-Mobile-Heading6': {
+          fontStyle: "normal",
+          fontWeight: "800",
+          fontSize: "16px",
+          lineHeight: "24px",
+        },
         // display
         '.Display-Desktop-Display1': {
           fontStyle: "normal",
@@ -182,6 +196,17 @@ module.exports = {
           fontSize: "64px",
           lineHeight: "87px",
         },
+        '.Display-Desktop-Display5': {
+          fontStyle: "normal",
+          fontWeight: "700",
+          fontSize: "24px",
+          lineHeight: "33px",
+        },
+        '.Display-Desktop-Display-footer': {
+          fontStyle: "normal",
+          fontSize: "18px",
+          lineHeight: "25px",
+        },
         // body Desktop
         '.Body-Desktop-Large': {
           fontStyle: "normal",
@@ -203,7 +228,7 @@ module.exports = {
         },
         '.Body-Desktop-Medium-Bold': {
           fontStyle: "normal",
-          fontWeight: "500",
+          fontWeight: "700",
           fontSize: "18px",
           lineHeight: "25px",
         },
@@ -249,6 +274,12 @@ module.exports = {
           fontWeight: "400",
           fontSize: "16px",
           lineHeight: "22px",
+        },
+        '.Body-Mobile-9px-Medium': {
+          fontStyle: "normal",
+          fontWeight: "500",
+          fontSize: "12px",
+          lineHeight: "12px",
         },
         '.Body-Mobile-Medium-Bold': {
           fontStyle: "normal",
