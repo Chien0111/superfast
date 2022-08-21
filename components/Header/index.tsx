@@ -35,19 +35,19 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="max-w-[1200px] mx-auto">
-        <div className="flex items-center p-5 justify-between">
+      <nav className="max-w-[2152px] mx-auto">
+        <div className="flex items-center p-5 justify-between ">
           <div className="flex ">
-            <div className="w-[106.45px] h-[18.83px] mr-2 sm:w-[176px] sm:h-[39px] sm:border-r sm:pr-2 border-ct-primary-1000">
+            <div className="w-[86.45px] h-[18.83px] mr-2 sm:w-[176px] sm:h-[39px] sm:border-r sm:pr-2 border-ct-primary-1000">
               <Image className="mr-8" src="logo.png" alt="" width="100%" />
             </div>
             <div className="mt-[-10px]">
               <div>
-                <span className="text-ct-primary-1000 font-medium text-[8px] sm:text-[10px]">
+                <span className="text-ct-primary-1000 font-medium text-[6px] sm:text-[10px]">
                   Được phát triển độc quyền bởi
                 </span>
               </div>
-              <div className="w-[101.31px] h-[11.98px] mt-[-5px] sm:w-[137px] sm:h-[22px]">
+              <div className="w-[81.31px] h-[11.98px] mt-[-5px] sm:w-[137px] sm:h-[22px]">
                 <Image
                   className="mr-8"
                   src="Rectangle.png"
@@ -57,9 +57,9 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="hidden sm:block ">
-            <div className="flex">
-              <div className="flex items-center border-r border-ct-primary-1000 pl-5 pr-10">
+          <div className="hidden md:block mx-5">
+            <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <div className="w-[25px] h-[25px] mr-2">
                   <Image
                     className="mr-8"
@@ -74,7 +74,15 @@ const Header = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center border-r border-ct-primary-1000 pl-5 pr-10">
+              <div className="mx-10 min-w-[2px]">
+                <Image
+                  className=""
+                  src="/images/thanh.png"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div className="flex items-center justify-center">
                 <div className="w-[25px] h-[25px] mr-2">
                   <Image
                     className="mr-8"
@@ -89,7 +97,15 @@ const Header = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center pl-5 pr-5">
+              <div className="mx-10 min-w-[2px]">
+                <Image
+                  className=""
+                  src="/images/thanh.png"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div className="flex items-center justify-center">
                 <div className="w-[25px] h-[25px] mr-2">
                   <Image
                     className="mr-8"
@@ -99,24 +115,24 @@ const Header = () => {
                   />
                 </div>
                 <div>
-                  <p className="Heading-Mobile-Heading6 text-ct-primary-1000">
+                  <p className="Heading-Mobile-Heading6 text-ct-primary-1000 lg:w-[219px]">
                     GIẢI PHÁP HỌC TIẾNG ANH
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="mt-2">
+          <div className="mt-2 mr-2 sm:mr-4">
             <div className="Body-Mobile-9px-Medium text-ct-tertiary-1000 sm:Body-Desktop-Medium text-right">
               Hỗ trợ khách hàng
             </div>
-            <div className="text-ct-primary-1000 font-bold text-right sm:Body-Desktop-Medium-Bold">
+            <div className="text-ct-primary-1000 Body-Mobile-9px-Medium1 font-bold text-right sm:Body-Desktop-Medium-Bold">
               1900 9399
             </div>
           </div>
         </div>
-        <div className="flex justify-between sm:hidden">
-          <div className="flex items-center border-r border-ct-primary-1000 pl-5 pr-10">
+        <div className="flex justify-between md:hidden mx-5">
+          <div className="flex items-center sm:px-5 px-2">
             <div className="w-[16px] h-[16px] mr-1">
               <Image
                 className="mr-8"
@@ -126,12 +142,15 @@ const Header = () => {
               />
             </div>
             <div>
-              <p className="Heading-Mobile-Heading5 text-ct-primary-1000">
+              <p className="Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[58px]">
                 TRANG CHỦ
               </p>
             </div>
           </div>
-          <div className="flex items-center border-r border-ct-primary-1000 pl-5 pr-10">
+          <div className="min-w-[1px]">
+            <Image className="" src="/images/thanh.png" alt="" width="100%" />
+          </div>
+          <div className="flex items-center sm:px-5 px-3">
             <div className="w-[16px] h-[16px] mr-1">
               <Image
                 className="mr-8"
@@ -141,12 +160,15 @@ const Header = () => {
               />
             </div>
             <div>
-              <p className="Heading-Mobile-Heading5 text-ct-primary-1000">
+              <p className="Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[38px]">
                 Liên hệ
               </p>
             </div>
           </div>
-          <div className="flex items-center pl-5 pr-5">
+          <div className="min-w-[1px]">
+            <Image className="" src="/images/thanh.png" alt="" width="100%" />
+          </div>
+          <div className="flex items-center pl-2 pr-5 sm:px-5 px-2">
             <div className="w-[16px] h-[16px] mr-1">
               <Image
                 className="mr-8"
@@ -156,7 +178,7 @@ const Header = () => {
               />
             </div>
             <div>
-              <p className="Heading-Mobile-Heading5 text-ct-primary-1000">
+              <p className="Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[132px]">
                 GIẢI PHÁP HỌC TIẾNG ANH
               </p>
             </div>

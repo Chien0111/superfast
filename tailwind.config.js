@@ -162,7 +162,7 @@ module.exports = {
         '.Heading-Mobile-Heading5': {
           fontStyle: "normal",
           fontWeight: "800",
-          fontSize: "12px",
+          fontSize: "9px",
           lineHeight: "20px",
         },
         '.Heading-Mobile-Heading6': {
@@ -223,7 +223,7 @@ module.exports = {
         '.Body-Desktop-Medium': {
           fontStyle: "normal",
           fontWeight: "400",
-          fontSize: "18px",
+          fontSize: "14px",
           lineHeight: "25px",
         },
         '.Body-Desktop-Medium-Bold': {
@@ -278,7 +278,13 @@ module.exports = {
         '.Body-Mobile-9px-Medium': {
           fontStyle: "normal",
           fontWeight: "500",
-          fontSize: "12px",
+          fontSize: "9px",
+          lineHeight: "12px",
+        },
+        '.Body-Mobile-9px-Medium1': {
+          fontStyle: "normal",
+          fontWeight: "700",
+          fontSize: "9px",
           lineHeight: "12px",
         },
         '.Body-Mobile-Medium-Bold': {
