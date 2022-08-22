@@ -271,6 +271,18 @@ module.exports = {
           lineHeight: "19px",
         },
         // body mobile
+        '.Body-Mobile-Small-bold': {
+          fontStyle: "normal",
+          fontWeight: "400",
+          fontSize: "14px",
+          lineHeight: "19px",
+        },
+        '.Body-Mobile-Small1': {
+          fontStyle: "normal",
+          fontWeight: "400",
+          fontSize: "12px",
+          lineHeight: "16px",
+        },
         '.Body-Mobile-Large': {
           fontStyle: "normal",
           fontWeight: "400",
@@ -364,8 +376,6 @@ module.exports = {
         },
         ".Rectangle-27": {
           boxShadow: " 0px 0px 10px 2px #FFFFFF",
-          width: "1233px",
-          height: "598px",
           background:"#FFFFFF",
           borderRadius:"35px"
         },
