@@ -165,12 +165,18 @@ const Slider = () => {
     // },
   ];
   return (
-    <div className="w-full  lg:bg-[url('/images/banner-bg.png')] bg-[url('/images/bg-banner-mobile.png')] bg-cover bg-no-repeat lg:h-[970px] h-[300px]">
+    <div className="w-full lg:bg-[url('/images/banner-bg.png')] bg-[url('/images/bg-banner-mobile.png')] bg-cover bg-no-repeat lg:h-[970px] h-[300px]">
       <div className="lg:w-full w-[98%] max-w-[1200px] mx-auto flex items-start justify-center lg:justify-between">
         <div className="ml-0 lg:ml-12 w-[34%] ">
           <div className=" lg:w-[350px]">
-            <img src="/images/ufo.png" className=" rotate-[3.54deg] w-[60px] lg:w-[189px] lg:mt-[295px] lg:ml-[165px] mt-[50px] ml-[20px]" />
-            <img src="/images/img1-banner.png" className="lg:w-full w-full lg:ml-[75px] lg:mt-[40px] mt-[20px]" />
+            <img
+              src="/images/ufo.png"
+              className=" rotate-[3.54deg] w-[60px] lg:w-[189px] lg:mt-[295px] lg:ml-[165px] mt-[50px] ml-[20px]"
+            />
+            <img
+              src="/images/img1-banner.png"
+              className="lg:w-full w-full lg:ml-[75px] lg:mt-[40px] mt-[20px]"
+            />
           </div>
         </div>
         <div className="lg:mt-8  w-[32%] ">
@@ -179,8 +185,13 @@ const Slider = () => {
             src="/images/img-banner.png"
           />
           <div className="flex justify-center lg:mt-[-60px] mt-[-20px]">
-            <button className="bg-ct-tertiary-500 glow lg:w-[308px] w-[138px] lg:h-[60px] h-[27px] rounded-[50px] flex items-center justify-center" style={{ boxShadow: '0px 0px 13px 6px #FFFFFF' }}>
-              <p className="text-ct-primary-400 lg:Button-Desktop-Large uppercase text-[12px] font-bold">đăng ký ngay</p>
+            <button
+              className="bg-ct-tertiary-500 glow lg:w-[308px] w-[138px] lg:h-[60px] h-[27px] rounded-[50px] flex items-center justify-center"
+              style={{ boxShadow: "0px 0px 13px 6px #FFFFFF" }}
+            >
+              <p className="text-ct-primary-400 lg:Button-Desktop-Large uppercase text-[12px] font-bold">
+                đăng ký ngay
+              </p>
               <img
                 className="lg:w-[35px] w-[20px] pl-1 lg:pl-3"
                 src="/images/icon12.png"
@@ -190,8 +201,14 @@ const Slider = () => {
         </div>
         <div className=" lg:w-[350px] w-[34%]">
           <div className="lg:pt-[340px] pt-[60px]">
-            <img src="/images/img3-banner.png" className="lg:w-full w-[128px]" />
-            <img src="/images/img4-banner.png" className="lg:w-full w-[154px] lg:mt-[55px]" />
+            <img
+              src="/images/img3-banner.png"
+              className="lg:w-full w-[128px]"
+            />
+            <img
+              src="/images/img4-banner.png"
+              className="lg:w-full w-[154px] lg:mt-[55px]"
+            />
           </div>
         </div>
       </div>

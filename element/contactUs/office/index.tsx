@@ -53,20 +53,32 @@ const ContentOffice = ({ data }: any) => {
       /> */}
       <div>
         <div className="">
-          <p className=" border-ct-neutral-03 border-b-2 border-dashed font-['Dancing_Script'] text-ct-secondary-02 text-[30px]">
+          <p className=" border-ct-neutral-03 lg:text-left text-center lg:Heading-Desktop-Heading3 text-ct-secondary-500 text-[16px] ">
             {data.title}
           </p>
         </div>
         <div className="mt-4 text-ct-neutral-05">
           <p className="flex mt-2">
             {" "}
-            <Location size="30" className="mr-2" />
-            {data.location}
+            <Location
+              size="20"
+              className="mr-2 text-ct-tertiary-1000 w-[55px]"
+              color="currentColor"
+            />
+            <span className="text-ct-primary-500 lg:text-[20px] text-justify">
+              {data.location}
+            </span>
           </p>
           <Link href={`tel:${data.phone}`}>
             <a className="flex mt-2">
-              <CallCalling size="20" className="mr-2" />
-              {data.phone}
+              <CallCalling
+                size="20"
+                className="mr-2 text-ct-tertiary-1000"
+                color="currentColor"
+              />
+              <span className="text-ct-primary-500 lg:text-[20px] text-justify">
+                {data.phone}
+              </span>
             </a>
           </Link>
           {/* <p className="flex mt-2">
