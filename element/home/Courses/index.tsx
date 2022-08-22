@@ -74,12 +74,17 @@ const Courses = () => {
     styleDot: "",
   };
   return (
-    <div className="lg:bg-[url('https://firebasestorage.googleapis.com/v0/b/libhuha-73130.appspot.com/o/images%2F8ed3092a-a181-45fb-8353-2c12d7a93899.png?alt=media&token=a5428ca8-e54a-4773-9745-985281855337')] bg-[url('/images/course-mobile.png')] bg-cover bg-no-repeat w-full lg:h-[828px] py-20 lg:pt-[55px]">
-      <div className="w-fit mx-auto text-center lg:mb-[43px] lg:pt-2 lg:pb-2 mb-4">
-        <div className="text-[#0056B8] lg:text-[28px] text-[18px] lg:Heading-Desktop-Heading2 font-bold uppercase">Khơi dậy niềm đam mê học tập</div>
-        <div className="text-ct-secondary-400 lg:text-[26px] text-[16px] font-bold uppercase lg:Heading-Desktop-Heading2"> cùng các khóa học của SpeakWell</div>
+    <div className="lg:bg-[url(/images/slide-bg.png)] bg-[url('/images/course-mobile.png')] bg-cover bg-no-repeat w-full lg:h-[828px] py-20 lg:pt-[55px]">
+      <div className="w-fit mx-auto text-center lg:mb-[43px] lg:pt-6 lg:pb-2 mb-4">
+        <div className="text-[#0056B8] lg:text-[28px] text-[18px] lg:Heading-Desktop-Heading2 font-bold uppercase">
+          Khơi dậy niềm đam mê học tập
+        </div>
+        <div className="text-ct-secondary-400 lg:text-[26px] text-[16px] font-bold uppercase lg:Heading-Desktop-Heading2">
+          {" "}
+          cùng các khóa học của SpeakWell
+        </div>
       </div>
-      <div className="w-full max-w-[1050px] mx-auto">
+      <div className="w-full max-w-[1200px] lg: pt-2 mx-auto">
         <SliderComp
           settings={settingSlidePC.setting}
           showArrow={settingSlidePC.showArrow}
@@ -99,47 +104,46 @@ const CourseItem = ({ data }: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='lg:w-[332px] w-[92%] mx-auto h-[auto] border-2 bg-[#EFFCFF] border-[#0056B8] rounded-lg'>
-
-      <div className='flex py-3 justify-end px-5 bg-[#00A9F1]'>
-        <img src='/images/topbar.svg' />
+    <div className="lg:w-[332px] w-[92%] mx-auto h-[auto] border-2 bg-[#EFFCFF] border-[#0056B8] rounded-lg">
+      <div className="flex py-3 justify-end px-5 bg-[#00A9F1]">
+        <img src="/images/topbar.png" />
       </div>
-      <div className='px-5 py-3'>
-        <div className='border border-[#0056B8] rounded'>
-          <div className=' '>
-            <img src='/images/anh11.svg' className="w-full" alt="" />
-
+      <div className="px-5 py-3">
+        <div className="border border-[#0056B8] rounded">
+          <div className=" ">
+            <img src="/images/anh11.png" className="w-full" alt="" />
           </div>
-          <div className='py-2 border-t border-[#0056B8] bg-[#3DD1F7]'>
-            <p className='text-white text-[22px] font-bold lg:Heading-Desktop-Heading3 text-center uppercase'>
+          <div className="py-2 border-t border-[#0056B8] bg-[#3DD1F7]">
+            <p className="text-white text-[22px] font-bold lg:Heading-Desktop-Heading3 text-center uppercase">
               startup
             </p>
           </div>
         </div>
-        <div className='pt-2'>
-          <p className='text-[16px] text-[#0056B8] text-justify px-2 lg:h-[160px]'>
-            Giúp trẻ có nền móng tiếng Anh vững chắc thông qua việc trải nghiệm hình thức học năng động, sáng tạo, tương tác đa chiều với giáo viên để đạt trình độ Starters của Cambridge.
+        <div className="pt-2">
+          <p className="text-[16px] text-[#0056B8] text-justify px-2 lg:h-[160px]">
+            Giúp trẻ có nền móng tiếng Anh vững chắc thông qua việc trải nghiệm
+            hình thức học năng động, sáng tạo, tương tác đa chiều với giáo viên
+            để đạt trình độ Starters của Cambridge.
           </p>
         </div>
         <div className="px-2">
-        <div className="border-t border-ct-primary-400"></div>
-        <div className="flex mb-4 justify-between mt-4">
-          <div className="border-r border-ct-primary-400 pr-2">
-            <p className="text-ct-secondary-500">Tuổi:</p>
-            <p className="text-ct-primary-500">{data.age} tuổi</p>
+          <div className="border-t border-ct-primary-400"></div>
+          <div className="flex mb-4 justify-between mt-4">
+            <div className="border-r border-ct-primary-400 pr-2">
+              <p className="text-ct-secondary-500">Tuổi:</p>
+              <p className="text-ct-primary-500">{data.age} tuổi</p>
+            </div>
+            <div className="border-r border-ct-primary-400 px-2">
+              <p className="text-ct-secondary-500">Thời gian:</p>
+              <p className="text-ct-primary-500">{data.time}</p>
+            </div>
+            <div className="px-2">
+              <p className="text-ct-secondary-500">Số học sinh:</p>
+              <p className="text-ct-primary-500">{data.cap} em</p>
+            </div>
           </div>
-          <div className="border-r border-ct-primary-400 px-2">
-            <p className="text-ct-secondary-500">Thời gian:</p>
-            <p className="text-ct-primary-500">{data.time}</p>
-          </div>
-          <div className="px-2">
-            <p className="text-ct-secondary-500">Số học sinh:</p>
-            <p className="text-ct-primary-500">{data.cap} em</p>
-          </div>
-        </div>
         </div>
       </div>
-
 
       <ModalRegisterTime
         isOpen={isOpen}
