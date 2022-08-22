@@ -1,53 +1,99 @@
 import { Image } from "@mantine/core";
+import SliderComp from "../../../components/Slider";
 
 const OurStaff = () => {
   const data = [
     {
-      img: "/images/Anh_GV_Loise.png",
-      name: "Cô Loise",
-      des: "5 năm kinh nghiệm giảng dạy.",
+      img: "/images/teacher11.png",
+      name: "Cô Lilac",
+      des: "Đạt chứng chỉ 120 Hrs TESOL",
     },
     {
-      img: "/images/Anh_GV_Arlo.png",
-      name: "Thầy Arlo",
+      img: "/images/teacher12.png",
+      name: "Cô Glazee",
       des: "6 năm kinh nghiệm giảng dạy",
     },
     {
-      img: "/images/Anh_GV_Aiza.png",
-      name: "Cô Aiza",
-      des: "5 năm kinh nghiệm giảng dạy.",
+      img: "/images/teacher13.png",
+      name: "Cô Everleigh",
+      des: "Có hơn 7 năm kinh nghiệm giảng dạy trẻ em",
     },
   ];
+  const settingSlidePC = {
+    setting: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      swipeToSlide: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+            swipeToSlide: true,
+          },
+        },
+        {
+          breakpoint: 870,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            swipeToSlide: true,
+          },
+        },
+      ],
+    },
+    showArrow: true,
+    showDots: true,
+    styleDot: "",
+  };
   return (
-    <div className=" max-w-[1200px] mx-auto mb-10">
+
+    <div className="lg:bg-[url(/images/teacher-bg.png)] bg-[url(/images/teacher-bg-mobile.png)] bg-cover py-10">
+<div className=" max-w-[1200px] mx-auto mb-10">
       <div className="w-fit mx-auto">
-        <p className="text-center font-['Dancing_Script'] text-ct-solid-red-03 text-[30px]">
+        <p className="text-center lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 text-ct-secondary-500">
           Đội ngũ giáo viên nước ngoài
         </p>
-        <h2 className="text-center font-bold text-[40px] mb-4 text-ct-primary-01">
+        <h2 className="text-center font-bold lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 mb-4 text-ct-primary-400">
           Đội ngũ giảng viên giàu kinh nghiệm <br /> được rất nhiều học viên yêu
           quý
         </h2>
       </div>
-      <div className="flex flex-wrap">
-        {data.map((item, index) => (
-          <Teacher data={item} key={index} />
-        ))}
+      <div className=" pt-8">
+      <SliderComp
+          settings={settingSlidePC.setting}
+          showArrow={settingSlidePC.showArrow}
+          showDots={settingSlidePC.showDots}
+          content={data.map((item, index) => {
+            return {
+              content: <Teacher data={item} />,
+            };
+          })}
+          styleDot=""
+        />
       </div>
+    </div>
     </div>
   );
 };
 const Teacher = ({ data }: any) => {
   return (
-    <div className="max-w-[400px] grow lg:w-1/4 mx-auto p-4">
+    <div className="max-w-[326px] ">
       {" "}
       <Image
         className=" rounded-md overflow-hidden"
         alt="teacher"
         src={data.img || "/images/teacher-01.jpg"}
       />
-      <p className="mt-6 my-2 font-bold text-center">{data.name}</p>
-      <p className="text-[14px] font-normal text-center">{data.des}</p>
+      <div className="bg-[url(/images/teacher-info.png)] bg-cover py-8">
+      <p className=" font-bold text-center lg:Heading-Desktop-Heading5 text-ct-primary-400">{data.name}</p>
+      <div className="flex justify-center">
+      <p className="w-[220px] text-ct-primary-400 font-normal text-center Body-Desktop-Small">{data.des}</p>
+      </div>
+      </div>
     </div>
   );
 };

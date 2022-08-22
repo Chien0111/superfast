@@ -52,7 +52,7 @@ const ContentOffice = ({ data }: any) => {
         alt="img"
       /> */}
       <div>
-        <div className="">
+        <div className="lg:mt-0 pt-6">
           <p className=" border-ct-neutral-03 lg:text-left text-center lg:Heading-Desktop-Heading3 text-ct-secondary-500 text-[16px] ">
             {data.title}
           </p>
