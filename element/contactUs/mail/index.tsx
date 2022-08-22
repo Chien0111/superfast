@@ -1,32 +1,10 @@
 import { Image, NumberInput, Textarea, TextInput } from "@mantine/core";
 import { useForm, yupResolver } from "@mantine/form";
 import { showNotification } from "@mantine/notifications";
+import { ArrowCircleRight } from "iconsax-react";
 import * as Yup from "yup";
 
 const GetinTouch = () => {
-  const data = [
-    {
-      img: "/images/Banner 11.jpg",
-      name: "Chien",
-      work: "Senior Marketing Manager",
-      phone: "+ 844 123 456 78 90",
-      email: "contact@example.com",
-    },
-    {
-      img: "/images/Banner 11.jpg",
-      name: "Hung",
-      work: "Senior Marketing Manager",
-      phone: "+ 844 123 456 78 90",
-      email: "contact@example.com",
-    },
-    {
-      img: "/images/Banner 11.jpg",
-      name: "Hưng",
-      work: "Senior Marketing Manager",
-      phone: "+ 844 123 456 78 90",
-      email: "contact@example.com",
-    },
-  ];
   const phoneRegExp = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
   const schema = Yup.object().shape({
     name: Yup.string()
@@ -37,6 +15,8 @@ const GetinTouch = () => {
       .matches(phoneRegExp, "Vui lòng nhập số điện thoại đúng quy định")
       .required("Vui lòng nhập số điện thoại"),
   });
+
+  const data = {};
   const form = useForm({
     initialValues: {
       phone: "",
@@ -88,100 +68,117 @@ const GetinTouch = () => {
       });
   };
   return (
-    <div className="lg:flex max-w-[1200px] m-auto">
-      <div className="lg:w-3/5 p-10">
-        <div>
-          <h2 className="w-full font-bold text-[15px] mb-4 text-ct-primary-01">
-            Vui lòng nhập chính xác các thông tin dưới đây để thuận tiện cho
-            SPEAKWEll liên hệ lại với bạn, toàn bộ thông tin của bạn sẽ được bảo
-            mật
-          </h2>
+    <div className="max-w-[1920px] h-[1006px] bg-[url('/images/BG.png')] p-20 py-40 relative m-auto">
+      <div className="flex justify-center">
+        <div className="w-[1440px]">
+          <Image src="/images/Border.png" width="100%" />
         </div>
-        <div className="">
-          <form onSubmit={form.onSubmit((value) => handleUploadData(value))}>
+      </div>
+      <div className="flex justify-center ">
+        <div className="w-[1205px] h-[130px] Secondary-500 rounded-[64px] border-4 border-white absolute top-[105px] text-center text-white">
+          {" "}
+          <p className="mt-10 Heading-Desktop-Heading8 ">
+            Ba mẹ vui lòng nhập đúng thông tin để SPEAKWELL liên hệ với mình
+            trong thời gian sớm nhất
+          </p>
+          <p className="mt-2 text-xl">
+            *Toàn bộ thông tin của phụ huynh đều được bảo mật
+          </p>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="Rectangle-27 absolute top-[303px] ">
+          <form
+            className="p-20"
+            onSubmit={form.onSubmit((value) => handleUploadData(value))}
+          >
             <div className="flex">
               <TextInput
+                classNames={{
+                  label: "Heading-Desktop-Heading5 text-ct-primary-1000",
+                  input:
+                    "h-[61px] mt-2 bg-ct2-neutral-06 rounded-[20px] border-2",
+                }}
                 {...form.getInputProps("name")}
-                required
-                className="grow mr-4 "
-                label="Họ và tên phụ huynh"
-                placeholder="Họ và tên phụ huynh"
+                // required
+                className="w-1/2 mr-20"
+                label="Họ và tên phụ huynh:"
+                // placeholder="Họ và tên phụ huynh"
               />
               <TextInput
+                classNames={{
+                  label: "Heading-Desktop-Heading5 text-ct-primary-1000",
+                  input:
+                    "h-[61px] mt-2 bg-ct2-neutral-06 rounded-[20px] border-2",
+                }}
                 {...form.getInputProps("phone")}
-                required
-                className="grow"
-                label="Số điện thoại"
-                placeholder="Số điện thoại"
+                // required
+                className="w-1/2 "
+                label="Số điện thoại:"
+                // placeholder="Số điện thoại"
               />
             </div>
             <div className="flex my-2">
               <TextInput
+                classNames={{
+                  label: "Heading-Desktop-Heading5 text-ct-primary-1000",
+                  input:
+                    "h-[61px] mt-2 bg-ct2-neutral-06 rounded-[20px] border-2",
+                }}
                 {...form.getInputProps("studentName")}
-                className="grow mr-4"
-                label="Họ và tên học viên"
-                placeholder="Họ và tên học viên"
+                className="w-1/2 mr-20"
+                label="Họ và tên học viên:"
+                // placeholder="Họ và tên học viên"
               />
-              <NumberInput
+              <TextInput
+                classNames={{
+                  label: "Heading-Desktop-Heading5 text-ct-primary-1000",
+                  input:
+                    "h-[61px] mt-2 bg-ct2-neutral-06 rounded-[20px] border-2",
+                }}
                 {...form.getInputProps("nam_sinh")}
-                className="grow"
-                defaultValue={2016}
-                label="Năm sinh học viên"
-                placeholder="Năm sinh học viên"
+                className="w-1/2 "
+                label="Năm sinh học viên:"
+                // placeholder="Năm sinh học viên"
               />
             </div>
-            <TextInput
-              {...form.getInputProps("email")}
-              label="Email"
-              type="email"
-              placeholder="Email"
-            />
-            <Textarea
-              {...form.getInputProps("note")}
-              className="my-2"
-              placeholder="Lời nhắn cho SpeakWell"
-              label="Lời nhắn cho SpeakWell"
-            />
-            <button
-              type="submit"
-              className="capitalize px-8 py-4 mt-2 rounded-md bg-ct-solid-red-03 text-sm text-ct-neutral-01"
-            >
-              <span>Đăng ký ngay</span>{" "}
-            </button>
+            <div className="flex">
+              <TextInput
+                {...form.getInputProps("email")}
+                label="Email:"
+                type="email"
+                // placeholder="Email"
+                className="w-1/2 mr-20 "
+                classNames={{
+                  label: "Heading-Desktop-Heading5 text-ct-primary-1000",
+                  input:
+                    "h-[61px] mt-2 bg-ct2-neutral-06 rounded-[20px] border-2",
+                }}
+              />
+              <Textarea
+                classNames={{
+                  label: "Heading-Desktop-Heading5 text-ct-primary-1000",
+                  input:
+                    "h-[184px] mt-2 bg-ct2-neutral-06 rounded-[20px] border-2",
+                }}
+                {...form.getInputProps("note")}
+                className="w-1/2 "
+                // placeholder="Lời nhắn cho SpeakWell"
+                label="Lời nhắn cho SpeakWell:"
+              />
+            </div>
+            <div className="w-1/2 absolute bottom-16 left-4">
+              <div className="flex justify-center items-center ">
+                <button
+                  type="submit"
+                  className="Body-Desktop-Large text-ct-primary-1000 flex bg-ct-tertiary-500 p-5 rounded-[50px]"
+                >
+                  <span className="mr-2">Đăng ký ngay</span>{" "}
+                  <ArrowCircleRight size="32" color="#0056B8" />
+                </button>
+              </div>
+            </div>
           </form>
-        </div>
-      </div>
-      <div className="lg:w-2/5 mt-20">
-        {/* {data.map((item: any, index: number) => {
-          return <Contact key={index} data={item} />;
-        })} */}
-      </div>
-    </div>
-  );
-};
-
-const Contact = ({ data }: any) => {
-  return (
-    <div className="px-10">
-      <div className="flex items-center p-2">
-        <Image
-          classNames={{
-            image: `w-full hover:opacity-70`,
-            imageWrapper: "w-full",
-          }}
-          radius={999}
-          src={data.img}
-          width="100px"
-          height="100px"
-          alt="img"
-        />
-        <div className="mx-5">
-          <h2 className="font-bold text-[20px] mb-4 text-ct-primary-01">
-            {data.name}
-          </h2>
-          <span>{data.work}</span> <br />
-          <span>Phone: {data.phone}</span> <br />
-          <span>Email: {data.email}</span> <br />
         </div>
       </div>
     </div>

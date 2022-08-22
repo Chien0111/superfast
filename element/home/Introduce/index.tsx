@@ -70,7 +70,7 @@ const Item = (props: any) => {
         <div
           className={`${data.colorSecond} w-full h-[109px] flex items-center border-[3px] border-[#3DD1F7] rounded-xl justify-center glow`}
         >
-          <div className="relative w-[61px] h-[61px] mx-4">
+          <div className="relative w-[61px] h-[61px] ml-4">
             <span>
               <Image
                 src="/images/tron.png"
@@ -79,11 +79,18 @@ const Item = (props: any) => {
                 alt="banner"
               />
             </span>
-            <span className="absolute top-[14%] sm:left-[20%] left-[15%] sm:h-[38px] sm:w-[38px] w-[28px] h-[28px]">
-              <div dangerouslySetInnerHTML={{ __html: `${data.icon}` }}></div>
+            <span className="absolute top-[22%] sm:left-[25%] left-[25%] sm:h-[30px] sm:w-[30px] w-[28px] h-[28px]">
+              <span>
+                <Image
+                  src={data.icon}
+                  width="100%"
+                  height="100%"
+                  alt="banner"
+                />
+              </span>
             </span>
           </div>
-          <div className="w-[226px] p-4 text-center font-extrabold text-lg leading-6">
+          <div className="w-[226px] p-4 text-center font-extrabold text-lg leading-6 text-white">
             {data.title}
           </div>
         </div>

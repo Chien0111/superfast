@@ -89,6 +89,7 @@ module.exports = {
           '03': '#C4C4C4',
           '04': '#4B5563',
           '05': '#333333',
+          '06': '#FAFAFA',
         },
         'ct2-primary': {
           '01': '#2978F9',
@@ -133,6 +134,18 @@ module.exports = {
           fontSize: "18px",
           lineHeight: "25px",
           textTransform: "uppercase"
+        },
+        '.Heading-Desktop-Heading5': {
+          fontStyle: "normal",
+          fontWeight: "700",
+          fontSize: "22px",
+          lineHeight: "30px",
+        },
+        '.Heading-Desktop-Heading8': {
+          fontStyle: "normal",
+          fontWeight: "800",
+          fontSize: "24px",
+          lineHeight: "33px",
         },
 
         '.Heading-Mobile-Heading1': {
@@ -210,9 +223,10 @@ module.exports = {
         // body Desktop
         '.Body-Desktop-Large': {
           fontStyle: "normal",
-          fontWeight: "400",
-          fontSize: "20px",
-          lineHeight: "27px",
+          fontWeight: "900",
+          fontSize: "24px",
+          lineHeight: "33px",
+          textAlign: "center"
         },
         '.Body-Desktop-Large-Bold': {
           fontStyle: "normal",
@@ -343,6 +357,17 @@ module.exports = {
         ".white-glow": {
           boxShadow: " 0px 0px 13px 6px #FFFFFF",
           background: "#D9D9D9"
+        },
+        ".Secondary-500": {
+          boxShadow: " 0px 0px 11px 3px #FFFFFF",
+          background: "#FF3BAF"
+        },
+        ".Rectangle-27": {
+          boxShadow: " 0px 0px 10px 2px #FFFFFF",
+          width: "1233px",
+          height: "598px",
+          background:"#FFFFFF",
+          borderRadius:"35px"
         },
       });
     }),
