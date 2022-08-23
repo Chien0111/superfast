@@ -22,7 +22,7 @@ const SliderComp = (props: SliderProps) => {
   const styleDots = `dot2 h-5 w-5 border-[3px] border-ct-primary-400 rounded-full mt-4 ${styleDot}`;
   const settingsInit = {
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     infinite: false,
     dots: showDots,
@@ -94,7 +94,7 @@ const SamplePrevArrow = (props: arrowProps) => {
       className="flex absolute left-4 h-min rounded-full -mr-10 z-50 justify-center items-center"
       onClick={onClick}
     >
-      <Image src="/images/leftArr.png" width="26px" height="38px" alt="right" />{" "}
+      <Image src="/images/LeftArr.png" width="26px" height="38px" alt="right" />{" "}
     </span>
   );
 };

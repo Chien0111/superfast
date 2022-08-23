@@ -74,62 +74,76 @@ const Courses = () => {
     styleDot: "",
   };
   return (
-    <div className="lg:bg-[url(/images/slide-bg.png)] bg-[url('/images/course-mobile.png')]  max-w-[793px] h-[auto] sm:max-w-[1920px] sm:max-h-[1206px] lg:py-16 lg:pb-[180px] bg-cover py-5 pb-14 relative m-auto">
-      <div className="w-fit mx-auto text-center lg:mb-[43px] lg:pt-6 lg:pb-2 mb-4">
-        <div className="relative hidden sm:block">
-          <div className="">
-            <Image
-              src="/images/iconactive1.png"
-              width="91px"
-              height="133px"
-              className="absolute top-[30px] left-[-480px]"
-            />
-            <Image
-              src="/images/iconactive8.png"
-              width="146px"
-              height="150px"
-              className="absolute top-[30px] right-[-570px]"
-            />
-            <Image
-              src="/images/iconactive5.png"
-              width="166px"
-              height="110px"
-              className="absolute top-[715px] left-[-510px]"
-            />
-            <Image
-              src="/images/iconactive6.png"
-              width="194px"
-              height="218px"
-              className="absolute top-[640px] right-[-545px]"
-            />
-            <Image
-              src="/images/iconactive7.png"
-              width="79px"
-              height="127px"
-              className="absolute top-[725px] right-[-570px]"
-            />
+    <div className="">
+      <div className="lg:bg-[url(/images/slide-bg.png)] bg-[url('/images/course-mobile.png')] lg:py-16 lg:pb-[220px] overflow-x-hidden bg-cover py-5 pb-20 m-auto relative top-0">
+        <div className="w-fit mx-auto text-center lg:mb-[43px] lg:pt-6 lg:pb-2 mb-4">
+          <div className="relative hidden sm:block">
+            <div className="">
+              <Image
+                src="/images/iconactive1.png"
+                width="91px"
+                height="133px"
+                className="absolute top-[30px] left-[-480px]"
+              />
+              <Image
+                src="/images/iconactive8.png"
+                width="146px"
+                height="150px"
+                className="absolute top-[30px] right-[-570px]"
+              />
+              <Image
+                src="/images/iconactive5.png"
+                width="166px"
+                height="110px"
+                className="absolute top-[715px] left-[-510px]"
+              />
+              <Image
+                src="/images/iconactive6.png"
+                width="194px"
+                height="218px"
+                className="absolute top-[640px] right-[-545px]"
+              />
+              <Image
+                src="/images/iconactive7.png"
+                width="79px"
+                height="127px"
+                className="absolute top-[725px] right-[-570px]"
+              />
+            </div>
+          </div>
+          <Image
+            src="/images/iconactive10.png"
+            width="50px"
+            height="52px"
+            className="lg:hidden absolute top-[25px] left-[0px]"
+          />
+          <Image
+            src="/images/iconactive6.png"
+            width="58px"
+            height="65px"
+            className="lg:hidden absolute top-[15px] right-[10px] rotate-[40.51deg]"
+          />
+          <div className="text-[#0056B8] lg:text-[28px] text-[18px] lg:Heading-Desktop-Heading2 font-bold uppercase lg:pt-0 pt-12">
+            Khơi dậy niềm đam mê học tập
+          </div>
+          <div className="text-ct-secondary-400 lg:text-[26px] text-[16px] font-bold uppercase lg:Heading-Desktop-Heading2">
+            {" "}
+            cùng các khóa học của SpeakWell
           </div>
         </div>
-        <div className="text-[#0056B8] lg:text-[28px] text-[18px] lg:Heading-Desktop-Heading2 font-bold uppercase">
-          Khơi dậy niềm đam mê học tập
+        <div className="w-full max-w-[1200px] lg: pt-2 mx-auto">
+          <SliderComp
+            settings={settingSlidePC.setting}
+            showArrow={settingSlidePC.showArrow}
+            showDots={settingSlidePC.showDots}
+            content={data.map((item, index) => {
+              return {
+                content: <CourseItem data={item} />,
+              };
+            })}
+            styleDot=""
+          />
         </div>
-        <div className="text-ct-secondary-400 lg:text-[26px] text-[16px] font-bold uppercase lg:Heading-Desktop-Heading2">
-          {" "}
-          cùng các khóa học của SpeakWell
-        </div>
-      </div>
-      <div className="w-full max-w-[1200px] lg: pt-2 mx-auto">
-        <SliderComp
-          settings={settingSlidePC.setting}
-          showArrow={settingSlidePC.showArrow}
-          showDots={settingSlidePC.showDots}
-          content={data.map((item, index) => {
-            return {
-              content: <CourseItem data={item} />,
-            };
-          })}
-          styleDot=""
-        />
       </div>
     </div>
   );
