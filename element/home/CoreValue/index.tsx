@@ -32,7 +32,7 @@ const CoreValue = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-[1200px] my-32">
+    <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-[1200px] my-4 sm:my-32">
       {" "}
       <div className="max-w-[577px] w-fit lg:mr-10 mx-auto lg:mx-0 text-center lg:text-left">
         <Image
@@ -55,7 +55,7 @@ const CoreValue = () => {
 const Item = (props: any) => {
   const { data, index } = props;
   return (
-    <div className={`sm:max-w-[300px] w-full sm:p-2 p-8`}>
+    <div className={`sm:max-w-[300px] w-full sm:p-4 px-8 py-4`}>
       <div className="flex justify-center">
         <div
           className={`${data.colorSecond} flex justify-center items-center sm:w-[265px] w-[95%] h-[41px] rounded-t-lg glow border-[2px] border-[#3DD1F7]`}

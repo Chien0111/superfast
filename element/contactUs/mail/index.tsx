@@ -68,10 +68,10 @@ const GetinTouch = () => {
       });
   };
   return (
-    <div className="max-w-[793px] h-[auto] sm:min-w-[1920px] sm:min-h-[1206px] bg-[url('/images/BG.png')] sm:py-40 py-5 relative m-auto">
+    <div className="max-w-[793px] h-[auto] sm:max-w-full sm:min-h-[1206px] bg-[url('/images/BG.png')] sm:py-40 py-5 relative m-auto">
       <div className="flex justify-center items-center">
         <div className="relative hidden sm:block">
-          <Image src="/images/Border.png" width="100%" height="100%" />
+          <Image src="/images/Border.png" width="100%" height="803.96px" />
           <div className="">
             <Image
               src="/images/iconactive1.png"
@@ -107,13 +107,13 @@ const GetinTouch = () => {
               src="/images/iconactive6.png"
               width="194px"
               height="218px"
-              className="absolute top-[720px] right-[-40px]"
+              className="absolute top-[720px] right-[-40px] hidden 2xl:block"
             />
             <Image
               src="/images/iconactive7.png"
               width="79px"
               height="127px"
-              className="absolute top-[780px] right-[-80px]"
+              className="absolute top-[780px] right-[-80px] hidden 2xl:block"
             />
             <Image
               src="/images/iconactive8.png"
@@ -132,7 +132,7 @@ const GetinTouch = () => {
       </div>
 
       <div className="flex justify-center ">
-        <div className="w-[333px] h-[130px] rounded-[19px] py-4 sm:py-0 sm:w-[1205px] sm:h-[130px] Secondary-500 sm:rounded-[64px] border-4 border-white sm:absolute sm:top-[105px] text-center text-white px-6 sm:px-10">
+        <div className="rounded-[19px] py-4 sm:py-0 sm:max-w-[1205px] sm:max-h-[130px] Secondary-500 sm:rounded-[64px] border-4 border-white sm:absolute sm:top-[105px] text-center text-white px-6 sm:px-10 mx-2">
           {" "}
           <p className="sm:mt-10 sm:Heading-Desktop-Heading8 Body-Mobile-Small-bold ">
             Ba mẹ vui lòng nhập đúng thông tin để SPEAKWELL liên hệ với mình
@@ -225,7 +225,7 @@ const GetinTouch = () => {
         </form>
       </div>
       <div className="flex justify-center ">
-        <div className="Rectangle-27 absolute top-[303px] min-w-[1233px] h-[598px] hidden sm:block">
+        <div className="Rectangle-27 absolute top-[303px] w-[1233px] max-h-[598px] hidden sm:block mx-10">
           <form
             className="p-20"
             onSubmit={form.onSubmit((value) => handleUploadData(value))}

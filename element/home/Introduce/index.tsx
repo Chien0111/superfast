@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 const Introduce = () => {
   return (
-    <div className="mx-auto max-w-[1363px] text-center ">
+    <div className="mx-auto max-w-[1363px] text-center mb-[-60px] sm:mb-0">
       <div className="w-fit mx-auto text-center flex items-center sm:mt-20 mt-5 px-10 sm:mb-[-40px] mb-[-60px]">
         <div className="w-[47px] h-[34px] sm:w-[199px] sm:h-[142px]">
           <Image
@@ -15,7 +15,7 @@ const Introduce = () => {
           />
         </div>
         <div className="sm:mx-10 lg:mx-20 mx-5">
-          <p className="md:Heading-Mobile-Heading1 font-bold text-ct-secondary-400 w-[147px] sm:w-[280px] sm:h-[44px]">
+          <p className="md:Heading-Mobile-Heading1 text-lg font-bold text-ct-secondary-400 w-[187px] sm:w-[280px] sm:h-[44px]">
             LÝ DO NÊN CHỌN
           </p>
           <h2 className="md:Heading-Mobile-Heading1 font-bold text-ct-primary-1000">
@@ -66,7 +66,7 @@ const Item = (props: any) => {
   const { data } = props;
   return (
     <div>
-      <div className="max-w-[319.51px] p-5 sm:max-w-[409px] sm:max-h-[358px] sm:p-10 relative mb-10">
+      <div className="max-w-[319.51px] p-5 sm:max-w-[409px] sm:max-h-[358px] sm:p-10 relative sm:mb-10">
         <div
           className={`${data.colorSecond} w-full h-[109px] flex items-center border-[3px] border-[#3DD1F7] rounded-xl justify-center glow`}
         >
