@@ -18,6 +18,11 @@ const OurStaff = () => {
       name: "Cô Everleigh",
       des: "Có hơn 7 năm kinh nghiệm giảng dạy trẻ em",
     },
+    {
+      img: "/images/co-vera.png",
+      name: "Cô Vera",
+      des: "Phương pháp độc đáo khơi gợi niềm hứng thú cho học viên",
+    },
   ];
   const settingSlidePC = {
     setting: {
@@ -50,38 +55,37 @@ const OurStaff = () => {
     styleDot: "",
   };
   return (
-
-    <div className="lg:bg-[url(/images/teacher-bg.png)] bg-[url(/images/teacher-bg-mobile.png)] bg-cover py-10">
-<div className=" max-w-[1200px] mx-auto mb-10">
-      <div className="w-fit mx-auto">
-        <p className="text-center lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 text-ct-secondary-500">
-          Đội ngũ giáo viên nước ngoài
-        </p>
-        <h2 className="text-center font-bold lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 mb-4 text-ct-primary-400">
-          Đội ngũ giảng viên giàu kinh nghiệm <br /> được rất nhiều học viên yêu
-          quý
-        </h2>
+    <div className="lg:bg-[url(/images/teacher-bg.png)] bg-[url(/images/teacher-bg-mobile.png)] bg-cover max-w-[793px] h-[auto] sm:max-w-[1920px] sm:max-h-[1206px] sm:py-40 py-5 relative m-auto">
+      <div className=" max-w-[1200px] mx-auto mb-10">
+        <div className="w-fit mx-auto">
+          <p className="text-center lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 text-ct-secondary-500">
+            Đội ngũ giáo viên nước ngoài
+          </p>
+          <h2 className="text-center font-bold lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 mb-4 text-ct-primary-400">
+            Đội ngũ giảng viên giàu kinh nghiệm <br /> được rất nhiều học viên
+            yêu quý
+          </h2>
+        </div>
+        <div className=" pt-8">
+          <SliderComp
+            settings={settingSlidePC.setting}
+            showArrow={settingSlidePC.showArrow}
+            showDots={settingSlidePC.showDots}
+            content={data.map((item, index) => {
+              return {
+                content: <Teacher data={item} />,
+              };
+            })}
+            styleDot=""
+          />
+        </div>
       </div>
-      <div className=" pt-8">
-      <SliderComp
-          settings={settingSlidePC.setting}
-          showArrow={settingSlidePC.showArrow}
-          showDots={settingSlidePC.showDots}
-          content={data.map((item, index) => {
-            return {
-              content: <Teacher data={item} />,
-            };
-          })}
-          styleDot=""
-        />
-      </div>
-    </div>
     </div>
   );
 };
 const Teacher = ({ data }: any) => {
   return (
-    <div className="max-w-[326px] ">
+    <div className="lg:w-[326px] w-[92%] mx-auto">
       {" "}
       <Image
         className=" rounded-md overflow-hidden"
@@ -89,10 +93,14 @@ const Teacher = ({ data }: any) => {
         src={data.img || "/images/teacher-01.jpg"}
       />
       <div className="bg-[url(/images/teacher-info.png)] bg-cover py-8">
-      <p className=" font-bold text-center lg:Heading-Desktop-Heading5 text-ct-primary-400">{data.name}</p>
-      <div className="flex justify-center">
-      <p className="w-[220px] text-ct-primary-400 font-normal text-center Body-Desktop-Small">{data.des}</p>
-      </div>
+        <p className=" font-bold text-center lg:Heading-Desktop-Heading5 text-ct-primary-400">
+          {data.name}
+        </p>
+        <div className="flex justify-center">
+          <p className="w-[220px] text-ct-primary-400 font-normal text-center Body-Desktop-Small">
+            {data.des}
+          </p>
+        </div>
       </div>
     </div>
   );

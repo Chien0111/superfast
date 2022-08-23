@@ -5,7 +5,6 @@ import Courses from "../../element/home/Courses";
 import Introduce from "../../element/home/Introduce";
 import OurStaff from "../../element/home/OurStaff";
 import Slider from "../../element/home/Slider";
-import Contact from "../ContactUs";
 const Coundown = dynamic(() => import("../../element/home/Coundown"), {
   ssr: false,
 });
@@ -19,7 +18,7 @@ const HomeTemplate = () => {
       <OurStaff />
       {/* <Feedback /> */}
       {/* <Curriculum /> */}
-      <Contact />
+      {/* <Contact /> */}
       {/* <Galery /> */}
       <Coundown />
       {/* <Blog /> */}
