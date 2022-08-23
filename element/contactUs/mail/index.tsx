@@ -68,7 +68,7 @@ const GetinTouch = () => {
       });
   };
   return (
-    <div className="max-w-[793px] h-[auto] sm:max-w-[1920px] sm:max-h-[1206px] bg-[url('/images/BG.png')] sm:py-40 py-5 relative m-auto">
+    <div className="max-w-[793px] h-[auto] sm:min-w-[1920px] sm:min-h-[1206px] bg-[url('/images/BG.png')] sm:py-40 py-5 relative m-auto">
       <div className="flex justify-center items-center">
         <div className="relative hidden sm:block">
           <Image src="/images/Border.png" width="100%" height="100%" />
@@ -119,7 +119,7 @@ const GetinTouch = () => {
               src="/images/iconactive8.png"
               width="146px"
               height="150px"
-              className="absolute top-[350px] right-[-140px]"
+              className="absolute top-[350px] right-[-140px] hidden 2xl:block"
             />
             <Image
               src="/images/iconactive9.png"
@@ -225,7 +225,7 @@ const GetinTouch = () => {
         </form>
       </div>
       <div className="flex justify-center ">
-        <div className="Rectangle-27 absolute top-[303px] w-[1233px] h-[598px] hidden sm:block">
+        <div className="Rectangle-27 absolute top-[303px] min-w-[1233px] h-[598px] hidden sm:block">
           <form
             className="p-20"
             onSubmit={form.onSubmit((value) => handleUploadData(value))}

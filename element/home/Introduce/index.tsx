@@ -90,7 +90,7 @@ const Item = (props: any) => {
               </span>
             </span>
           </div>
-          <div className="w-[226px] p-4 text-center font-extrabold text-lg leading-6 text-white">
+          <div className="w-[226px] p-4 text-center font-extrabold sm:text-lg text-base leading-6 text-white">
             {data.title}
           </div>
         </div>

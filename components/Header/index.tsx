@@ -72,7 +72,7 @@ const Header = () => {
                   <Link href="/">
                     <a
                       href=""
-                      className="Heading-Mobile-Heading6 text-ct-primary-1000"
+                      className="Heading-Mobile-Heading6 text-ct-primary-1000 cursor-pointer"
                     >
                       TRANG CHỦ
                     </a>
@@ -98,7 +98,7 @@ const Header = () => {
                 </div>
                 <div>
                   <Link href="/contact-us">
-                    <a className="cursor-pointer Heading-Mobile-Heading6 text-ct-primary-1000">
+                    <a className="cursor-pointer Heading-Mobile-Heading6 text-ct-primary-1000 cursor-pointer">
                       LIÊN HỆ
                     </a>
                   </Link>
@@ -149,7 +149,7 @@ const Header = () => {
               />
             </div>
             <div>
-              <p className="Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[58px]">
+              <p className="Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[58px] cursor-pointer">
                 TRANG CHỦ
               </p>
             </div>
@@ -167,7 +167,7 @@ const Header = () => {
               />
             </div>
             <div>
-              <p className="Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[38px]">
+              <p className="Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[38px] cursor-pointer">
                 Liên hệ
               </p>
             </div>
