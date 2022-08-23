@@ -81,9 +81,16 @@ const Slider = () => {
           <div className="lg:w-full w-[98%] max-w-[1200px] mx-auto ">
             <img
               src="/images/book1.png"
-              className="w-[132px] h-[149px] absolute top-[448px] left-[335px]"
+              className="lg:w-[132px] w-[25px] h-[28px] lg:h-[149px] absolute lg:top-[448px] top-[113px] lg:left-[335px] left-[39px]"
               alt=""
             />{" "}
+           <div className="hidden lg:block">
+           <img
+                  src="/images/ufo.png"
+                  alt=""
+                  className="lg:absolute lg:top-[448px] lg:right-[197px] lg:w-[123px] lg:h-[215px]"
+                />
+           </div>
             <div className="lg:pt-[147px] pt-4 justify-center flex lg:flex-none lg:justify-start">
               <img
                 src="/images/title.png"
@@ -91,56 +98,51 @@ const Slider = () => {
                 alt=""
               />
             </div>
-            <div className="flex">
+            <div className="flex w-full lg:flex-row flex-col">
               <div>
                 <img
                   src="/images/bg3-if.png"
-                  className="lg:w-[460px] w-[86px] lg:h-[600px] h-[112px] lg:pt-[74px] pt-7 "
+                  className="lg:w-[460px] w-[86px] lg:h-[600px] h-[112px] lg:pt-[74px] pt-4 lg:mt-0 mt-3 lg:ml-0 ml-10"
                   alt=""
                 />
               </div>
-              <div className="lg:pt-[74px] pt-7">
+              <div className="lg:pt-[74px] pt-0 w-full">
                 <img
                   src="/images/chu-a.png"
-                  className="absolute top-[437px] left-[837px]"
+                  className="absolute lg:top-[437px] top-[113px] lg:left-[837px] left-[152px] w-[23px] h-[29px] lg:w-[84px] lg:h-[105px]"
                 />
                 <img
                   src="/images/chu-b.png"
-                  className="absolute top-[415px] left-[960px]"
+                  className="absolute lg:top-[415px] top-[97px] lg:left-[960px] left-[187px] w-9 h-8 lg:w-[129px] lg:h-[115px]"
                 />
                 <img
                   src="/images/chu-d.png"
                   alt=""
-                  className="absolute top-[530px] left-[944px]"
+                  className="absolute lg:top-[530px] lg:left-[944px] lg:w-[114px] lg:h-[114px] top-[144px] left-[180px] w-[31px] h-[31px]"
                 />
                 <img
                   src="/images/bg-teacher.png"
                   alt=""
-                  className="absolute top-[0px] lg:left-[1093px] left-0"
+                  className="absolute lg:top-[0px] top-12 lg:left-[1093px] lg:w-[455px] lg:h-[585px] w-[106px] h-[136px] right-6"
                 />
-                <div className="mt-[240px] flex">
-                  <div className="bg-[url(/images/bg001.png)] py-10 justify-center items-center flex w-[267px]">
-                    <div className="w-[51px] text-[17px] text-white uppercase font-medium">
+                <div className="lg:mt-[240px] flex lg:justify-start justify-center">
+                  <div className="lg:bg-[url(/images/bg001.png)] bg-[url(/images/bg002.png)]  lg:py-10 py-2 justify-center items-center flex lg:w-[267px] w-[111px] px-4">
+                    <div className="lg:w-[51px] w-[45px] lg:text-[17px] text-[8px] text-white uppercase font-medium">
                       Công nghệ
                     </div>
-                    <div className="text-[52px] text-white font-bold">H5P</div>
+                    <div className="lg:text-[52px] text-[24px] text-white font-bold">H5P</div>
                   </div>
-                  <div className="bg-[url(/images/bg001.png)] w-[267px] py-10 text-center ">
-                    <div className=" text-[17px] text-white uppercase font-medium">
+                  <div className="lg:bg-[url(/images/bg001.png)] bg-[url(/images/bg002.png)] lg:w-[267px] w-[111px] lg:py-10 py-3 text-center ">
+                    <div className=" lg:text-[17px] text-[8px] text-white uppercase font-medium">
                       mô hình học
                     </div>
-                    <div className="text-[43px] text-white font-bold">1-1</div>
+                    <div className="lg:text-[43px] text-[22px] text-white font-bold">1-1</div>
                   </div>
-                  <div className="bg-[url(/images/bg001.png)] w-[267px] py-10 text-white px-[34px]">
+                  <div className="lg:bg-[url(/images/bg001.png)] bg-[url(/images/bg002.png)] lg:text-[16px] text-[6.5px] lg:py-10 lg:w-[267px] w-[111px] py-4 text-white lg:px-[34px] px-4">
                     Ứng dụng AI luyện phát âm như người bản xứ, nâng cao năng
                     lực phản xạ
                   </div>
                 </div>
-                <img
-                  src="/images/ufo.png"
-                  alt=""
-                  className="absolute top-[448px] right-[197px] w-[123px] h-[215px]"
-                />
               </div>
             </div>
           </div>
@@ -267,7 +269,7 @@ const Slider = () => {
           setIsOpen(false);
         }}
       />
-      <div className="flex lg:justify-start lg:pl-8 justify-center lg:pt-6 pt-9 absolute left-[40%] bottom-[80px]">
+      <div className="flex lg:justify-start lg:pl-8 justify-center lg:pt-6 pt-9 absolute lg:left-[40%] lg:bottom-[80px] left-[20%] bottom-0">
         <button
           className="bg-ct-tertiary-500 glow lg:w-[308px] w-[232px] lg:h-[60px] h-[47px] rounded-[50px] flex items-center justify-center"
           style={{
