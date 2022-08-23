@@ -102,7 +102,7 @@ const Item = (props: any) => {
             alt="banner"
           />
         </div>
-        <div className="w-full h-[249px] mt-2 Body-Desktop-Medium flex items-center p-2 bg-[#EBFAFE] text-[#0056B8] font-normal border-[3px] border-[#3DD1F7] rounded-lg justify-center glow">
+        <div className="w-full h-[249px] mt-2 sm:Body-Desktop-Medium-Bold Body-Desktop-Medium text-start flex items-center p-4 bg-[#EBFAFE] text-[#0056B8] font-normal border-[3px] border-[#3DD1F7] rounded-lg glow">
           {data.des}
         </div>
       </div>
