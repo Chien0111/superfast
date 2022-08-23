@@ -1,6 +1,7 @@
 import { Modal, NumberInput, Textarea, TextInput } from "@mantine/core";
 import { useForm, yupResolver } from "@mantine/form";
 import { showNotification } from "@mantine/notifications";
+import { ArrowCircleRight } from "iconsax-react";
 
 import * as Yup from "yup";
 
@@ -118,9 +119,10 @@ const ModalRegister = ({ isOpen = false, onClose }: any) => {
         />
         <button
           type="submit"
-          className="capitalize px-8 py-4 mt-2 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01"
+          className="Button-Desktop-Medium text-ct-primary-1000 border-2 border-white flex bg-ct-tertiary-500 p-2 px-4 rounded-[50px]"
         >
-          <span>Đăng ký ngay</span>{" "}
+          <span className="mr-2">Đăng ký ngay</span>{" "}
+          <ArrowCircleRight size="24" color="#0056B8" />
         </button>
       </form>
     </Modal>
