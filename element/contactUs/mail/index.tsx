@@ -125,7 +125,7 @@ const GetinTouch = () => {
               src="/images/iconactive9.png"
               width="91px"
               height="177px"
-              className="absolute top-[-220px] right-[-80px]"
+              className="absolute top-[-220px] right-[-80px] hidden 2xl:block"
             />
           </div>
         </div>

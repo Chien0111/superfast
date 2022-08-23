@@ -4,8 +4,8 @@ import style from "./style.module.css";
 
 const Introduce = () => {
   return (
-    <div className="mx-auto max-w-[1363px] text-center mb-[-60px] sm:mb-0">
-      <div className="w-fit mx-auto text-center flex items-center sm:mt-20 mt-5 px-10 sm:mb-[-40px] mb-[-60px]">
+    <div className="mx-auto max-w-[1363px] text-center mb-[-60px] sm:mb-0 p-0">
+      <div className="w-fit mx-auto text-center flex items-center sm:mt-20 mt-5 px-10 sm:mb-[-40px] mb-[-60px] p-0">
         <div className="w-[47px] h-[34px] sm:w-[199px] sm:h-[142px]">
           <Image
             src="/images/bong1.png"
@@ -14,7 +14,7 @@ const Introduce = () => {
             alt="banner"
           />
         </div>
-        <div className="sm:mx-10 lg:mx-20 mx-5">
+        <div className="sm:mx-10 lg:mx-20 mx-5 ">
           <p className="md:Heading-Mobile-Heading1 text-lg font-bold text-ct-secondary-400 w-[187px] sm:w-[280px] sm:h-[44px]">
             LÝ DO NÊN CHỌN
           </p>
@@ -22,7 +22,7 @@ const Introduce = () => {
             SPEAKWELL
           </h2>
         </div>
-        <div className="w-fit min-w-[47px]">
+        <div className="w-fit min-w-[47px] p-0">
           <div className="w-[19px] h-[19px] sm:w-[98px] sm:h-[98px] mb-5">
             <Image
               src="/images/bong2.png"
