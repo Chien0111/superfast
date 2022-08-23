@@ -141,6 +141,18 @@ module.exports = {
           fontSize: "22px",
           lineHeight: "30px",
         },
+        '.Heading-Desktop-Heading6': {
+          fontStyle: "normal",
+          fontWeight: "800",
+          fontSize: "16px",
+          lineHeight: "22px",
+        },
+        '.Heading-Desktop-Heading7': {
+          fontStyle: "normal",
+          fontWeight: "800",
+          fontSize: "14px",
+          lineHeight: "19px",
+        },
         '.Heading-Desktop-Heading8': {
           fontStyle: "normal",
           fontWeight: "800",
@@ -376,8 +388,8 @@ module.exports = {
         },
         ".Rectangle-27": {
           boxShadow: " 0px 0px 10px 2px #FFFFFF",
-          background:"#FFFFFF",
-          borderRadius:"35px"
+          background: "#FFFFFF",
+          borderRadius: "35px"
         },
       });
     }),

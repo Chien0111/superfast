@@ -53,7 +53,7 @@ const Subscribe = () => {
     <div className="w-full bg-ct-secondary-500">
       <div className="max-w-[1200px] mx-auto w-full h-full flex flex-col lg:flex-row items-center z-10 pb-2">
         <div className="text-ct-white text-center lg:text-left font-bold text-4xl pt-2 lg:pt-0 lg:ml-20 md:w-1/3 flex justify-center lg:justify-end">
-          <h1 className="lg:Heading-Desktop-Heading5 Heading-Mobile-Heading7 text-white ">
+          <h1 className="uppercase Heading-Desktop-Heading7 lg:Heading-Desktop-Heading5 text-white ">
             Nhận thông tin mới nhất
           </h1>
         </div>

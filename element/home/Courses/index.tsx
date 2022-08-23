@@ -75,7 +75,7 @@ const Courses = () => {
   };
   return (
     <div className="">
-      <div className="lg:bg-[url(/images/slide-bg.png)] bg-[url('/images/course-mobile.png')] lg:py-16 lg:pb-[220px] overflow-x-hidden bg-cover py-5 pb-20 m-auto relative top-0">
+      <div className="lg:bg-[url(/images/slide-bg.png)] bg-[url('/images/course-mobile.png')] lg:py-16 lg:pb-[220px] overflow-x-hidden bg-cover bg-center py-5 pb-20 m-auto relative top-0">
         <div className="w-fit mx-auto text-center lg:mb-[43px] lg:pt-6 lg:pb-2 mb-4">
           <div className="relative hidden sm:block">
             <div className="">
@@ -123,7 +123,7 @@ const Courses = () => {
             height="65px"
             className="lg:hidden absolute top-[15px] right-[10px] rotate-[40.51deg]"
           />
-          <div className="text-[#0056B8] lg:text-[28px] text-[18px] lg:Heading-Desktop-Heading2 font-bold uppercase lg:pt-0 pt-12">
+          <div className="text-[#0056B8] text-[18px] lg:Heading-Desktop-Heading2 font-bold uppercase lg:pt-0 pt-12">
             Khơi dậy niềm đam mê học tập
           </div>
           <div className="text-ct-secondary-400 lg:text-[26px] text-[16px] font-bold uppercase lg:Heading-Desktop-Heading2">

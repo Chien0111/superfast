@@ -39,9 +39,9 @@ const Slider = () => {
   const cardList = [
     {
       content: (
-        <div className="w-full lg:bg-[url('/images/banner-bg.png')] bg-[url('/images/bg-banner-mobile.png')] bg-cover bg-no-repeat lg:h-[970px] h-[300px]">
+        <div className="relative w-full lg:bg-[url('/images/banner-bg.png')] bg-[url('/images/bg-banner-mobile.png')] bg-cover bg-center bg-no-repeat lg:h-[970px] h-[300px]">
           <div className="lg:w-full w-[98%] max-w-[1200px] mx-auto flex items-start justify-center lg:justify-start">
-            <div className="ml-0  w-[34%] ">
+            <div className="ml-0 w-[34%] ">
               <div className=" lg:w-[350px]">
                 <img
                   src="/images/ufo.png"
@@ -72,25 +72,42 @@ const Slider = () => {
               </div>
             </div>
           </div>
+          <div className="flex lg:justify-start lg:pl-8 justify-center lg:pt-6 pt-9 absolute lg:left-[40%] lg:bottom-[80px] left-[20%] bottom-0">
+            <button
+              className="bg-ct-tertiary-500 glow lg:w-[308px] w-[232px] lg:h-[60px] h-[47px] rounded-[50px] flex items-center justify-center"
+              style={{
+                boxShadow: "0px 0px 15px 3px rgba(255, 255, 255, 0.5)",
+              }}
+              onClick={() => setIsOpen(true)}
+            >
+              <p className="text-ct-primary-400 lg:Button-Desktop-Large uppercase text-[18px] font-bold">
+                Đăng ký ngay
+              </p>
+              <img
+                className="lg:w-[35px] w-[25px] pl-1 lg:pl-3"
+                src="/images/icon12.png"
+              />
+            </button>
+          </div>
         </div>
       ),
     },
     {
       content: (
-        <div className="w-full lg:bg-[url('/images/slide-bg-desktop.png')] bg-[url('/images/slide-bg2.png')] relative bg-cover bg-no-repeat lg:h-[970px] h-[310px]">
+        <div className="w-full lg:bg-[url('/images/slide-bg-desktop.png')] bg-[url('/images/slide-bg2.png')] relative bg-cover bg-center bg-no-repeat lg:h-[970px] h-[310px]">
           <div className="lg:w-full w-[98%] max-w-[1200px] mx-auto ">
             <img
               src="/images/book1.png"
               className="lg:w-[132px] w-[25px] h-[28px] lg:h-[149px] absolute lg:top-[448px] top-[113px] lg:left-[335px] left-[39px]"
               alt=""
             />{" "}
-           <div className="hidden lg:block">
-           <img
-                  src="/images/ufo.png"
-                  alt=""
-                  className="lg:absolute lg:top-[448px] lg:right-[197px] lg:w-[123px] lg:h-[215px]"
-                />
-           </div>
+            <div className="hidden lg:block">
+              <img
+                src="/images/ufo.png"
+                alt=""
+                className="lg:absolute lg:top-[448px] lg:right-[197px] lg:w-[123px] lg:h-[215px]"
+              />
+            </div>
             <div className="lg:pt-[147px] pt-4 justify-center flex lg:flex-none lg:justify-start">
               <img
                 src="/images/title.png"
@@ -130,13 +147,17 @@ const Slider = () => {
                     <div className="lg:w-[51px] w-[45px] lg:text-[17px] text-[8px] text-white uppercase font-medium">
                       Công nghệ
                     </div>
-                    <div className="lg:text-[52px] text-[24px] text-white font-bold">H5P</div>
+                    <div className="lg:text-[52px] text-[24px] text-white font-bold">
+                      H5P
+                    </div>
                   </div>
                   <div className="lg:bg-[url(/images/bg001.png)] bg-[url(/images/bg002.png)] lg:w-[267px] w-[111px] lg:py-10 py-3 text-center ">
                     <div className=" lg:text-[17px] text-[8px] text-white uppercase font-medium">
                       mô hình học
                     </div>
-                    <div className="lg:text-[43px] text-[22px] text-white font-bold">1-1</div>
+                    <div className="lg:text-[43px] text-[22px] text-white font-bold">
+                      1-1
+                    </div>
                   </div>
                   <div className="lg:bg-[url(/images/bg001.png)] bg-[url(/images/bg002.png)] lg:text-[16px] text-[6.5px] lg:py-10 lg:w-[267px] w-[111px] py-4 text-white lg:px-[34px] px-4">
                     Ứng dụng AI luyện phát âm như người bản xứ, nâng cao năng
@@ -145,6 +166,23 @@ const Slider = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex lg:justify-start lg:pl-8 justify-center lg:pt-6 pt-9 absolute lg:left-[40%] lg:bottom-[80px] left-[20%] bottom-0">
+            <button
+              className="bg-ct-tertiary-500 glow lg:w-[308px] w-[232px] lg:h-[60px] h-[47px] rounded-[50px] flex items-center justify-center"
+              style={{
+                boxShadow: "0px 0px 15px 3px rgba(255, 255, 255, 0.5)",
+              }}
+              onClick={() => setIsOpen(true)}
+            >
+              <p className="text-ct-primary-400 lg:Button-Desktop-Large uppercase text-[18px] font-bold">
+                Đăng ký ngay
+              </p>
+              <img
+                className="lg:w-[35px] w-[25px] pl-1 lg:pl-3"
+                src="/images/icon12.png"
+              />
+            </button>
           </div>
         </div>
       ),
@@ -249,7 +287,7 @@ const Slider = () => {
     // },
   ];
   return (
-    <div className=" lg:h-[970px] h-[300px] relative">
+    <div className=" lg:h-[970px] h-[300px]">
       <SliderComp
         settings={{
           slidesToShow: 1,
@@ -260,7 +298,7 @@ const Slider = () => {
         showArrow={settingSlidePC.showArrow}
         showDots={settingSlidePC.showDots}
         content={cardList}
-        styleDot=""
+        styleDot="-mt-8 bg-ct-neutral-100"
         className=""
       />
       <ModalRegister
@@ -269,23 +307,6 @@ const Slider = () => {
           setIsOpen(false);
         }}
       />
-      <div className="flex lg:justify-start lg:pl-8 justify-center lg:pt-6 pt-9 absolute lg:left-[40%] lg:bottom-[80px] left-[20%] bottom-0">
-        <button
-          className="bg-ct-tertiary-500 glow lg:w-[308px] w-[232px] lg:h-[60px] h-[47px] rounded-[50px] flex items-center justify-center"
-          style={{
-            boxShadow: "0px 0px 15px 3px rgba(255, 255, 255, 0.5)",
-          }}
-          onClick={() => setIsOpen(true)}
-        >
-          <p className="text-ct-primary-400 lg:Button-Desktop-Large uppercase text-[18px] font-bold">
-            đăng ký ngay
-          </p>
-          <img
-            className="lg:w-[35px] w-[25px] pl-1 lg:pl-3"
-            src="/images/icon12.png"
-          />
-        </button>
-      </div>
     </div>
   );
 };

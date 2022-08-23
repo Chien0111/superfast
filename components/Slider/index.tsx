@@ -1,7 +1,5 @@
 import { Image } from "@mantine/core";
 import { twMerge } from "tailwind-merge";
-import LeftArrow from "../Icon/LeftArrow";
-import RightArrow from "../Icon/RightArrow";
 import { arrowProps, SliderProps } from "./index.type";
 import style from "./style.module.css";
 

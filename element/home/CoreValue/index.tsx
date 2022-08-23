@@ -34,7 +34,7 @@ const CoreValue = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-[1200px] my-4 sm:my-32">
       {" "}
-      <div className="max-w-[577px] w-fit lg:mr-10 mx-auto lg:mx-0 text-center lg:text-left">
+      <div className="max-w-[577px] w-fit lg:mr-10 mx-auto lg:mx-0 text-center lg:text-left px-4">
         <Image
           src="/images/cotloi.png"
           width="100%"

@@ -13,15 +13,15 @@ const Coundown = () => {
     countDownDate.toISOString()
   );
   return (
-    <div className="lg:bg-[url(/images/countdown-bg.png)] bg-[url(/images/countdown-bg-mobile.png)] bg-cover pb-24 pt-14">
-      <div className="lg:flex lg:w-full max-w-[1200px] m-auto">
-        <div className="lg:w-1/2 w-full flex justify-center">
+    <div className="lg:bg-[url(/images/countdown-bg.png)] bg-[url(/images/countdown-bg-mobile.png)] bg-cover pb-24 pt-14 w-full">
+      <div className="lg:flex lg:ml-64 w-fit max-w-[1200px]">
+        <div className="lg:w-[550px] w-full flex justify-center">
           <div>
             <p className="text-center text-ct-secondary-400 lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 uppercase">
               Đăng ký ngay
             </p>
             <h2 className="text-center font-bold text-white lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 uppercase">
-              Tham gia trải nghiệm miễn phí <br /> Không nên bỏ lỡ
+              Tham gia trải nghiệm miễn phí Không nên bỏ lỡ
             </h2>
             <div className="flex justify-center lg:pt-8 pt-9">
               <div className="pr-2">
@@ -29,7 +29,7 @@ const Coundown = () => {
                   className="px-4 border-2 rounded-[13px] bg-[rgba(255, 255, 255, 0.2)]"
                   style={{ boxShadow: "0px 0px 8px rgba(153, 234, 255, 0.96)" }}
                 >
-                  <p className="text-center text-[40px] font-bold text-white">
+                  <p className="text-center text-[30px] lg:text-[40px] font-bold text-white">
                     {days}
                   </p>
                 </div>
@@ -40,7 +40,7 @@ const Coundown = () => {
                   className="px-4 border-2 rounded-[13px] bg-[rgba(255, 255, 255, 0.2)]"
                   style={{ boxShadow: "0px 0px 8px rgba(153, 234, 255, 0.96)" }}
                 >
-                  <p className="text-center text-[40px] font-bold text-white">
+                  <p className="text-center text-[30px] lg:text-[40px] font-bold text-white">
                     {hours}
                   </p>
                 </div>
@@ -51,7 +51,7 @@ const Coundown = () => {
                   className="px-4 border-2 rounded-[13px] bg-[rgba(255, 255, 255, 0.2)]"
                   style={{ boxShadow: "0px 0px 8px rgba(153, 234, 255, 0.96)" }}
                 >
-                  <p className="text-center text-[40px] font-bold text-white">
+                  <p className="text-center text-[30px] lg:text-[40px] font-bold text-white">
                     {minutes}
                   </p>
                 </div>
@@ -62,7 +62,7 @@ const Coundown = () => {
                   className="px-4 border-2 rounded-[13px] bg-[rgba(255, 255, 255, 0.2)]"
                   style={{ boxShadow: "0px 0px 8px rgba(153, 234, 255, 0.96)" }}
                 >
-                  <p className="text-center text-[40px] font-bold text-white">
+                  <p className="text-center text-[30px] lg:text-[40px] font-bold text-white">
                     {seconds}
                   </p>
                 </div>

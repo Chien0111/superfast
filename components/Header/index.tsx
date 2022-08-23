@@ -35,28 +35,30 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="max-w-[2152px] mx-auto">
+      <nav className="max-w-[1600px] mx-auto">
         <div className="flex items-center p-5 justify-between ">
-          <div className="flex ">
-            <div className="w-[86.45px] h-[18.83px] mr-2 sm:w-[176px] sm:h-[39px] sm:border-r sm:pr-2 border-ct-primary-1000">
-              <Image className="mr-8" src="logo.png" alt="" width="100%" />
-            </div>
-            <div className="mt-[-10px]">
-              <div>
-                <span className="text-ct-primary-1000 font-medium text-[6px] sm:text-[10px]">
-                  Được phát triển độc quyền bởi
-                </span>
+          <Link href="/">
+            <a className="flex">
+              <div className="w-[86.45px] h-[18.83px] mr-2 sm:w-[176px] sm:h-[39px] sm:border-r sm:pr-2 border-ct-primary-1000">
+                <Image className="mr-8" src="logo.png" alt="" width="100%" />
               </div>
-              <div className="w-[81.31px] h-[11.98px] mt-[-5px] sm:w-[137px] sm:h-[22px]">
-                <Image
-                  className="mr-8"
-                  src="Rectangle.png"
-                  alt=""
-                  width="100%"
-                />
+              <div className="mt-[-10px]">
+                <div>
+                  <span className="text-ct-primary-1000 font-medium text-[6px] sm:text-[10px]">
+                    Được phát triển độc quyền bởi
+                  </span>
+                </div>
+                <div className="w-[81.31px] h-[11.98px] mt-[-5px] sm:w-[137px] sm:h-[22px]">
+                  <Image
+                    className="mr-8"
+                    src="Rectangle.png"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
               </div>
-            </div>
-          </div>
+            </a>
+          </Link>
           <div className="hidden md:block mx-5">
             <div className="flex items-center">
               <div className="flex items-center justify-center">
@@ -134,7 +136,7 @@ const Header = () => {
               Hỗ trợ khách hàng
             </div>
             <div className="text-ct-primary-1000 Body-Mobile-9px-Medium1 font-bold text-right sm:Body-Desktop-Medium-Bold">
-              1900 9399
+              <a href="tel:19009399">1900 9399</a>
             </div>
           </div>
         </div>

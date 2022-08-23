@@ -94,3 +94,12 @@
     height: 17vw;
   }
 }
+
+@keyframes small-trans {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
