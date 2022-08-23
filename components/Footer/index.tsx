@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <div className="lg:flex  pt-10 pb-5 border-b max-w-[1200px] m-auto">
+      <div className="lg:flex  pt-10 pb-5 max-w-[1200px] m-auto">
         <div className="lg:flex lg:w-full">
           <div className="lg:w-1/2 w-full pb-4">
             <div className="w-full text-center">
@@ -44,9 +44,9 @@ const Footer = () => {
                   <br />
                 </p>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center items-center">
                 <div className="flex items-center border-r border-ct-primary-1000 px-5">
-                  <div className="w-[25px] h-[25px] mr-2">
+                  <div className="sm:w-[25px] sm:h-[25px] w-[16px] h-[16px] mr-2">
                     <Image
                       className="mr-8"
                       src="/images/home.png"
@@ -58,7 +58,7 @@ const Footer = () => {
                     <Link href="/">
                       <a
                         href=""
-                        className="Heading-Mobile-Heading6 text-ct-primary-1000"
+                        className="sm:Heading-Mobile-Heading6 Heading-Mobile-Heading5 cursor-pointer text-ct-primary-1000"
                       >
                         TRANG CHỦ
                       </a>
@@ -66,7 +66,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="flex items-center border-r border-ct-primary-1000 px-5">
-                  <div className="w-[25px] h-[25px] mr-2">
+                  <div className="sm:w-[25px] sm:h-[25px] w-[16px] h-[16px] mr-2">
                     <Image
                       className="mr-8"
                       src="/images/lienhe.png"
@@ -76,39 +76,43 @@ const Footer = () => {
                   </div>
                   <div>
                     <Link href="/contact-us">
-                      <a className="cursor-pointer Heading-Mobile-Heading6 text-ct-primary-1000">
+                      <a className="cursor-pointer sm:Heading-Mobile-Heading6 Heading-Mobile-Heading5 text-ct-primary-1000">
                         LIÊN HỆ
                       </a>
                     </Link>
                   </div>
                 </div>
-                <div className="flex items-center border-r border-ct-primary-1000 px-5">
+                <div className="flex items-center border-r border-ct-primary-1000 px-5 ">
                   <Link href="https://www.youtube.com/c/SpeakWellTi%E1%BA%BFnganhchu%E1%BA%A9nCambridgechotr%E1%BA%BB">
                     <a
                       className="w-fit cursor-pointer text-xl hover:opacity-70"
                       target="_blank"
                     >
                       {" "}
-                      <Youtube
-                        size="49"
-                        className="text-ct-theme-red"
-                        variant="Bold"
-                      />
+                      <div className="sm:w-[39px] sm:h-[39px] w-[26px] h-[26px]">
+                        <Youtube
+                          size="100%"
+                          className="text-ct-theme-red"
+                          variant="Bold"
+                        />
+                      </div>
                     </a>
                   </Link>
                 </div>
-                <div className="flex items-center border-ct-primary-1000 px-5">
+                <div className="flex items-center border-ct-primary-1000  px-5">
                   <Link href="https://www.facebook.com/speakwell.icanconnect.vn">
                     <a
                       className="w-fit cursor-pointer text-xl mr-3 hover:opacity-70"
                       target="_blank"
                     >
                       {" "}
-                      <Facebook
-                        size="42"
-                        className="text-ct-primary-400"
-                        variant="Bold"
-                      />
+                      <div className="sm:w-[39px] sm:h-[39px] w-[28px] h-[28px] ">
+                        <Facebook
+                          size="100%"
+                          className="text-ct-primary-400 "
+                          variant="Bold"
+                        />
+                      </div>
                     </a>
                   </Link>
                 </div>
@@ -117,17 +121,17 @@ const Footer = () => {
           </div>
           <div className="lg:w-1/2 mt-2 px-5 lg:text-right text-start">
             <div className="w-full mt-2">
-              <h1 className="Display-Desktop-Display5 text-ct-primary-1000 mb-4">
-                Hotline: 1900 9399
+              <h1 className="sm:Display-Desktop-Display5 Body-Desktop-Medium-Bold text-ct-primary-1000 mb-4 text">
+                <span className="text-ct-tertiary-1000 sm:text-ct-primary-1000">Hotline:</span> 1900 9399
               </h1>
-              <p className="Display-Desktop-Display-footer  mb-4">
+              <p className="sm:Display-Desktop-Display-footer Body-Mobile-Small-bold mb-4">
                 <span className="text-ct-primary-1000 font-bold">
                   Văn phòng Hà Nội:
                 </span>{" "}
                 Tầng 4, tòa nhà 25T2, Nguyễn Thị Thập, Trung Hòa, Cầu Giấy, Hà
                 Nội
               </p>
-              <p className="Display-Desktop-Display-footer ">
+              <p className="sm:Display-Desktop-Display-footer Body-Mobile-Small-bold">
                 <span className="text-ct-primary-1000 font-bold">
                   Văn phòng Hồ Chí Minh:
                 </span>{" "}

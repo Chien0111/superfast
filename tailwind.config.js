@@ -242,7 +242,7 @@ module.exports = {
         },
         '.Body-Desktop-Medium-Bold': {
           fontStyle: "normal",
-          fontWeight: "700",
+          fontWeight: "600",
           fontSize: "18px",
           lineHeight: "25px",
         },
