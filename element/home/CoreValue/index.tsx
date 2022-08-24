@@ -32,9 +32,9 @@ const CoreValue = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-[1200px] my-4 sm:my-32">
+    <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-[1200px] my-[60px]">
       {" "}
-      <div className="max-w-[577px] w-fit lg:mr-10 mx-auto lg:mx-0 text-center lg:text-left px-4">
+      <div className="lg:w-[577px] lg:min-w-[577px] w-fit mx-auto lg:mx-0 text-center lg:text-left px-4 lg:px-0 grow">
         <Image
           src="/images/cotloi.png"
           width="100%"
@@ -42,12 +42,10 @@ const CoreValue = () => {
           alt="banner"
         />
       </div>
-      <div className="w-fit">
-        <div className="flex flex-wrap items-start justify-center">
-          {dataCoreValue.map((item, index) => {
-            return <Item key={index} index={index} data={item} />;
-          })}
-        </div>
+      <div className="flex flex-wrap items-start justify-center w-fit">
+        {dataCoreValue.map((item, index) => {
+          return <Item key={index} index={index} data={item} />;
+        })}
       </div>
     </div>
   );

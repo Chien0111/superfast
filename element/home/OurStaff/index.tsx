@@ -55,7 +55,7 @@ const OurStaff = () => {
     styleDot: "",
   };
   return (
-    <div className="lg:bg-[url(/images/teacher-bg.png)] bg-[url(/images/teacher-bg-mobile.png)] bg-cover sm:py-40 py-5 relative m-auto">
+    <div className="lg:bg-[url(/images/teacher-bg.png)] bg-[url(/images/teacher-bg-mobile.png)] bg-cover p-[64px] relative m-auto">
       <div className=" max-w-[1200px] mx-auto mb-10">
         <div className="w-fit mx-auto">
           <p className="text-center lg:Heading-Desktop-Heading2 Heading-Mobile-Heading6 text-ct-secondary-500">
@@ -92,12 +92,12 @@ const Teacher = ({ data }: any) => {
         alt="teacher"
         src={data.img || "/images/teacher-01.jpg"}
       />
-      <div className="bg-[url(/images/teacher-info.png)] bg-cover py-8">
-        <p className=" font-bold text-center lg:Heading-Desktop-Heading5 text-ct-primary-400 pt-1">
+      <div className="bg-[url(/images/teacher-info.png)] bg-cover py-8 h-[120px]">
+        <p className=" font-bold text-center text-[22px] leading-6 text-ct-primary-400 pt-1">
           {data.name}
         </p>
         <div className="flex justify-center">
-          <p className="w-[220px] text-ct-primary-400 font-normal text-center Body-Desktop-Small">
+          <p className="w-[220px] text-ct-primary-400 font-bold text-center text-[16px] leading-4">
             {data.des}
           </p>
         </div>

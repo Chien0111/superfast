@@ -149,7 +149,7 @@ const ModalRegisterTime = ({ isOpen = false, onClose }: any) => {
         />
         <button
           type="submit"
-          className="capitalize px-8 py-4 mt-2 rounded-md bg-ct-secondary-01 text-sm text-ct-neutral-01"
+          className="capitalize px-8 py-4 mt-2 rounded-md text-white bg-ct-primary-1000 text-sm text-ct-neutral-01"
         >
           <span>Đăng ký ngay</span>{" "}
         </button>

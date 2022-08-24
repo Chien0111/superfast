@@ -119,10 +119,9 @@ const ModalRegister = ({ isOpen = false, onClose }: any) => {
         />
         <button
           type="submit"
-          className="Button-Desktop-Medium text-ct-primary-1000 border-2 border-white flex bg-ct-tertiary-500 p-2 px-4 rounded-[50px]"
+          className="capitalize px-8 py-4 mt-2 rounded-md text-white bg-ct-primary-1000 text-sm text-ct-neutral-01"
         >
-          <span className="mr-2">Đăng ký ngay</span>{" "}
-          <ArrowCircleRight size="24" color="#0056B8" />
+          <span>Đăng ký ngay</span>{" "}
         </button>
       </form>
     </Modal>

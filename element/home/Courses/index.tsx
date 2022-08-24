@@ -152,7 +152,9 @@ const CourseItem = ({ data }: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="lg:w-[332px] w-[92%] mx-auto h-[auto] border-2 bg-[#EFFCFF] border-[#0056B8] rounded-lg">
+    <div
+      className={`lg:w-[332px] w-[92%] overflow-hidden mx-auto h-[auto] border-2 bg-[#EFFCFF] border-[#0056B8] rounded-lg relative ${style.dad}`}
+    >
       <div className="flex py-3 justify-end px-5 bg-[#00A9F1]">
         <img src="/images/topbar.png" />
       </div>
@@ -163,18 +165,16 @@ const CourseItem = ({ data }: any) => {
           </div>
           <div className="py-2 border-t border-[#0056B8] bg-[#3DD1F7]">
             <p className="text-white text-[22px] font-bold lg:Heading-Desktop-Heading3 text-center uppercase">
-              startup
+              {data.title}
             </p>
           </div>
         </div>
         <div className="pt-2">
-          <p className="text-[16px] text-[#0056B8] text-justify px-2 lg:h-[160px]">
-            Giúp trẻ có nền móng tiếng Anh vững chắc thông qua việc trải nghiệm
-            hình thức học năng động, sáng tạo, tương tác đa chiều với giáo viên
-            để đạt trình độ Starters của Cambridge.
+          <p className="Body-Desktop-Medium text-[#0056B8] text-justify px-2 lg:h-[160px]">
+            {data.des}
           </p>
         </div>
-        <div className="px-2">
+        <div className={`px-2 overflow-hidden`}>
           <div className="border-t border-ct-primary-400"></div>
           <div className="flex mb-4 justify-between mt-4">
             <div className="border-r border-ct-primary-400 pr-2">
@@ -188,6 +188,16 @@ const CourseItem = ({ data }: any) => {
             <div className="px-2">
               <p className="text-ct-secondary-500">Số học sinh:</p>
               <p className="text-ct-primary-500">{data.cap} em</p>
+            </div>
+          </div>
+          <div
+            className={` w-full transition-all -bottom-[200px] left-0 absolute p-4 bg-white ${style.childBottom}`}
+          >
+            <div
+              onClick={() => setIsOpen(true)}
+              className={`w-full p-3 text-center text-white rounded-lg border overflow-hidden bg-ct-primary-1000 text-ct-neutral-01 cursor-pointer`}
+            >
+              Tham gia lớp học{" "}
             </div>
           </div>
         </div>

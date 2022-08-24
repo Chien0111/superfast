@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 const Introduce = () => {
   return (
-    <div className="mx-auto max-w-[1363px] text-center mb-[-60px] sm:mb-0 p-0">
+    <div className="mx-auto max-w-[1363px] text-center mb-[-60px] sm:mb-0 p-0 mt-20">
       <div className="w-fit mx-auto text-center flex items-center sm:mt-20 mt-5 px-10 sm:mb-[-40px] mb-[-60px] p-0">
         <div className="w-[47px] h-[34px] sm:w-[199px] sm:h-[142px]">
           <Image
@@ -102,7 +102,7 @@ const Item = (props: any) => {
             alt="banner"
           />
         </div>
-        <div className="w-full h-[249px] mt-2 sm:Body-Desktop-Medium-Bold Body-Desktop-Medium text-start flex items-center p-4 bg-[#EBFAFE] text-[#0056B8] font-normal border-[3px] border-[#3DD1F7] rounded-lg glow">
+        <div className="w-full lg:h-[240px] h-fit mt-2 Body-Desktop-Medium text-start flex items-start pt-8 px-8 p-4 bg-[#EBFAFE] text-[#0056B8] border-[3px] border-[#3DD1F7] rounded-lg glow">
           {data.des}
         </div>
       </div>
