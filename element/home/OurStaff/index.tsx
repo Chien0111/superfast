@@ -4,6 +4,21 @@ import SliderComp from "../../../components/Slider";
 const OurStaff = () => {
   const data = [
     {
+      img: "/images/co-vera.png",
+      name: "Cô Vera",
+      des: "Phương pháp độc đáo khơi gợi niềm hứng thú cho học viên",
+    },
+    {
+      img: "/images/teacher14.png",
+      name: "Cô Yhen",
+      des: "Một trong những giáo viên được yêu thích nhất tại SpeakWell",
+    },
+    {
+      img: "/images/teacher13.png",
+      name: "Cô Everleigh",
+      des: "Có hơn 7 năm kinh nghiệm giảng dạy trẻ em",
+    },
+    {
       img: "/images/teacher11.png",
       name: "Cô Lilac",
       des: "Đạt chứng chỉ 120 Hrs TESOL",
@@ -12,16 +27,6 @@ const OurStaff = () => {
       img: "/images/teacher12.png",
       name: "Cô Glazee",
       des: "6 năm kinh nghiệm giảng dạy",
-    },
-    {
-      img: "/images/teacher13.png",
-      name: "Cô Everleigh",
-      des: "Có hơn 7 năm kinh nghiệm giảng dạy trẻ em",
-    },
-    {
-      img: "/images/co-vera.png",
-      name: "Cô Vera",
-      des: "Phương pháp độc đáo khơi gợi niềm hứng thú cho học viên",
     },
   ];
   const settingSlidePC = {
@@ -97,7 +102,7 @@ const Teacher = ({ data }: any) => {
           {data.name}
         </p>
         <div className="flex justify-center">
-          <p className="w-[220px] text-ct-primary-400 font-bold text-center text-[16px] leading-4">
+          <p className="w-[220px] text-ct-primary-400 font-bold text-center text-[14px] leading-4">
             {data.des}
           </p>
         </div>

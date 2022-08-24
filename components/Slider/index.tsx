@@ -20,7 +20,7 @@ const SliderComp = (props: SliderProps) => {
   const styleDots = `dot2 h-5 w-5 border-[3px] border-ct-primary-400 rounded-full mt-4 ${styleDot}`;
   const settingsInit = {
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     infinite: false,
     dots: showDots,

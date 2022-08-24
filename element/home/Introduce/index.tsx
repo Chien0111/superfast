@@ -1,11 +1,10 @@
 import { Image } from "@mantine/core";
 import { dataIntro } from "./data";
-import style from "./style.module.css";
 
 const Introduce = () => {
   return (
-    <div className="mx-auto max-w-[1363px] text-center mb-[-60px] sm:mb-0 p-0 mt-20">
-      <div className="w-fit mx-auto text-center flex items-center sm:mt-20 mt-5 px-10 sm:mb-[-40px] mb-[-60px] p-0">
+    <div className="mx-auto max-w-[1200px] text-center mb-[-60px] sm:mb-0 p-0 mt-20 lg:mt-0">
+      <div className="w-full mx-auto text-center flex justify-between items-center mt-5 sm:mt-0 px-10 sm:mb-[-40px] mb-[-60px] p-0">
         <div className="w-[47px] h-[34px] sm:w-[199px] sm:h-[142px]">
           <Image
             src="/images/bong1.png"
@@ -14,7 +13,7 @@ const Introduce = () => {
             alt="banner"
           />
         </div>
-        <div className="sm:mx-10 lg:mx-20 mx-5 ">
+        <div className="sm:mx-10 lg:mx-20 mx-5 mb-5 lg:mb-0">
           <p className="md:Heading-Mobile-Heading1 text-lg font-bold text-ct-secondary-400 w-[187px] sm:w-[280px] sm:h-[44px]">
             LÝ DO NÊN CHỌN
           </p>
@@ -41,7 +40,7 @@ const Introduce = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between my-20">
+      <div className="flex flex-col md:flex-row items-center justify-between my-20 mt-10">
         {" "}
         <div className="w-fit mx-auto">
           <div className="flex flex-wrap items-start justify-center">
@@ -50,7 +49,7 @@ const Introduce = () => {
             })}
           </div>
         </div>
-        <div className="w-fit hidden md:block min-w-[300px] lg:min-w-[454px] lg:min-h-[806px] lg:mr-10">
+        <div className="w-fit hidden md:block min-w-[300px] lg:min-w-[300px] lg:min-h-[806px] lg:mr-10">
           <Image
             src="/images/intro-banner.png"
             width="100%"

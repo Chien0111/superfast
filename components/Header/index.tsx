@@ -38,7 +38,7 @@ const Header = () => {
         <div className="flex items-center p-5 justify-between ">
           <Link href="/">
             <a className="flex">
-              <div className="w-[200px] mr-2 sm:pr-2">
+              <div className="w-[170px] mr-2 sm:pr-2">
                 <Image
                   className="mr-8"
                   src="speak_well.png"

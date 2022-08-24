@@ -41,7 +41,7 @@ const Slider = () => {
     {
       content: (
         <div
-          className={`relative w-full lg:bg-[url('/banner/desktop1.png')] bg-[url('/banner/mobile1.png')] bg-cover lg:bg-center bg-top bg-no-repeat lg:h-[970px] h-[300px] ${style.roundClip}`}
+          className={`relative w-full lg:bg-[url('/banner/desktop1.png')] bg-[url('/banner/mobile1.png')] bg-cover lg:bg-center bg-top bg-no-repeat lg:h-screen h-[300px] ${style.roundClip}`}
         >
           <div className="w-fit mx-auto mb-8 absolute -bottom-4 lg:bottom-4 left-1/2 -translate-x-1/2">
             <button
@@ -66,7 +66,7 @@ const Slider = () => {
     {
       content: (
         <div
-          className={`w-full lg:bg-[url('/banner/desktop2.png')] bg-[url('/banner/mobile2.png')] relative bg-cover lg:bg-cover bg-no-repeat lg:h-[970px] h-[310px] ${style.roundClip}`}
+          className={`w-full lg:bg-[url('/banner/desktop2.png')] bg-[url('/banner/mobile2.png')] relative bg-cover lg:bg-cover bg-no-repeat lg:h-screen h-[310px] ${style.roundClip}`}
         >
           <div className="w-fit mx-auto mb-8 absolute -bottom-4 lg:bottom-4 left-1/2 -translate-x-1/2">
             <button
@@ -91,7 +91,7 @@ const Slider = () => {
     {
       content: (
         <div
-          className={`w-full lg:bg-[url('/banner/desktop3.png')] bg-[url('/banner/mobile3.png')] relative bg-cover bg-center bg-no-repeat lg:h-[970px] h-[310px] ${style.roundClip}`}
+          className={`w-full lg:bg-[url('/banner/desktop3.png')] bg-[url('/banner/mobile3.png')] relative bg-cover bg-center bg-no-repeat lg:h-screen h-[310px] ${style.roundClip}`}
         >
           <div className="w-fit mx-auto mb-8 absolute -bottom-4 lg:bottom-4 left-1/2 -translate-x-1/2">
             <button

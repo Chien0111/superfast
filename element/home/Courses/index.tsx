@@ -14,6 +14,7 @@ const Courses = () => {
       age: "4-6",
       time: "--",
       cap: "--",
+      bgColor: "bg-[#FFA601]",
     },
     {
       img: "/images/Banner 12.jpg",
@@ -23,6 +24,7 @@ const Courses = () => {
       age: "6-8",
       time: "--",
       cap: "--",
+      bgColor: "bg-[#3DD1F7]",
     },
     {
       img: "/images/Banner 10.jpg",
@@ -32,6 +34,7 @@ const Courses = () => {
       age: "8-10",
       time: "--",
       cap: "--",
+      bgColor: "bg-[#9CE156]",
     },
     {
       img: "/images/Banner 7.jpg",
@@ -41,6 +44,7 @@ const Courses = () => {
       age: "8-10",
       time: "--",
       cap: "--",
+      bgColor: "bg-[#FF7ECB]",
     },
   ];
   const settingSlidePC = {
@@ -161,9 +165,9 @@ const CourseItem = ({ data }: any) => {
       <div className="px-5 py-3">
         <div className="border border-[#0056B8] rounded">
           <div className=" ">
-            <img src="/images/anh11.png" className="w-full" alt="" />
+            <img src={data.img} className="w-[286px] h-[161px]" alt="" />
           </div>
-          <div className="py-2 border-t border-[#0056B8] bg-[#3DD1F7]">
+          <div className={`py-2 border-t border-[#0056B8] ${data.bgColor}`}>
             <p className="text-white text-[22px] font-bold lg:Heading-Desktop-Heading3 text-center uppercase">
               {data.title}
             </p>
