@@ -1,5 +1,3 @@
-import { Image } from "@mantine/core";
-import { ArrowRight } from "iconsax-react";
 import { useState } from "react";
 import ModalRegister from "../../../components/ModalRegister";
 import SliderComp from "../../../components/Slider";
@@ -41,7 +39,7 @@ const Slider = () => {
     {
       content: (
         <div
-          className={`relative w-full lg:bg-[url('/banner/desktop1.png')] bg-[url('/banner/mobile1.png')] bg-cover lg:bg-center bg-top bg-no-repeat lg:h-screen h-[300px] ${style.roundClip}`}
+          className={`w-full lg:bg-[url('/banner/desktop3.png')] bg-[url('/banner/mobile3.png')] relative bg-cover bg-center bg-no-repeat lg:h-screen h-[310px] ${style.roundClip}`}
         >
           <div className="w-fit mx-auto mb-8 absolute -bottom-4 lg:bottom-4 left-1/2 -translate-x-1/2">
             <button
@@ -88,10 +86,11 @@ const Slider = () => {
         </div>
       ),
     },
+
     {
       content: (
         <div
-          className={`w-full lg:bg-[url('/banner/desktop3.png')] bg-[url('/banner/mobile3.png')] relative bg-cover bg-center bg-no-repeat lg:h-screen h-[310px] ${style.roundClip}`}
+          className={`relative w-full lg:bg-[url('/banner/desktop1.png')] bg-[url('/banner/mobile1.png')] bg-cover lg:bg-center bg-top bg-no-repeat lg:h-screen h-[300px] ${style.roundClip}`}
         >
           <div className="w-fit mx-auto mb-8 absolute -bottom-4 lg:bottom-4 left-1/2 -translate-x-1/2">
             <button
@@ -115,7 +114,7 @@ const Slider = () => {
     },
   ];
   return (
-    <div className=" lg:h-[970px] h-[300px]">
+    <div className="lg:h-screen h-[300px]">
       <SliderComp
         settings={{
           slidesToShow: 1,
