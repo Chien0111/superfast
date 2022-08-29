@@ -34,7 +34,7 @@ const CoreValue = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-[1200px] my-[60px]">
       {" "}
-      <div className="lg:w-[577px] lg:min-w-[577px] w-fit mx-auto lg:mx-0 text-center lg:text-left px-4 lg:px-0 grow">
+      <div className="lg:w-[547px] lg:min-w-[547px] w-fit mx-auto lg:mx-0 text-center lg:text-left px-4 lg:px-0 grow">
         <Image
           src="/images/cotloi.png"
           width="100%"
@@ -53,10 +53,10 @@ const CoreValue = () => {
 const Item = (props: any) => {
   const { data, index } = props;
   return (
-    <div className={`sm:max-w-[300px] w-full sm:p-4 px-8 py-4`}>
+    <div className={`sm:max-w-[320px] w-full sm:p-4 px-8 py-4`}>
       <div className="flex justify-center">
         <div
-          className={`${data.colorSecond} flex justify-center items-center sm:w-[265px] w-[95%] h-[41px] rounded-t-lg glow border-[2px] border-[#3DD1F7]`}
+          className={`${data.colorSecond} flex justify-center items-center sm:w-[265px] w-[95%] h-[41px] rounded-t-xl glow border-[2px] border-b-0 border-[#3DD1F7]`}
         >
           <p className={`transition-all font-bold text-white text-sm`}>
             {data.title}

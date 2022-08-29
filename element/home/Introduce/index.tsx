@@ -49,8 +49,9 @@ const Introduce = () => {
             })}
           </div>
         </div>
-        <div className="w-fit hidden md:block min-w-[300px] lg:min-w-[300px] lg:min-h-[806px] lg:mr-10">
+        <div className="w-fit hidden md:block min-w-[300px] lg:min-w-[300px] lg:min-h-[806px]">
           <Image
+            className="mt-10"
             src="/images/intro-banner.png"
             width="100%"
             height="100%"
@@ -67,39 +68,23 @@ const Item = (props: any) => {
     <div>
       <div className="max-w-[319.51px] p-5 sm:max-w-[409px] sm:max-h-[358px] sm:p-10 relative sm:mb-10">
         <div
-          className={`${data.colorSecond} w-full h-[109px] flex items-center border-[3px] border-[#3DD1F7] rounded-xl justify-center glow`}
+          className={`${data.colorSecond} w-full h-[99px] flex items-center border-[3px] border-[#3DD1F7] rounded-xl justify-center glow`}
         >
-          <div className="relative w-[61px] h-[61px] ml-4">
-            <span>
-              <Image
-                src="/images/tron.png"
-                // width="100%"
-                // height="100%"
-                alt="banner"
-              />
-            </span>
-            <span className="absolute top-[22%] sm:left-[25%] left-[25%] sm:h-[30px] sm:w-[30px] w-[28px] h-[28px]">
-              <span>
-                <Image
-                  src={data.icon}
-                  width="100%"
-                  height="100%"
-                  alt="banner"
-                />
-              </span>
-            </span>
+          <div className="w-[61px] h-[61px] border-[2px] border-white rounded-full p-1 ml-4 flex justify-center items-center">
+            <Image
+              className="p-0 m-0"
+              src={data.icon}
+              width={data.size.width}
+              height={data.size.height}
+              alt="icon"
+            />
           </div>
-          <div className="w-[226px] p-4 text-center font-extrabold sm:text-lg text-base leading-6 text-white">
+          <div className="w-[226px] p-4 text-center font-extrabold sm:text-lg text-base leading-6 text-white uppercase">
             {data.title}
           </div>
         </div>
-        <div className="absolute top-[118px] sm:top-[135px] ml-4 sm:w-[300px] sm:h-[21px] w-[250px] px-5">
-          <Image
-            src="/images/group.png"
-            width="100%"
-            height="100%"
-            alt="banner"
-          />
+        <div className="absolute top-[108px] sm:top-[125px] ml-4 sm:w-[300px] sm:h-[21px] w-[250px] px-5">
+          <Image src="/images/group.png" width="100%" height="100%" alt="tag" />
         </div>
         <div className="w-full lg:h-[240px] h-fit mt-2 Body-Desktop-Medium text-start flex items-start pt-8 px-8 p-4 bg-[#EBFAFE] text-[#0056B8] border-[3px] border-[#3DD1F7] rounded-lg glow">
           {data.des}

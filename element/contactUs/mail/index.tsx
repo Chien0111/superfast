@@ -134,11 +134,11 @@ const GetinTouch = () => {
       <div className="flex justify-center ">
         <div className="rounded-[19px] py-4 sm:py-0 sm:max-w-[1205px] sm:max-h-[130px] Secondary-500 sm:rounded-[64px] border-4 border-white sm:absolute sm:top-[105px] text-center text-white px-6 sm:px-10 mx-2">
           {" "}
-          <p className="sm:mt-10 sm:Heading-Desktop-Heading8 Body-Mobile-Small-bold ">
+          <p className="sm:mt-6 sm:Heading-Desktop-Heading8 Body-Mobile-Small-bold ">
             Ba mẹ vui lòng nhập đúng thông tin để SPEAKWELL liên hệ với mình
             trong thời gian sớm nhất
           </p>
-          <p className="mt-2 sm:text-xl Body-Mobile-Small1">
+          <p className="my-2 sm:text-xl Body-Mobile-Small1">
             *Toàn bộ thông tin của phụ huynh đều được bảo mật
           </p>
         </div>

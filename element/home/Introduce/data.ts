@@ -1,6 +1,10 @@
 export const dataIntro = [
   {
     icon: `/images/icon1.png`,
+    size: {
+      width: 38,
+      height: 34,
+    },
     colorMain: "text-ct-primary-03 border-ct-primary-03",
     colorSecond: "bg-[#0067C5]",
     title: "Nâng cao Phản Xạ Nghe - Nói",
@@ -8,6 +12,10 @@ export const dataIntro = [
   },
   {
     icon: `/images/icon2.png`,
+    size: {
+      width: 26,
+      height: 32,
+    },
     colorMain: "text-[#f32c2c] border-[#f32c2c]",
     colorSecond: "bg-[#9CE156]",
     title: "Môi Trường Học 100% Tiếng Anh",
@@ -15,6 +23,10 @@ export const dataIntro = [
   },
   {
     icon: `/images/icon3.png`,
+    size: {
+      width: 33,
+      height: 29,
+    },
     colorMain: "text-[#df57a8] border-[#df57a8]",
     colorSecond: "bg-[#FF9F43]",
     title: "Chủ Động Thời Gian Học",
@@ -22,6 +34,10 @@ export const dataIntro = [
   },
   {
     icon: `/images/icon4.png`,
+    size: {
+      width: 36,
+      height: 36,
+    },
     colorMain: "text-[#51c9ee] border-[#51c9ee]",
     colorSecond: "bg-[#FF58C2]",
     title: " Tiết Kiệm Chi Phí",
