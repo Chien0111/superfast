@@ -14,13 +14,13 @@ const Header = () => {
       name: "Trang chủ",
       href: "/",
     },
-    // {
-    //   name: "Chương trình học",
-    //   href: "/curriculum",
-    // },
     {
       name: "Liên hệ",
       href: "/contact-us",
+    },
+    {
+      name: "GIẢI PHÁP HỌC TIẾNG ANH",
+      href: "/solution",
     },
   ];
 
@@ -96,6 +96,37 @@ const Header = () => {
                       }hover:text-ct-secondary-600 Heading-Mobile-Heading6 text-ct-primary-1000 cursor-pointer`}
                     >
                       LIÊN HỆ
+                    </a>
+                  </Link>
+                </div>
+                <div className="mx-10 min-w-[2px]">
+                  <Image
+                    className=""
+                    src="/images/thanh.png"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="w-[25px] h-[25px] mr-2">
+                  <Image
+                    className="mr-8"
+                    src="/images/solution.png"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div>
+                  <Link href="/solution">
+                    <a
+                      className={`${
+                        focus === "/solution"
+                          ? "text-ct-secondary-500 "
+                          : ""
+                      }hover:text-ct-secondary-600 Heading-Mobile-Heading6 text-ct-primary-1000 cursor-pointer`}
+                    >
+                      GIẢI PHÁP HỌC TIẾNG ANH
                     </a>
                   </Link>
                 </div>

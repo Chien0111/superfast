@@ -402,7 +402,7 @@ module.exports = {
           // background: "#FFFFFF",
           // borderRadius: "35px"
         },
-    
+
       });
     }),
   ],

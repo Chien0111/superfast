@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import BaseLayout from "../../layout/base";
+import SolutionTemplate from "../../Template/Solution";
 
 const Solution = () => {
   return (
-    <div>Solution</div>
-  )
-}
+    <>
+      <SolutionTemplate />
+    </>
+  );
+};
 
-export default Solution
+Solution.Layout = BaseLayout;
+export default Solution;
