@@ -252,6 +252,12 @@ module.exports = {
           fontSize: "14px",
           lineHeight: "25px",
         },
+        '.Body-Desktop-Medium1': {
+          fontStyle: "normal",
+          fontWeight: "400",
+          fontSize: "18px",
+          lineHeight: "25px",
+        },
         '.Body-Desktop-Medium-Bold': {
           fontStyle: "normal",
           fontWeight: "600",
@@ -391,6 +397,12 @@ module.exports = {
           background: "#FFFFFF",
           borderRadius: "35px"
         },
+        ".Chien": {
+          textShadow: " 0px 0px 10px 2px #FFFFFF",
+          // background: "#FFFFFF",
+          // borderRadius: "35px"
+        },
+    
       });
     }),
   ],
