@@ -6,12 +6,18 @@ import { data } from "../data";
 const StepDesktop = () => {
   return (
     <>
-      <div className="max-w-[1200px] mx-auto py-16 flex">
+      <div className="max-w-[1200px] mx-auto py-16 flex bg-[url(/images/solution/line_connect.png)] bg-contain bg-no-repeat">
         {data.map((_, index) => {
           return (
             <div key={index} className="flex flex-col items-center even:mt-32">
-              <Image src={_.image} width={300} height={300} alt={_.type} />
-              <div className="h-[200px] -mt-6">
+              <Image
+                src={_.image}
+                width={300}
+                height={300}
+                alt={_.type}
+                quality={100}
+              />
+              <div className="h-[200px] -mt-4">
                 <div
                   className={`transition-all overflow-hidden h-[140px] hover:h-[200px] border-ct-primary-200 border-[5px] rounded-[25px] bg-[#EFFCFF] p-4 w-[254px]`}
                 >

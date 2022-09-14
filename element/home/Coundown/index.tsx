@@ -1,4 +1,3 @@
-import { ArrowCircleRight2 } from "iconsax-react";
 import { useState } from "react";
 import ModalRegister from "../../../components/ModalRegister";
 import { useCountdown } from "../../../hooks/useCoundown";
@@ -13,7 +12,7 @@ const Coundown = () => {
     countDownDate.toISOString()
   );
   return (
-    <div className="lg:bg-[url(/images/countdown-bg.png)] bg-[url(/images/countdown-bg-mobile.png)] bg-cover pb-24 pt-14 w-full">
+    <div className="lg:bg-[url(/images/countdown-bg.png)] bg-[url(/images/countdown-bg-mobile.png)] bg-cover pb-24 pt-14 w-full overflow-hidden">
       <div className="lg:w-[1200px] mx-auto">
         <div className="lg:flex lg:ml-24 w-full">
           <div className="lg:w-[570px] w-full flex justify-center">

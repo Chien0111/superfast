@@ -8,12 +8,12 @@ export const data = [
     link: "/solution/beginners",
   },
   {
-    type: "srarters",
+    type: "starters",
     image: "/images/solution/srarters planet.png",
     age: "6-8 tuổi",
     input: "Beginners/ học xong khóa Beginners",
     output: "Pre-A1",
-    link: "/solution/srarters",
+    link: "/solution/starters",
   },
   {
     type: "movers",

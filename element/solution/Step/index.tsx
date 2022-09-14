@@ -1,5 +1,4 @@
 import { useIsMobile } from "../../../hooks/useIsMobile";
-
 import StepDesktop from "../../../modecules/Solution/Step/Desktop";
 import StepMobile from "../../../modecules/Solution/Step/Mobile";
 
