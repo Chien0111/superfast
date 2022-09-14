@@ -8,6 +8,7 @@ module.exports = {
     "./layout/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./Template/**/*.{js,ts,jsx,tsx}",
+    "./modecules/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -63,7 +64,7 @@ module.exports = {
           'white': "#FFFFFF",
           'black': "#000000",
         },
-        'ct-texts': {
+        'ct-text': {
           'black': '#333333',
           'white': '#FFFFFF',
           'gray555': '#555555',

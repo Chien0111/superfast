@@ -121,9 +121,7 @@ const Header = () => {
                   <Link href="/solution">
                     <a
                       className={`${
-                        focus === "/solution"
-                          ? "text-ct-secondary-500 "
-                          : ""
+                        focus === "/solution" ? "text-ct-secondary-500 " : ""
                       }hover:text-ct-secondary-600 Heading-Mobile-Heading6 text-ct-primary-1000 cursor-pointer`}
                     >
                       GIẢI PHÁP HỌC TIẾNG ANH
@@ -184,6 +182,30 @@ const Header = () => {
                   }hover:text-ct-secondary-600 Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[38px] cursor-pointer`}
                 >
                   Liên hệ
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="min-w-[1px]">
+            <Image className="" src="/images/thanh.png" alt="" width="100%" />
+          </div>
+          <div className="flex items-center sm:px-5 px-3">
+            <div className="w-[16px] h-[16px] mr-1">
+              <Image
+                className="mr-8"
+                src="/images/lienhe.png"
+                alt=""
+                width="100%"
+              />
+            </div>
+            <div>
+              <Link href="/solution">
+                <a
+                  className={`${
+                    focus === "/solution" ? "text-ct-secondary-500 " : ""
+                  }hover:text-ct-secondary-600 Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[38px] cursor-pointer`}
+                >
+                  GIẢI PHÁP HỌC TIẾNG ANH
                 </a>
               </Link>
             </div>

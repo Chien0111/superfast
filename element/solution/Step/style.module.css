@@ -1,9 +1,0 @@
-.dad {
-  height: 140px;
-}
-.dad:hover .child {
-  height: "";
-}
-.dad:hover {
-  height: 200px;
-}
