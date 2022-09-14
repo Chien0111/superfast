@@ -12,7 +12,7 @@ import style from "./style.module.css";
 const ChildrenSolution = () => {
   const [detailData, setDetailData] = useState<any>();
   const navigate = useRouter();
-  const { type } = useRouter().query;
+  const type = useRouter().query.type;
   const data = [
     {
       name: "beginners",
@@ -41,15 +41,23 @@ const ChildrenSolution = () => {
     );
     if (type != undefined) {
       setDetailData(detail);
-    } else {
-      navigate.push("/404");
     }
-  }, []);
+  }, [type]);
+
+  console.log(detailData);
+  
+  useEffect(() => {
+    setTimeout(() => {
+      if (detailData == undefined) {
+        navigate.push("/404");
+      }
+    }, 1000);
+  }, [detailData]);
 
   return (
     <div>
       <div>
-        <div className="text-center lg:bg-[url(/images/contact-bg-desktop.png)] bg-[url(/images/contact-bg.png)] text-ct-secondary-500 bg-cover lg:py-10 py-2">
+        <div className="text-center lg:bg-[url(/images/contact-bg-desktop.png)] bg-[url(/images/contact-bg.png)] bg-center text-ct-secondary-500 bg-cover lg:py-10 py-2">
           <h1
             className={`lg:Heading-Desktop-Heading1 Heading-Mobile-Heading4 uppercase ${style.borderwhite}`}
           >

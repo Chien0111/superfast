@@ -27,8 +27,6 @@ function newTracker(config: any) {
       config?.projectKey || process.env.NEXT_PUBLIC_OPENREPLAY_PROJECT_KEY,
   };
 
-  console.log("Tracker configuration");
-  console.log(trackerConfig);
   const tracker = new Tracker(trackerConfig);
 
   if (config?.userIdEnabled) {
@@ -42,14 +40,11 @@ function reducer(state: any, action: any) {
   switch (action.type) {
     case "init": {
       if (!state.tracker) {
-        console.log("Instantiaing the tracker for the first time...");
         return { ...state, tracker: newTracker(state.config) };
       }
       return state;
     }
     case "start": {
-      console.log("Starting tracker...");
-      console.log("Custom configuration received: ", state.config);
       state.tracker.start();
       return state;
     }
