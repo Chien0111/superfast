@@ -356,6 +356,12 @@ module.exports = {
           fontSize: "24px",
           lineHeight: "33px",
         },
+        '.Button-Desktop-Large1': {
+          fontStyle: "normal",
+          fontWeight: "900",
+          fontSize: "20px",
+          lineHeight: "27px",
+        },
         '.Button-Desktop-Medium': {
           fontStyle: "normal",
           fontWeight: "700",
@@ -384,6 +390,9 @@ module.exports = {
           boxShadow: "0px 0px 9px 2px rgba(94, 222, 255, 0.7)",
           background: "#D9D9D9"
         },
+        ".glowBorder": {
+          boxShadow: "0px 0px 9px 2px rgba(94, 222, 255, 0.7)",
+        },
         ".white-glow": {
           boxShadow: " 0px 0px 13px 6px #FFFFFF",
           background: "#D9D9D9"
@@ -397,11 +406,20 @@ module.exports = {
           background: "#FFFFFF",
           borderRadius: "35px"
         },
-        ".Chien": {
-          textShadow: " 0px 0px 10px 2px #FFFFFF",
-          // background: "#FFFFFF",
-          // borderRadius: "35px"
+      
+        ".Body-Desktop-Large": {
+          fontFamily: 'Nunito',
+          fontStyle: "normal",
+          fontWeight: "400",
+          fontSize: "20px",
+          lineHeight: "27px",
+          textAlign: "center",
+
+          /* Primary/600 */
+
+          color: "#00376E"
         },
+      
 
       });
     }),
