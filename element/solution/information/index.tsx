@@ -1,85 +1,17 @@
 import { Image } from "@mantine/core";
+import { type } from "os";
 import { useState } from "react";
+import { string } from "yup";
 import ModalRegisterTime from "../../../components/ModalRegisterTime";
 import SliderComp from "../../../components/Slider";
 import style from "./style.module.css";
-
-const Information = () => {
-  const data = [
-    {
-      img: "/images/Banner 11.jpg",
-      title: "Beginners",
-      des: `Khoá học khơi gợi hứng thú học tập và khám phá ngôn ngữ của học sinh ở trình độ tiền căn bản, giúp trẻ được tiếp thu Tiếng Anh một cách tự nhiên`,
-      price: "--",
-      age: "4-6",
-      time: "--",
-      cap: "--",
-      bgColor: "bg-[#FFA601]",
-    },
-    {
-      img: "/images/Banner 12.jpg",
-      title: "Starters",
-      des: `Khóa học giúp cho học sinh có thể nâng cao trình độ tiếng Anh thông qua việc trải nghiệm hình thức học năng động, sáng tạo, tương tác 2 chiều với giáo viên để đạt trình độ Starters`,
-      price: "--",
-      age: "6-8",
-      time: "--",
-      cap: "--",
-      bgColor: "bg-[#3DD1F7]",
-    },
-    {
-      img: "/images/Banner 10.jpg",
-      title: "Movers",
-      des: ` Khóa học Movers giúp học sinh có thể sử dụng 4 kỹ năng với những chủ đề quen thuộc trong cuộc sống hàng ngày và định hướng thi được chứng chỉ Movers theo chuẩn Cambridge`,
-      price: "--",
-      age: "8-10",
-      time: "--",
-      cap: "--",
-      bgColor: "bg-[#9CE156]",
-    },
-    {
-      img: "/images/Banner 7.jpg",
-      title: "Flyers",
-      des: `Khóa học Flyers phù hợp với học sinh muốn nâng cao trình độ tiếng Anh đồng đều 4 kỹ năng Nghe - Nói - Đọc - Viết, tự tin giao tiếp, phát triển đầy đủ kiến thức và kỹ năng để chinh phục bài thi Flyers theo chuẩn Cambridge`,
-      price: "--",
-      age: "8-10",
-      time: "--",
-      cap: "--",
-      bgColor: "bg-[#FF7ECB]",
-    },
-  ];
-  const settingSlidePC = {
-    setting: {
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      swipeToSlide: true,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            arrows: false,
-            swipeToSlide: true,
-          },
-        },
-        {
-          breakpoint: 870,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            swipeToSlide: true,
-          },
-        },
-      ],
-    },
-    showArrow: true,
-    showDots: true,
-    styleDot: "",
-  };
+type Information = {
+  data?: string;
+};
+const Information = ({ data }: Information) => {
   return (
     <div className="">
-      <div className="lg:bg-[url(/images/slide-bg.png)] bg-[url('/images/course-mobile.png')] lg:py-16 lg:pb-[220px] overflow-x-hidden bg-cover bg-center py-5 pb-20 m-auto relative top-0">
+      <div className="lg:bg-[url(/images/slide-bg.png)] bg-[url('/images/course-mobile.png')] lg:py-16 lg:pb-[220px] overflow-x-hidden bg-cover bg-center py-5 sm:pb-20 m-auto relative top-0 ">
         <div className="w-fit mx-auto text-center lg:mb-[43px] lg:pt-6 lg:pb-2 mb-4">
           <div className="relative hidden sm:block">
             <div className="">
@@ -115,29 +47,76 @@ const Information = () => {
               />
             </div>
           </div>
-    
           <Image
-            src="/images/slide-bg.png"
+            src="/images/iconactive10.png"
+            width="50px"
+            height="52px"
+            className="lg:hidden absolute top-[25px] left-[0px]"
           />
-          <div className="text-[#0056B8] text-[18px] lg:Heading-Desktop-Heading2 font-bold uppercase lg:pt-0 pt-12">
-            Thông tin tổng quát
+          <Image
+            src="/images/iconactive6.png"
+            width="58px"
+            height="65px"
+            className="lg:hidden absolute top-[15px] right-[10px] rotate-[40.51deg]"
+          />
+          <div className="text-[#0056B8] text-[18px] lg:Heading-Desktop-Heading2 p-6 text-2xl font-black uppercase lg:pt-2 lg:mt-2 ">
+            thông tin tổng quan
           </div>
         </div>
-        <div className="w-full max-w-[1200px] lg: pt-2 mx-auto">
-          <div>
-            <p>
-              Khóa học dành cho trẻ từ 4-6 tuổi. Thông qua hình thức truyền tải
-              bằng các bài hát, câu chuyện, trò chơi được biên soạn hình ảnh một
-              cách sinh động, vui nhộn, các bé sẽ được hình thành nên phản xạ tự
-              nhiên nhất với tiếng Anh và phát triển nền tảng từ vựng một cách
-              vững chắc.
-            </p>
-          </div>
-          
+        <div className="w-full max-w-[1200px] lg:w-[1165px] lg:h-[620px] lg:pt-2 mx-auto px-6">
+          <CourseItem data={data} />
         </div>
       </div>
     </div>
   );
 };
-
+type CourseItem = {
+  data?: string;
+};
+const CourseItem = ({ data }: any) => {
+  return (
+    <div>
+      <div className="lg:my-10  Body-Desktop-Large">{data}</div>
+      <div className="lg:flex sm:justify-around justify-center items-center mt-4">
+        <div className="sm:w-[493px] sm:h-[493px] w-full h-full p-6 sm:p-0 m-auto sm:mb-6">
+          <Image className="" src="/images/information1.png" alt="icon" />
+        </div>
+        <div >
+          <div className="flex justify-center px-6 sm:p-0">
+            <div className="w-[234px] sm:h-[234px] mb-6 mr-6">
+              <Image
+                className="p-0 m-0"
+                src="/images/information2.png"
+                alt="icon"
+              />
+            </div>
+            <div className="w-[234px] sm:h-[234px] mb-6">
+              <Image
+                className="p-0 m-0"
+                src="/images/infomation3.png"
+                alt="icon"
+              />
+            </div>
+          </div>
+          <div className="flex justify-center px-6 sm:p-0">
+            <div className="w-[234px] sm:h-[234px] sm:mt-6 mr-6">
+              <Image
+                className="p-0 m-0"
+                src="/images/infomation4.png"
+                alt="icon"
+              />
+            </div>
+            <div className="w-[234px] sm:h-[234px] sm:mt-6">
+              <Image
+                className="p-0 m-0"
+                src="/images/infomation5.png"
+                alt="icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default Information;
