@@ -1,0 +1,15 @@
+.anim {
+  animation: abc 5s ease-in-out infinite;
+}
+
+@keyframes abc {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}

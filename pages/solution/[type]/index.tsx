@@ -39,15 +39,13 @@ const ChildrenSolution = () => {
     const detail = data.find(
       (item: any) => item.name.toLowerCase() === type?.toString().toLowerCase()
     );
-    console.log('chien',detail);
-    
     if (type != undefined) {
       setDetailData(detail);
     } else {
-      navigate.prefetch('/404')
+      navigate.push("/404");
     }
   }, []);
-  
+
   return (
     <div>
       <div>
@@ -62,7 +60,7 @@ const ChildrenSolution = () => {
           </h2>
         </div>
         <div>
-          <Infomation data={detailData?.content}/>
+          <Infomation data={detailData?.content} />
         </div>
         <div>
           <Reason />

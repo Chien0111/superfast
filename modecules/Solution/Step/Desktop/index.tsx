@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { data } from "../data";
+import style from "./style.module.css";
 
 const StepDesktop = () => {
   return (
@@ -9,8 +10,12 @@ const StepDesktop = () => {
       <div className="max-w-[1200px] mx-auto py-16 flex bg-[url(/images/solution/line_connect.png)] bg-contain bg-no-repeat">
         {data.map((_, index) => {
           return (
-            <div key={index} className="flex flex-col items-center even:mt-32">
+            <div
+              key={index}
+              className={`flex flex-col items-center even:mt-32`}
+            >
               <Image
+                className={`${style.anim}`}
                 src={_.image}
                 width={300}
                 height={300}
