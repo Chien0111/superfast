@@ -8,19 +8,19 @@ const Querys = () => {
   const data = [
     {
       name: "Beginners",
-      href: "/solution/beginners",
+      href: "/curriculum/beginners",
     },
     {
       name: "Starters",
-      href: "/solution/starters",
+      href: "/curriculum/starters",
     },
     {
       name: "Movers",
-      href: "/solution/movers",
+      href: "/curriculum/movers",
     },
     {
       name: "Flyers",
-      href: "/solution/flyers",
+      href: "/curriculum/flyers",
     },
   ];
   const { type } = useRouter().query;
