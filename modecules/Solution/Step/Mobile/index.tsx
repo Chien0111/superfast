@@ -17,8 +17,15 @@ const StepMobile = () => {
   const specialPointRender = data.map((_, index) => {
     return {
       content: (
-        <div className="mx-auto w-fit">
-          <Image src={_.image} width={300} height={300} alt={_.type} />
+        <div className="mx-auto w-fit relative rounded-[24px] z-[10] overflow-hidden">
+          <Image
+            src={_.image}
+            width={300}
+            height={300}
+            alt={_.type}
+            quality={100}
+            className="absolute z-[9]"
+          />
         </div>
       ),
     };

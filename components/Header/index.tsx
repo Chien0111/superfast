@@ -83,19 +83,19 @@ const Header = () => {
                 <div className="w-[25px] h-[25px] mr-2">
                   <Image
                     className="mr-8"
-                    src="/images/lienhe.png"
+                    src="/images/solution.png"
                     alt=""
                     width="100%"
                   />
                 </div>
                 <div>
-                  <Link href="/contact-us">
+                  <Link href="/solution">
                     <a
                       className={`${
-                        focus === "/contact-us" ? "text-ct-secondary-500 " : ""
+                        focus === "/solution" ? "text-ct-secondary-500 " : ""
                       }hover:text-ct-secondary-600 Heading-Mobile-Heading6 text-ct-primary-1000 cursor-pointer`}
                     >
-                      LIÊN HỆ
+                      GIẢI PHÁP HỌC TIẾNG ANH
                     </a>
                   </Link>
                 </div>
@@ -112,19 +112,19 @@ const Header = () => {
                 <div className="w-[25px] h-[25px] mr-2">
                   <Image
                     className="mr-8"
-                    src="/images/solution.png"
+                    src="/images/lienhe.png"
                     alt=""
                     width="100%"
                   />
                 </div>
                 <div>
-                  <Link href="/solution">
+                  <Link href="/contact-us">
                     <a
                       className={`${
-                        focus === "/solution" ? "text-ct-secondary-500 " : ""
+                        focus === "/contact-us" ? "text-ct-secondary-500 " : ""
                       }hover:text-ct-secondary-600 Heading-Mobile-Heading6 text-ct-primary-1000 cursor-pointer`}
                     >
-                      GIẢI PHÁP HỌC TIẾNG ANH
+                      LIÊN HỆ
                     </a>
                   </Link>
                 </div>
@@ -175,13 +175,13 @@ const Header = () => {
               />
             </div>
             <div>
-              <Link href="/contact-us">
+              <Link href="/solution">
                 <a
                   className={`${
-                    focus === "/contact-us" ? "text-ct-secondary-500 " : ""
+                    focus === "/solution" ? "text-ct-secondary-500 " : ""
                   }hover:text-ct-secondary-600 Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[38px] cursor-pointer`}
                 >
-                  Liên hệ
+                  GIẢI PHÁP HỌC TIẾNG ANH
                 </a>
               </Link>
             </div>
@@ -199,13 +199,13 @@ const Header = () => {
               />
             </div>
             <div>
-              <Link href="/solution">
+              <Link href="/contact-us">
                 <a
                   className={`${
-                    focus === "/solution" ? "text-ct-secondary-500 " : ""
+                    focus === "/contact-us" ? "text-ct-secondary-500 " : ""
                   }hover:text-ct-secondary-600 Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[38px] cursor-pointer`}
                 >
-                  GIẢI PHÁP HỌC TIẾNG ANH
+                  Liên hệ
                 </a>
               </Link>
             </div>
