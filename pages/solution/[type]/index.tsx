@@ -1,6 +1,7 @@
 import { ArrowRight2 } from "iconsax-react";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
+
 import Subscribe from "../../../components/Subscribe";
 import Coundown from "../../../element/home/Coundown";
 import Infomation from "../../../element/solution/information";
@@ -12,7 +13,7 @@ import style from "./style.module.css";
 const ChildrenSolution = () => {
   const [detailData, setDetailData] = useState<any>();
   const navigate = useRouter();
-  const type = useRouter().query.type;
+  const { type } = useRouter().query;
   const data = [
     {
       name: "beginners",
@@ -35,24 +36,19 @@ const ChildrenSolution = () => {
         "Khóa học dành cho trẻ từ 10-12 tuổi. Giúp trẻ mở rộng kiến thức về khoa học và xã hội. Các em có thể giao tiếp được với người bản xứ. Trong cả khóa học, trẻ được trau dồi đầy đủ kỹ năng và kiến thức để có thể làm được bài thi Flyers theo chuẩn Cambridge.",
     },
   ];
-  useEffect(() => {
-    const detail = data.find(
-      (item: any) => item.name.toLowerCase() === type?.toString().toLowerCase()
-    );
-    if (type != undefined) {
-      setDetailData(detail);
+  useLayoutEffect(() => {
+    if (type) {
+      const matching = data.findIndex(
+        (item, index) =>
+          item.name.toLowerCase() === type.toString().toLowerCase()
+      );
+      if (matching === -1) {
+        navigate.push("/404");
+      } else {
+        setDetailData(data[matching]);
+      }
     }
   }, [type]);
-
-  console.log(detailData);
-  
-  useEffect(() => {
-    setTimeout(() => {
-      if (detailData == undefined) {
-        navigate.push("/404");
-      }
-    }, 1000);
-  }, [detailData]);
 
   return (
     <div>

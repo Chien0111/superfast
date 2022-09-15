@@ -1,8 +1,12 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
-import React from "react";
+
 import Subscribe from "../components/Subscribe";
-import Coundown from "../element/home/Coundown";
 import BaseLayout from "../layout/base";
+
+const Coundown = dynamic(() => import("../element/home/Coundown"), {
+  ssr: false,
+});
 
 const NotFound = () => {
   return (

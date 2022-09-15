@@ -62,18 +62,20 @@ const StepMobile = () => {
 
   return (
     <div className="p-4">
-      <div className="w-[347px] h-[422px] p-[11px] rounded-[48px] mx-auto bg-[url(/images/solution/bg_slide_mobile.png)]">
-        <HSlider
-          content={specialPointRender}
-          settings={{
-            withIndicators: false,
-            withControls: true,
-            slideSize: "90%",
-          }}
-          styleControl="text-ct-text-white"
-          setItemSelected={setItemSelected}
-          getItemSelected={getItemSelected}
-        />
+      <div className="w-[347px] h-[422px] p-[11px] mx-auto bg-[url(/images/solution/bg_slide_mobile.png)]">
+        <div className="rounded-[48px] overflow-hidden">
+          <HSlider
+            content={specialPointRender}
+            settings={{
+              withIndicators: false,
+              withControls: true,
+              slideSize: "90%",
+            }}
+            styleControl="text-ct-text-white"
+            setItemSelected={setItemSelected}
+            getItemSelected={getItemSelected}
+          />
+        </div>
         <div className="flex justify-center -mt-8">{ListStep}</div>
       </div>
       <div className="flex flex-col items-center">

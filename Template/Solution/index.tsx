@@ -1,8 +1,11 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import Subscribe from "../../components/Subscribe";
-import Coundown from "../../element/home/Coundown";
 import Step from "../../element/solution/Step";
+const Coundown = dynamic(() => import("../../element/home/Coundown"), {
+  ssr: false,
+});
 
 const SolutionTemplate = () => {
   return (

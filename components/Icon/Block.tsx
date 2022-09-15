@@ -1,11 +1,11 @@
 import { IconProps } from "./index.type";
 
-const Block = ({ className }: IconProps) => {
+const Block = ({ className, width = 206, height = 81 }: IconProps) => {
   return (
     <div className={`${className}`}>
       <svg
-        width="206"
-        height="81"
+        width={`${width}`}
+        height={`${height}`}
         viewBox="0 0 206 81"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
