@@ -1,26 +1,25 @@
-import { ArrowRight2 } from "iconsax-react";
-import Subscribe from "../../components/Subscribe";
-import RegissTranTion from "../../element/curriculum/registration";
-import Sitecontent from "../../element/curriculum/sitecontent";
+import React from "react";
+import dynamic from "next/dynamic";
 
-const CurriculumTemplate = () => {
+import Subscribe from "../../components/Subscribe";
+import Step from "../../element/curriculum/Step";
+const Coundown = dynamic(() => import("../../element/home/Coundown"), {
+  ssr: false,
+});
+
+const SolutionTemplate = () => {
   return (
-    <div>
-      <div className="text-center text-ct-white bg-indigo-900 py-16">
-        <h1 className="font-bold text-6xl">Chương trình</h1>
-        <p className="flex items-center justify-center m-4">
-          <span>Trang chủ</span>{" "}
-          <span className="mx-2">
-            <ArrowRight2 size="14" />
-          </span>{" "}
-          <span>Chương trình</span>
-        </p>
+    <>
+      <div className="text-center lg:bg-[url(/images/contact-bg-desktop.png)] bg-[url(/images/contact-bg.png)] text-ct-secondary-500 bg-cover lg:py-10 py-2">
+        <h1 className="lg:Heading-Desktop-Heading1 Heading-Mobile-Heading4 uppercase">
+          GIẢI PHÁP HỌC TIẾNG ANH
+        </h1>
       </div>
-      <Sitecontent />
-      <RegissTranTion />
+      <Step />
+      <Coundown />
       <Subscribe />
-    </div>
+    </>
   );
 };
 
-export default CurriculumTemplate;
+export default SolutionTemplate;

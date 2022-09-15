@@ -4,9 +4,9 @@ import { useLayoutEffect, useState } from "react";
 
 import Subscribe from "../../../components/Subscribe";
 import Coundown from "../../../element/home/Coundown";
-import Infomation from "../../../element/solution/information";
-import Querys from "../../../element/solution/querys";
-import Reason from "../../../element/solution/reason";
+import Infomation from "../../../element/curriculum/information";
+import Querys from "../../../element/curriculum/querys";
+import Reason from "../../../element/curriculum/reason";
 import BaseLayout from "../../../layout/base";
 import style from "./style.module.css";
 

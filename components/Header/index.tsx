@@ -20,7 +20,7 @@ const Header = () => {
     },
     {
       name: "GIẢI PHÁP HỌC TIẾNG ANH",
-      href: "/solution",
+      href: "/curriculum",
     },
   ];
 
@@ -89,10 +89,10 @@ const Header = () => {
                   />
                 </div>
                 <div>
-                  <Link href="/solution">
+                  <Link href="/curriculum">
                     <a
                       className={`${
-                        focus === "/solution" ? "text-ct-secondary-500 " : ""
+                        focus === "/curriculum" ? "text-ct-secondary-500 " : ""
                       }hover:text-ct-secondary-600 Heading-Mobile-Heading6 text-ct-primary-1000 cursor-pointer`}
                     >
                       GIẢI PHÁP HỌC TIẾNG ANH
@@ -175,10 +175,10 @@ const Header = () => {
               />
             </div>
             <div>
-              <Link href="/solution">
+              <Link href="/curriculum">
                 <a
                   className={`${
-                    focus === "/solution" ? "text-ct-secondary-500 " : ""
+                    focus === "/curriculum" ? "text-ct-secondary-500 " : ""
                   }hover:text-ct-secondary-600 Heading-Mobile-Heading5 text-ct-primary-1000 min-w-[38px] cursor-pointer`}
                 >
                   GIẢI PHÁP HỌC TIẾNG ANH

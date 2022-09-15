@@ -5,7 +5,7 @@ export const data = [
     age: "4 - 6 tuổi",
     input: "học sinh bắt đầu tiếp cận Tiếng Anh",
     output: "Beginners",
-    link: "/solution/beginners",
+    link: "/curriculum/beginners",
   },
   {
     type: "starters",
@@ -13,7 +13,7 @@ export const data = [
     age: "6-8 tuổi",
     input: "Beginners/ học xong khóa Beginners",
     output: "Pre-A1",
-    link: "/solution/starters",
+    link: "/curriculum/starters",
   },
   {
     type: "movers",
@@ -21,7 +21,7 @@ export const data = [
     age: "8 - 10 tuổi",
     input: "Pre-A1/ học xong khóa Starters",
     output: "CEFR A1",
-    link: "/solution/movers",
+    link: "/curriculum/movers",
   },
   {
     type: "flyers",
@@ -29,6 +29,6 @@ export const data = [
     age: "8 - 10 tuổi",
     input: "A1/ học xong khóa Movers",
     output: "CEFR A2",
-    link: "/solution/flyers",
+    link: "/curriculum/flyers",
   },
 ];
