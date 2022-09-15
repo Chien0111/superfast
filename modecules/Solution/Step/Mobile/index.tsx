@@ -18,7 +18,13 @@ const StepMobile = () => {
     return {
       content: (
         <div className="mx-auto w-fit">
-          <Image src={_.image} width={300} height={300} alt={_.type} />
+          <Image
+            className="absolute z-[9]"
+            src={_.image}
+            width={300}
+            height={300}
+            alt={_.type}
+          />
         </div>
       ),
     };
@@ -63,7 +69,7 @@ const StepMobile = () => {
   return (
     <div className="p-4">
       <div className="w-[347px] h-[422px] p-[11px] mx-auto bg-[url(/images/solution/bg_slide_mobile.png)]">
-        <div className="rounded-[48px] overflow-hidden">
+        <div className="rounded-[48px] overflow-hidden relative z-[10]">
           <HSlider
             content={specialPointRender}
             settings={{
