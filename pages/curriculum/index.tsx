@@ -1,12 +1,14 @@
+import React from "react";
 import BaseLayout from "../../layout/base";
-import CurriculumTemplate from "../../Template/Curriculum";
+import SolutionTemplate from "../../Template/Curriculum";
 
-const CurriCulum = () => {
+const Solution = () => {
   return (
-    <div>
-      <CurriculumTemplate />
-    </div>
+    <>
+      <SolutionTemplate />
+    </>
   );
 };
-CurriCulum.Layout = BaseLayout;
-export default CurriCulum;
+
+Solution.Layout = BaseLayout;
+export default Solution;
