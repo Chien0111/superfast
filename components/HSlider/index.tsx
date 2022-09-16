@@ -1,8 +1,7 @@
 import { Carousel, CarouselProps } from "@mantine/carousel";
 import { createStyles } from "@mantine/core";
 import Autoplay from "embla-carousel-autoplay";
-import { EmblaCarouselType } from "embla-carousel-react";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { twMerge } from "tailwind-merge";
 import LeftArrow from "../Icon/LeftArrow";
 

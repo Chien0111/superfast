@@ -259,6 +259,7 @@ module.exports = {
           fontSize: "18px",
           lineHeight: "25px",
         },
+
         '.Body-Desktop-Medium-Bold': {
           fontStyle: "normal",
           fontWeight: "600",
@@ -288,6 +289,12 @@ module.exports = {
           fontWeight: "500",
           fontSize: "14px",
           lineHeight: "19px",
+        },
+        '.Body-Desktop-Bold': {
+          fontStyle: "normal",
+          fontWeight: "700",
+          fontSize: "18px",
+          lineHeight: "25px",
         },
         // body mobile
         '.Body-Mobile-Small-bold': {
@@ -407,7 +414,7 @@ module.exports = {
           background: "#FFFFFF",
           borderRadius: "35px"
         },
-      
+
         ".Body-Desktop-Large": {
           fontFamily: 'Nunito',
           fontStyle: "normal",
@@ -420,7 +427,7 @@ module.exports = {
 
           color: "#00376E"
         },
-      
+
 
       });
     }),

@@ -1,5 +1,5 @@
 import { Image } from "@mantine/core";
-import { CallCalling, Facebook, Youtube } from "iconsax-react";
+import { Facebook, Youtube } from "iconsax-react";
 import Link from "next/link";
 
 const Footer = () => {
@@ -122,7 +122,10 @@ const Footer = () => {
           <div className="lg:w-1/2 mt-2 px-5 lg:text-right text-start">
             <div className="w-full mt-2">
               <h1 className="sm:Display-Desktop-Display5 Body-Desktop-Medium-Bold text-ct-primary-1000 mb-4 text">
-                <span className="text-ct-tertiary-1000 sm:text-ct-primary-1000">Hotline:</span> 1900 9399
+                <span className="text-ct-tertiary-1000 sm:text-ct-primary-1000">
+                  Hotline:
+                </span>{" "}
+                1900 9399
               </h1>
               <p className="sm:Display-Desktop-Display-footer Body-Mobile-Small-bold mb-4">
                 <span className="text-ct-primary-1000 font-bold">

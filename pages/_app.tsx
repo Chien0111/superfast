@@ -4,14 +4,15 @@ import { NotificationsProvider } from "@mantine/notifications";
 import dayjs from "dayjs";
 import "dayjs/locale/vi";
 import { ArrowUp2 } from "iconsax-react";
-
-import DefaultLayout from "../layout/default";
-import "../styles/globals.css";
-
 import { NextSeo } from "next-seo";
+
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import "../styles/globals.css";
+import "../styles/styleSidebar.css";
+
 import TrackerProvider from "../Context/trackerContext";
+import DefaultLayout from "../layout/default";
 import TrackerLayer from "../layout/Tracker";
 
 dayjs.locale("vi"); // use locale globally

@@ -1,4 +1,3 @@
-import React from "react";
 import { Modal as ModalMantine } from "@mantine/core";
 
 type ModalType = {

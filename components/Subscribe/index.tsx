@@ -1,6 +1,6 @@
-import { Image, TextInput } from "@mantine/core";
+import { TextInput } from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
-import { ArrowCircleRight, ArrowCircleRight2 } from "iconsax-react";
+import { ArrowCircleRight } from "iconsax-react";
 import { useState } from "react";
 
 const Subscribe = () => {

@@ -1,18 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { data } from "../data";
+import { data } from "../../../../data/data";
 import style from "./style.module.css";
 
 const StepDesktop = () => {
   return (
     <>
-      <div className="max-w-[1200px] mx-auto py-16 flex bg-[url(/images/solution/line_connect.png)] bg-contain bg-no-repeat">
+      <div className="max-w-[1200px] mx-auto py-32 pb-10 flex bg-[url(/images/solution/line_connect.png)] bg-contain bg-no-repeat">
         {data.map((_, index) => {
           return (
             <div
               key={index}
-              className={`flex flex-col items-center even:mt-32`}
+              className={`flex flex-col items-center`}
+              style={{
+                marginTop: `${index * -50 + 50}px`,
+              }}
             >
               <Image
                 className={`${style.anim}`}

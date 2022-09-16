@@ -1,7 +1,6 @@
 import { Modal, NumberInput, Textarea, TextInput } from "@mantine/core";
 import { useForm, yupResolver } from "@mantine/form";
 import { showNotification } from "@mantine/notifications";
-import { ArrowCircleRight } from "iconsax-react";
 
 import * as Yup from "yup";
 

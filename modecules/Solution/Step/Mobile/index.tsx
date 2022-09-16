@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import HSlider from "../../../../components/HSlider";
-import { data } from "../data";
+import { data } from "../../../../data/data";
 
 const StepMobile = () => {
   const [selected, setSelected] = useState(0);
