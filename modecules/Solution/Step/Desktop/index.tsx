@@ -12,7 +12,7 @@ const StepDesktop = () => {
           return (
             <div
               key={index}
-              className={`flex flex-col items-center`}
+              className={`flex flex-col items-center ${style.dad}`}
               style={{
                 marginTop: `${index * -50 + 50}px`,
               }}
@@ -27,7 +27,7 @@ const StepDesktop = () => {
               />
               <div className="h-[200px] -mt-4">
                 <div
-                  className={`transition-all overflow-hidden h-[140px] hover:h-[200px] border-ct-primary-200 border-[5px] rounded-[25px] bg-[#EFFCFF] p-4 w-[254px]`}
+                  className={`transition-all overflow-hidden h-[140px] ${style.child} border-ct-primary-200 border-[5px] rounded-[25px] bg-[#EFFCFF] p-4 w-[254px]`}
                 >
                   <h3 className="text-center Heading-Desktop-Heading5  text-ct-secondary-500">
                     {_.age}

@@ -1,3 +1,6 @@
+.dad:hover .child {
+  height: 200px;
+}
 .anim {
   animation: abc 5s ease-in-out infinite;
 }
